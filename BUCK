@@ -1,8 +1,8 @@
 gerrit_plugin(
-  name = 'helloworld',
+  name = 'cookbook-plugin',
   srcs = glob(['src/main/java/**/*.java']),
   resources = glob(['src/main/resources/**/*']),
   manifest_entries = [
-    'Gerrit-SshModule: com.google.gerrit.plugins.HelloWorldCommandModule'
+    'Gerrit-SshModule: com.google.gerrit.plugins.CookbookCommandModule'
   ]
 )

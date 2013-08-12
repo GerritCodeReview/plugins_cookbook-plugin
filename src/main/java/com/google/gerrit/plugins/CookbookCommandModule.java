@@ -16,7 +16,7 @@ package com.google.gerrit.plugins;
 
 import com.google.gerrit.sshd.PluginCommandModule;
 
-public class HelloWorldCommandModule extends PluginCommandModule {
+public class CookbookCommandModule extends PluginCommandModule {
   @Override
   protected void configureCommands() {
     command(PrintHelloWorldCommand.class);
