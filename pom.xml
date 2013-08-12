@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright (C) 2012 The Android Open Source Project
+Copyright (C) 2013 The Android Open Source Project
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -19,13 +19,13 @@ limitations under the License.
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.google.gerrit.plugins</groupId>
-  <artifactId>helloworld</artifactId>
+  <groupId>com.googlesource.gerrit.plugins</groupId>
+  <artifactId>cookbook-plugin</artifactId>
   <packaging>jar</packaging>
   <version>0.1</version>
   <properties>
     <Gerrit-ApiType>plugin</Gerrit-ApiType>
-    <Gerrit-ApiVersion>2.6-SNAPSHOT</Gerrit-ApiVersion>
+    <Gerrit-ApiVersion>2.8-SNAPSHOT</Gerrit-ApiVersion>
   </properties>
 
   <build>
@@ -37,7 +37,7 @@ limitations under the License.
         <configuration>
           <archive>
             <manifestEntries>
-              <Gerrit-SshModule>com.google.gerrit.plugins.HelloWorldCommandModule</Gerrit-SshModule>
+              <Gerrit-SshModule>com.googlesource.gerrit.plugins.cookbook.CookbookCommandModule</Gerrit-SshModule>
 
               <Implementation-Vendor>Gerrit Code Review</Implementation-Vendor>
               <Implementation-URL>http://code.google.com/p/gerrit/</Implementation-URL>
