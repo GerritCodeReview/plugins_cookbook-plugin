@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "586f6876_e9b795ee",
+        "filename": "BUCK",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-08-13T01:13:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "786a6c67_4aad73c8",
+      "revId": "86582fecc2bfdad238a58be3917a2b00c5d80856",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "786a6c67_2aa4bfe2",
         "filename": "pom.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-08-13T00:46:59Z",
       "side": 1,
       "message": "com.googlesource.gerrit.plugins ?",
+      "revId": "86582fecc2bfdad238a58be3917a2b00c5d80856",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "786a6c67_4a425319",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-08-13T01:13:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "786a6c67_2aa4bfe2",
       "revId": "86582fecc2bfdad238a58be3917a2b00c5d80856",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "786a6c67_6a3f179c",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-08-13T01:13:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "786a6c67_0aa77bea",
+      "revId": "86582fecc2bfdad238a58be3917a2b00c5d80856",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "586f6876_29104d0d",
         "filename": "pom.xml",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2013-08-13T00:46:59Z",
       "side": 1,
       "message": "com.googlesource.gerrit.plugins.cookbook",
+      "revId": "86582fecc2bfdad238a58be3917a2b00c5d80856",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "586f6876_89acd9a0",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-08-13T01:13:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "586f6876_29104d0d",
       "revId": "86582fecc2bfdad238a58be3917a2b00c5d80856",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "786a6c67_0a4c5b46",
+        "filename": "src/main/java/com/google/gerrit/plugins/CookbookCommandModule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-08-13T01:13:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "586f6876_c9c9716f",
+      "revId": "86582fecc2bfdad238a58be3917a2b00c5d80856",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "786a6c67_6aaab7b3",
         "filename": "src/main/java/com/google/gerrit/plugins/CookbookCommandModule.java",
         "patchSetId": 1
@@ -98,6 +188,24 @@
       "writtenOn": "2013-08-13T00:46:59Z",
       "side": 1,
       "message": "Calling the class SshModule might be sufficient.",
+      "revId": "86582fecc2bfdad238a58be3917a2b00c5d80856",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "586f6876_a9b19dfb",
+        "filename": "src/main/java/com/google/gerrit/plugins/CookbookCommandModule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-08-13T01:13:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "786a6c67_6aaab7b3",
       "revId": "86582fecc2bfdad238a58be3917a2b00c5d80856",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
