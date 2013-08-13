@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "3802b4bb_214eb469",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-13T07:21:27Z",
+      "side": 1,
+      "message": "Fixed in a32af6920f5af8b802cd7fc52d5765cb144534e5",
+      "parentUuid": "d818b82e_75322805",
+      "revId": "edf6189a40fd6d00dc0594c23bdc7852ff442620",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f85d7cd3_c62de276",
         "filename": "BUCK",
         "patchSetId": 1
