@@ -37,6 +37,7 @@ limitations under the License.
         <configuration>
           <archive>
             <manifestEntries>
+              <Gerrit-HttpModule>com.googlesource.gerrit.plugins.cookbook.HttpModule</Gerrit-HttpModule>
               <Gerrit-SshModule>com.googlesource.gerrit.plugins.cookbook.SshModule</Gerrit-SshModule>
 
               <Implementation-Vendor>Gerrit Code Review</Implementation-Vendor>
@@ -79,6 +80,11 @@ limitations under the License.
       <artifactId>gerrit-${Gerrit-ApiType}-api</artifactId>
       <version>${Gerrit-ApiVersion}</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-servlet-api</artifactId>
+      <version>7.0.32</version>
     </dependency>
   </dependencies>
 
