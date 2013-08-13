@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3802b4bb_e15b1c2c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-13T07:07:06Z",
+      "side": 1,
+      "message": "Or may be\n\n buck build api\n\nis wrong? Will have a look. That why we need a working show case example of plugin API. That\u0027s the best justification: one liner servlet is enough to get into troubles ;-)",
+      "parentUuid": "d818b82e_75322805",
+      "revId": "edf6189a40fd6d00dc0594c23bdc7852ff442620",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f85d7cd3_c62de276",
         "filename": "BUCK",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-08-13T06:47:04Z",
       "side": 1,
       "message": "nit: this line should end in \",\"",
+      "revId": "edf6189a40fd6d00dc0594c23bdc7852ff442620",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3802b4bb_01573004",
+        "filename": "BUCK",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-13T07:07:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f85d7cd3_c62de276",
       "revId": "edf6189a40fd6d00dc0594c23bdc7852ff442620",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "b8fce4ed_3c7ff16d",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWorldServlet.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-13T07:07:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f85d7cd3_06a77aea",
+      "revId": "edf6189a40fd6d00dc0594c23bdc7852ff442620",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d818b82e_1525b4b9",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWorldServlet.java",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2013-08-13T06:47:04Z",
       "side": 1,
       "message": "Why implement both doGet and doPost in the example?",
+      "revId": "edf6189a40fd6d00dc0594c23bdc7852ff442620",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b8fce4ed_1c7cb575",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWorldServlet.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-13T07:07:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d818b82e_1525b4b9",
       "revId": "edf6189a40fd6d00dc0594c23bdc7852ff442620",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "b8fce4ed_7c797985",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWorldServlet.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-13T07:07:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f85d7cd3_66aaeeb3",
+      "revId": "edf6189a40fd6d00dc0594c23bdc7852ff442620",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f85d7cd3_26a4f6e2",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HttpModule.java",
         "patchSetId": 1
@@ -98,6 +188,24 @@
       "writtenOn": "2013-08-13T06:47:04Z",
       "side": 1,
       "message": "Why both bindings?",
+      "revId": "edf6189a40fd6d00dc0594c23bdc7852ff442620",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b8fce4ed_5c763d97",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HttpModule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-13T07:07:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f85d7cd3_26a4f6e2",
       "revId": "edf6189a40fd6d00dc0594c23bdc7852ff442620",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
