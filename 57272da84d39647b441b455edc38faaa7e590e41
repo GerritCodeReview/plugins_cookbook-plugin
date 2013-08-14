@@ -16,6 +16,24 @@
       "revId": "57272da84d39647b441b455edc38faaa7e590e41",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3802b4bb_219354a6",
+        "filename": "src/main/resources/Documentation/servlet-hello.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-14T07:20:48Z",
+      "side": 1,
+      "message": "Or may be add \"servlet-\" and/or \"rest-api-\" as auto discovery prefix for documentation machinery, so that all servlet-*.md and rest-api.*.md appear in its own Servlet section, like we do with SSH commands? That why i called it servlet-hello.md",
+      "parentUuid": "d818b82e_75a7c8e9",
+      "revId": "57272da84d39647b441b455edc38faaa7e590e41",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
