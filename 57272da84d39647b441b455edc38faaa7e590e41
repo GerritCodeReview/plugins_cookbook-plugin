@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d818b82e_75a7c8e9",
+        "filename": "src/main/resources/Documentation/servlet-hello.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-08-14T07:04:05Z",
+      "side": 1,
+      "message": "This appears in the index page as just \"cookbook-plugin hello\".\n\nIt might be better to change to something a bit more descriptive.  \n\nMaybe:\n\n \"hello world\" servlet\n \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nor\n\n Example HTTP servlet\n \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\n?",
+      "revId": "57272da84d39647b441b455edc38faaa7e590e41",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
