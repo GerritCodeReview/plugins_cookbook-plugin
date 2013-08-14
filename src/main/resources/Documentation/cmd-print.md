@@ -55,8 +55,8 @@ Have the server say hi to you in French.
 SEE ALSO
 --------
 
-* [Plugin Development](dev-plugins.html)
+* [Plugin Development](../../../Documentation/dev-plugins.html)
 
 GERRIT
 ------
-Part of [Gerrit Code Review](index.html)
+Part of [Gerrit Code Review](../../../Documentation/index.html)
