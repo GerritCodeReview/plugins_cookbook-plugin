@@ -1,13 +1,13 @@
-helloworld print
-================
+cookbook-plugin print
+====================
 
 NAME
 ----
-helloworld print - Print our helloworld message
+cookbook-plugin print - Print our "Hello world" message
 
 SYNOPSIS
 --------
->     ssh -p <port> <host> helloworld print
+>     ssh -p <port> <host> cookbook-plugin print
 >      [--french]
 >      [name]
 
@@ -42,15 +42,15 @@ EXAMPLES
 
 Have the server say hi to the world.
 
->     $ ssh -p 29418 review.example.com helloworld print
+>     $ ssh -p 29418 review.example.com cookbook-plugin print
 
 Have the server say hi to the world in French.
 
->     $ ssh -p 29418 review.example.com helloworld print --french
+>     $ ssh -p 29418 review.example.com cookbook-plugin print --french
 
 Have the server say hi to you in French.
 
->     $ ssh -p 29418 review.example.com helloworld print --french \'Revi Ewer\'
+>     $ ssh -p 29418 review.example.com cookbook-plugin print --french \'Revi Ewer\'
 
 SEE ALSO
 --------
