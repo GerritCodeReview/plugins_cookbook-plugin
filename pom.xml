@@ -38,6 +38,7 @@ limitations under the License.
           <archive>
             <manifestEntries>
               <Gerrit-SshModule>com.googlesource.gerrit.plugins.cookbook.SshModule</Gerrit-SshModule>
+              <Gerrit-HttpModule>com.googlesource.gerrit.plugins.cookbook.MyWebUrls</Gerrit-HttpModule>
 
               <Implementation-Vendor>Gerrit Code Review</Implementation-Vendor>
               <Implementation-URL>http://code.google.com/p/gerrit/</Implementation-URL>
