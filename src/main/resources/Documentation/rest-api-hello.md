@@ -15,13 +15,13 @@ Prints "Hello <user>!".
 
 ACCESS
 ------
-Any user. User has to be authenticated.
+Any authenticated user.
 
 SEE ALSO
 --------
 
 * [Plugin Development](../../../Documentation/dev-plugins.html)
-* [Plugin Development](../../../Documentation/dev-rest-api.html)
+* [REST API Development](../../../Documentation/dev-rest-api.html)
 
 GERRIT
 ------
