@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "0d0f7025_865434cf",
+        "filename": "BUCK",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2013-08-18T21:30:52Z",
+      "side": 1,
+      "message": "Alphabetical sorting works, but I prefer to think about it in terms of injector modules and the order they are put together. The system module (this one) comes before the others. :-)",
+      "parentUuid": "8d48c079_83489e5e",
+      "revId": "a16167590c58825964034e445f524f20ec655b7b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2d0a7414_f8add1cd",
         "filename": "pom.xml",
         "patchSetId": 4
