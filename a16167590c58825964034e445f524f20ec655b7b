@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "8d48c079_83489e5e",
+        "filename": "BUCK",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-18T21:23:24Z",
+      "side": 1,
+      "message": "I thought about it and decided to sort it alphabetically?\n\nDone.",
+      "parentUuid": "0d0f7025_06aee4c9",
+      "revId": "a16167590c58825964034e445f524f20ec655b7b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2d0a7414_f8add1cd",
         "filename": "pom.xml",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2013-08-18T21:14:12Z",
       "side": 1,
       "message": "nit: declare this module first?",
+      "revId": "a16167590c58825964034e445f524f20ec655b7b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cd4e3882_4e36476b",
+        "filename": "pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-18T21:23:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2d0a7414_f8add1cd",
       "revId": "a16167590c58825964034e445f524f20ec655b7b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "cd4e3882_2e3b0b53",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWorldAction.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-18T21:23:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2d0a7414_d8aa0db4",
+      "revId": "a16167590c58825964034e445f524f20ec655b7b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0d0f7025_e6aad0b3",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWorldAction.java",
         "patchSetId": 4
@@ -64,6 +118,24 @@
       "writtenOn": "2013-08-18T21:14:12Z",
       "side": 1,
       "message": "(optional) nit: I would put \"Hello\" on its own line. At first reading I thought we were passing 3 args to a format that accepts two, because I skimmed over the Objects.firstNonNull. Line breaking the two format args each onto their own lines reduces the risk I do something stupid like that. :-)",
+      "revId": "a16167590c58825964034e445f524f20ec655b7b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cd4e3882_0e404faf",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWorldAction.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-18T21:23:24Z",
+      "side": 1,
+      "message": ";-)\n\nDone",
+      "parentUuid": "0d0f7025_e6aad0b3",
       "revId": "a16167590c58825964034e445f524f20ec655b7b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "8d48c079_6381224f",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWorldAction.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-18T21:23:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0d0f7025_c6a7cce9",
+      "revId": "a16167590c58825964034e445f524f20ec655b7b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2d0a7414_b8a759ea",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/PrintHelloWorldCommand.java",
         "patchSetId": 4
@@ -98,6 +188,24 @@
       "writtenOn": "2013-08-18T21:14:12Z",
       "side": 1,
       "message": "nit: spaces around \u003d in @ annotation.",
+      "revId": "a16167590c58825964034e445f524f20ec655b7b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cd4e3882_ee44d3c5",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/PrintHelloWorldCommand.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-18T21:23:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2d0a7414_b8a759ea",
       "revId": "a16167590c58825964034e445f524f20ec655b7b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
