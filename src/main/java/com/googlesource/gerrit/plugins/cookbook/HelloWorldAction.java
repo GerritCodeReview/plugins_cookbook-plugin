@@ -15,6 +15,7 @@
 package com.googlesource.gerrit.plugins.cookbook;
 
 import com.google.common.base.Objects;
+import com.google.common.base.Strings;
 import com.google.gerrit.extensions.restapi.RestModifyView;
 import com.google.gerrit.extensions.webui.UiAction;
 import com.google.gerrit.server.CurrentUser;
@@ -29,6 +30,8 @@ class HelloWorldAction implements UiAction<RevisionResource>,
   private Provider<CurrentUser> user;
 
   static class Input {
+    boolean french;
+    String message;
   }
 
   @Inject
@@ -38,9 +41,16 @@ class HelloWorldAction implements UiAction<RevisionResource>,
 
   @Override
   public String apply(RevisionResource rev, Input input) {
-    return String.format("%s %s!",
-        "Hello",
-        Objects.firstNonNull(user.get().getUserName(), "world"));
+    final String greeting = input.french
+        ? "Bonjour"
+        : "Hello";
+    return String.format("%s %s from change %s, patch set %d!",
+        greeting,
+        Strings.isNullOrEmpty(input.message)
+            ? Objects.firstNonNull(user.get().getUserName(), "world")
+            : input.message,
+        rev.getChange().getId().toString(),
+        rev.getPatchSet().getPatchSetId());
   }
 
   @Override
