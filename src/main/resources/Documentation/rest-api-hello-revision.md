@@ -1,13 +1,13 @@
-cookbook-plugin hello
-=====================
+cookbook-plugin hello-revision
+==============================
 
 NAME
 ----
-say-hello - Print our "Hello <user>!" message
+hello-revision - Print our "Hello <user>!" message
 
 SYNOPSIS
 --------
->     POST /changes/link:#change-id[\{change-id\}]/revisions/link:#revision-id[\{revision-id\}]/cookbook-plugin~say-hello
+>     POST /changes/link:#change-id[\{change-id\}]/revisions/link:#revision-id[\{revision-id\}]/cookbook-plugin~hello-revision
 
 DESCRIPTION
 -----------
@@ -31,7 +31,7 @@ EXAMPLES
 
 Have the server say Hello to the user
 
->     curl -X POST --digest --user joe:secret http://host:port/a/changes/1/revisions/1/cookbook~say-hello
+>     curl -X POST --digest --user joe:secret http://host:port/a/changes/1/revisions/1/cookbook~hello-revision
 > "Hello joe from change 1, patch set 1!"
 
 Have the server say Bonjour to François
@@ -39,7 +39,7 @@ Have the server say Bonjour to François
 >     curl -X POST -H "Content-Type: application/json" \
 >       -d '{message: "François", french: true}' \
 >       --digest --user joe:secret \
->       http://host:port/a/changes/1/revisions/1/cookbook~say-hello
+>       http://host:port/a/changes/1/revisions/1/cookbook~hello-revision
 > "Bonjour François from change 1, patch set 1!"
 
 SEE ALSO

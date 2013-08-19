@@ -15,6 +15,7 @@
 package com.googlesource.gerrit.plugins.cookbook;
 
 import static com.google.gerrit.server.change.RevisionResource.REVISION_KIND;
+import static com.google.gerrit.server.project.ProjectResource.PROJECT_KIND;
 
 import com.google.gerrit.extensions.restapi.RestApiModule;
 import com.google.inject.AbstractModule;
@@ -26,7 +27,8 @@ public class Module extends AbstractModule {
     install(new RestApiModule() {
       @Override
       protected void configure() {
-        post(REVISION_KIND, "say-hello").to(HelloWorldAction.class);
+        post(REVISION_KIND, "hello-revision").to(HelloRevisionAction.class);
+        post(PROJECT_KIND, "hello-project").to(HelloProjectAction.class);
       }
     });
   }

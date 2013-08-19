@@ -24,8 +24,8 @@ import com.google.gerrit.server.change.RevisionResource;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 
-class HelloWorldAction implements UiAction<RevisionResource>,
-    RestModifyView<RevisionResource, HelloWorldAction.Input> {
+class HelloRevisionAction implements UiAction<RevisionResource>,
+    RestModifyView<RevisionResource, HelloRevisionAction.Input> {
 
   private Provider<CurrentUser> user;
 
@@ -35,7 +35,7 @@ class HelloWorldAction implements UiAction<RevisionResource>,
   }
 
   @Inject
-  HelloWorldAction(Provider<CurrentUser> user) {
+  HelloRevisionAction(Provider<CurrentUser> user) {
     this.user = user;
   }
 

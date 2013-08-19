@@ -13,7 +13,7 @@
 // limitations under the License.
 
 Gerrit.install(function(self) {
-    function onSayHello(c) {
+    function onSayHelloRevision(c) {
       var f = c.textfield();
       var t = c.checkbox();
       var b = c.button('Say hello', {onclick: function(){
@@ -33,5 +33,5 @@ Gerrit.install(function(self) {
         b));
       f.focus();
     }
-    self.onAction('revision', 'say-hello', onSayHello);
+    self.onAction('revision', 'hello-revision', onSayHelloRevision);
   });
