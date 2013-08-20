@@ -52,6 +52,24 @@
       "revId": "d6dc5ace0ecddd3707ad2b7ad903a5d386c16e3d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0de050ae_6f11f163",
+        "filename": "src/main/resources/Documentation/rest-api-hello.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-08-20T06:45:31Z",
+      "side": 1,
+      "message": "Actually i had it something like that in some older patches of helloworld plugin, that were all abandoned:\n\n https://gerrit-review.googlesource.com/#/c/42200/13/src/main/java/com/google/gerrit/plugins/HelloCommand.java\n\n     String msg \u003d String.format(\n          \"Hello %s, greetings from the core gerrit page (for the patch set %d)\",\n          cu.get().getUserName(), rev.getPatchSet().getPatchSetId());\n\nwill do.",
+      "parentUuid": "6dd1cce1_b29bc0b7",
+      "revId": "d6dc5ace0ecddd3707ad2b7ad903a5d386c16e3d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
