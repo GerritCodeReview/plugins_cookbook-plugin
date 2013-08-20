@@ -16,6 +16,24 @@
       "revId": "6788a6cc20c64c9951d1c5aa4d1a26fe05572e16",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4dd6c8dc_d7019484",
+        "filename": "src/main/resources/Documentation/rest-api-hello.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-08-20T07:23:55Z",
+      "side": 1,
+      "message": "Or you could just replace --french with --german ;)",
+      "parentUuid": "adce6449_ac160356",
+      "revId": "6788a6cc20c64c9951d1c5aa4d1a26fe05572e16",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
