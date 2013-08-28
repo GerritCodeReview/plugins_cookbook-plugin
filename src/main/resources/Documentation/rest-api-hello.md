@@ -7,7 +7,7 @@ say-hello - Print our "Hello <user>!" message
 
 SYNOPSIS
 --------
->     POST /changes/link:#change-id[\{change-id\}]/revisions/link:#revision-id[\{revision-id\}]/cookbook-plugin~say-hello
+>     POST /changes/\{change-id\}/revisions/\{revision-id\}/cookbook-plugin~say-hello
 
 DESCRIPTION
 -----------
