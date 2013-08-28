@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "52eca979_6112366c",
+        "filename": "src/main/resources/Documentation/rest-api-hello.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-08-28T06:02:35Z",
+      "side": 1,
+      "message": "I think the escaping slashes should also be removed on the { and } because they are rendering as-is in the documentation page.\n\nWith the REST API documentation in core Gerrit the \\ characters don\u0027t appear in the rendered HTML.",
+      "revId": "2f1692472f58d3b4ad95537d7c8137bd909b31a4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
