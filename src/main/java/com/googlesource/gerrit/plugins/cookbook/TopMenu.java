@@ -14,19 +14,27 @@
 
 package com.googlesource.gerrit.plugins.cookbook;
 
-import com.google.gerrit.extensions.registration.DynamicSet;
-import com.google.gerrit.extensions.webui.JavaScriptPlugin;
-import com.google.gerrit.extensions.webui.TopMenuExtension;
-import com.google.gerrit.extensions.webui.WebUiPlugin;
-import com.google.gerrit.httpd.plugins.HttpPluginModule;
+import java.util.List;
 
-public class HttpModule extends HttpPluginModule {
+import com.google.common.collect.Lists;
+import com.google.gerrit.extensions.annotations.PluginName;
+import com.google.gerrit.extensions.webui.TopMenuExtension;
+import com.google.inject.Inject;
+
+public class TopMenu implements TopMenuExtension {
+  private final List<MenuEntry> menuEntries;
+
+  @Inject
+  public TopMenu(@PluginName String pluginName) {
+    String baseUrl = "/plugins/" + pluginName + "/";
+    List<MenuItem> menuItems = Lists.newArrayListWithCapacity(1);
+    menuItems.add(new MenuItem("Documentation", baseUrl));
+    menuEntries = Lists.newArrayListWithCapacity(1);
+    menuEntries.add(new MenuEntry("Cookbook", menuItems));
+  }
+
   @Override
-  protected void configureServlets() {
-    serve("/say-hello/*").with(HelloWorldServlet.class);
-    DynamicSet.bind(binder(), WebUiPlugin.class)
-        .toInstance(new JavaScriptPlugin("hello.js"));
-    DynamicSet.bind(binder(), TopMenuExtension.class)
-        .to(TopMenu.class);
+  public List<MenuEntry> getEntries() {
+      return menuEntries;
   }
 }
