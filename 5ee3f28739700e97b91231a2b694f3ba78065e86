@@ -52,6 +52,24 @@
       "revId": "5ee3f28739700e97b91231a2b694f3ba78065e86",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "443787c3_0924a9b9",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloTopMenu.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-10-01T07:48:51Z",
+      "side": 1,
+      "message": "It works now.  I must have made a mistake in building or deploying my test version.  Sorry for the false alarm.",
+      "parentUuid": "443787c3_a9347df0",
+      "revId": "5ee3f28739700e97b91231a2b694f3ba78065e86",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
