@@ -16,6 +16,24 @@
       "revId": "5ee3f28739700e97b91231a2b694f3ba78065e86",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "84433f33_6b2b6188",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloTopMenu.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2013-10-01T07:19:08Z",
+      "side": 1,
+      "message": "Hmm, works for me. Are you sure you have [1] in your tree?\n\n[1] https://gerrit-review.googlesource.com/50234",
+      "parentUuid": "04582f19_ef092140",
+      "revId": "5ee3f28739700e97b91231a2b694f3ba78065e86",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
