@@ -22,6 +22,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gerrit.extensions.annotations.PluginCanonicalWebUrl;
 import com.google.gerrit.extensions.annotations.PluginName;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
@@ -35,8 +36,9 @@ class HelloWorldServlet extends HttpServlet {
   private static final Logger log = LoggerFactory.getLogger(HelloWorldServlet.class);
 
   @Inject
-  public HelloWorldServlet(@PluginName String pluginName) {
-    log.info("Cookbook Plugin '" + pluginName + "'");
+  public HelloWorldServlet(@PluginName String pluginName,
+      @PluginCanonicalWebUrl String url) {
+    log.info(String.format("Cookbook Plugin '%' at url %s", pluginName, url));
   }
 
   @Override
