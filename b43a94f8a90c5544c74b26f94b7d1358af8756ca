@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5e991882_7293d8a8",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWorldServlet.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-10-21T10:04:11Z",
+      "side": 1,
+      "message": "\u0027%s\u0027, \u003cs\u003e is missing in \u0027%\u0027",
+      "revId": "b43a94f8a90c5544c74b26f94b7d1358af8756ca",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
