@@ -16,6 +16,24 @@
       "revId": "b43a94f8a90c5544c74b26f94b7d1358af8756ca",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bec4d461_f59ed8aa",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWorldServlet.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-10-21T10:05:58Z",
+      "side": 1,
+      "message": "Doh.",
+      "parentUuid": "5e991882_7293d8a8",
+      "revId": "b43a94f8a90c5544c74b26f94b7d1358af8756ca",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
