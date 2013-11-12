@@ -37,6 +37,7 @@ limitations under the License.
         <configuration>
           <archive>
             <manifestEntries>
+              <Gerrit-PluginName>cookbook-plugin</Gerrit-PluginName>
               <Gerrit-Module>com.googlesource.gerrit.plugins.cookbook.Module</Gerrit-Module>
               <Gerrit-HttpModule>com.googlesource.gerrit.plugins.cookbook.HttpModule</Gerrit-HttpModule>
               <Gerrit-SshModule>com.googlesource.gerrit.plugins.cookbook.SshModule</Gerrit-SshModule>
@@ -64,7 +65,27 @@ limitations under the License.
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>gwt-maven-plugin</artifactId>
+        <version>2.5.1</version>
+        <configuration>
+          <module>com.googlesource.gerrit.plugins.cookbook.client.HelloForm</module>
+          <disableClassMetadata>true</disableClassMetadata>
+          <disableCastChecking>true</disableCastChecking>
+          <webappDirectory>${project.build.directory}/classes/static</webappDirectory>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
+
   </build>
 
   <dependencies>
@@ -72,6 +93,17 @@ limitations under the License.
       <groupId>com.google.gerrit</groupId>
       <artifactId>gerrit-${Gerrit-ApiType}-api</artifactId>
       <version>${Gerrit-ApiVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.gerrit</groupId>
+      <artifactId>gerrit-plugin-gwtui</artifactId>
+      <version>${Gerrit-ApiVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-user</artifactId>
+      <version>2.5.1</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
