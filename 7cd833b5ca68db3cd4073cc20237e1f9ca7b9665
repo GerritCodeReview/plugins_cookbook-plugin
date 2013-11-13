@@ -22,6 +22,24 @@
       "revId": "7cd833b5ca68db3cd4073cc20237e1f9ca7b9665",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bef77598_ae47b765",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HttpModule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-11-13T06:21:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9e2631f7_0d67f5fe",
+      "revId": "7cd833b5ca68db3cd4073cc20237e1f9ca7b9665",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
