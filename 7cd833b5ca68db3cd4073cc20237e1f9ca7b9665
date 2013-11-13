@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9e2631f7_0d67f5fe",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HttpModule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2013-11-13T06:09:45Z",
+      "side": 1,
+      "message": "s/cookbook-plugin/cookbook\n\nThis must match the module name in HelloForm.gwt.xml:\n  \u003cmodule rename-to\u003d\"cookbook\"\u003e",
+      "range": {
+        "startLine": 32,
+        "startChar": 35,
+        "endLine": 32,
+        "endChar": 50
+      },
+      "revId": "7cd833b5ca68db3cd4073cc20237e1f9ca7b9665",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
