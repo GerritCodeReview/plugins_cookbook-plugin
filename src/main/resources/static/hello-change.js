@@ -13,10 +13,17 @@
 // limitations under the License.
 
 Gerrit.install(function(self) {
-    function onSayHelloChange(c, r) {
-      window.alert("Hello from change\n"
+    function onOpenChange(c, r) {
+      alert("Hello from change\n"
           + c.id + "\n"
           + "revision: " + r.name);
     }
-    Gerrit.on('showchange', onSayHelloChange);
+    function onSubmit(c, r) {
+      return confirm("Really submit change:\n"
+          + c.id + "\n"
+          + "revision: " + r.name
+          + "?");
+    }
+    Gerrit.on('showchange', onOpenChange);
+    Gerrit.on('submitchange', onSubmit);
   });
