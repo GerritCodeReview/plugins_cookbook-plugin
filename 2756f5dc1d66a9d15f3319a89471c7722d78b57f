@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "231a8eb4_46bd529c",
+        "filename": "src/main/resources/static/hello-change.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2013-11-30T23:49:22Z",
+      "side": 1,
+      "message": "The other two hooks are annoying. This one may drive a user crazy. Maybe console log instead of alert?",
+      "revId": "2756f5dc1d66a9d15f3319a89471c7722d78b57f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
