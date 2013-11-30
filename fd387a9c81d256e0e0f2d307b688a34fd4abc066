@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "03174a8c_05a0728c",
+        "filename": "src/main/resources/static/hello-change.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2013-11-30T21:32:04Z",
+      "side": 1,
+      "message": "return? Or is the return value from confirm implicit in JS?",
+      "revId": "fd387a9c81d256e0e0f2d307b688a34fd4abc066",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
