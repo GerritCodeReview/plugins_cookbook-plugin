@@ -24,6 +24,11 @@ Gerrit.install(function(self) {
           + "revision: " + r.name
           + "?");
     }
+    function onViewChanged(t) {
+      alert("View changed:\n"
+          + t);
+    }
     Gerrit.on('showchange', onOpenChange);
     Gerrit.on('submitchange', onSubmit);
+    Gerrit.on('history', onViewChanged);
   });
