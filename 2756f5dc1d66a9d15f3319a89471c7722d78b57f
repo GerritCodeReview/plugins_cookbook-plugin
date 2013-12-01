@@ -16,6 +16,24 @@
       "revId": "2756f5dc1d66a9d15f3319a89471c7722d78b57f",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "83d09a10_c1ecc2a7",
+        "filename": "src/main/resources/static/hello-change.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-12-01T21:15:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "231a8eb4_46bd529c",
+      "revId": "2756f5dc1d66a9d15f3319a89471c7722d78b57f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
