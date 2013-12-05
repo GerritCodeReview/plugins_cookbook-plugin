@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "633d664c_801d9678",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/Greetings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2013-12-05T22:22:17Z",
+      "side": 1,
+      "message": "unused?",
+      "revId": "4216a7105667e9218c07102a2db3f05bb95e2ae9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "83389a5d_a1353ef8",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/Greetings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2013-12-05T22:22:17Z",
+      "side": 1,
+      "message": "no space after (",
+      "range": {
+        "startLine": 49,
+        "startChar": 12,
+        "endLine": 49,
+        "endChar": 16
+      },
+      "revId": "4216a7105667e9218c07102a2db3f05bb95e2ae9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "83389a5d_c13ac2e5",
+        "filename": "src/main/resources/static/greetings.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2013-12-05T22:22:17Z",
+      "side": 1,
+      "message": "Grab this DOM node in your onOpenChange function before Gerrit.get(). That way if the user navigates to another change before this HTTP call completes the handler will install its result into a discarded DOM node, which the browser will simply garbage collect away.\n\nBy looking up the container after the HTTP call ends you run the risk of the user opening another change first and the wrong data being injected into the current change\u0027s DOM.",
+      "range": {
+        "startLine": 52,
+        "startChar": 9,
+        "endLine": 52,
+        "endChar": 45
+      },
+      "revId": "4216a7105667e9218c07102a2db3f05bb95e2ae9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
