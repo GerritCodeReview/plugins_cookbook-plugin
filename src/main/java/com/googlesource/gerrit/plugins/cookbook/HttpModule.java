@@ -25,6 +25,8 @@ public class HttpModule extends HttpPluginModule {
   protected void configureServlets() {
     serve("/say-hello/*").with(HelloWorldServlet.class);
     DynamicSet.bind(binder(), WebUiPlugin.class)
+        .toInstance(new JavaScriptPlugin("greetings.js"));
+    DynamicSet.bind(binder(), WebUiPlugin.class)
         .toInstance(new JavaScriptPlugin("hello-change.js"));
     DynamicSet.bind(binder(), WebUiPlugin.class)
         .toInstance(new JavaScriptPlugin("hello-project.js"));
