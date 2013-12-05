@@ -33,6 +33,7 @@ public class Module extends AbstractModule {
       protected void configure() {
         post(REVISION_KIND, "hello-revision").to(HelloRevisionAction.class);
         post(PROJECT_KIND, "hello-project").to(HelloProjectAction.class);
+        get(REVISION_KIND, "greetings").to(Greetings.class);
       }
     });
   }
