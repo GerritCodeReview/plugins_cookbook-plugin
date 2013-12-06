@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "43906299_6fef312a",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/Greetings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-12-06T06:55:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "633d664c_801d9678",
+      "revId": "4216a7105667e9218c07102a2db3f05bb95e2ae9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "83389a5d_a1353ef8",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/Greetings.java",
         "patchSetId": 3
@@ -42,6 +60,24 @@
     },
     {
       "key": {
+        "uuid": "23752e3e_8e005b1a",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/Greetings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-12-06T06:55:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "83389a5d_a1353ef8",
+      "revId": "4216a7105667e9218c07102a2db3f05bb95e2ae9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "83389a5d_c13ac2e5",
         "filename": "src/main/resources/static/greetings.js",
         "patchSetId": 3
@@ -59,6 +95,24 @@
         "endLine": 52,
         "endChar": 45
       },
+      "revId": "4216a7105667e9218c07102a2db3f05bb95e2ae9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "23752e3e_ae051729",
+        "filename": "src/main/resources/static/greetings.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-12-06T06:55:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "83389a5d_c13ac2e5",
       "revId": "4216a7105667e9218c07102a2db3f05bb95e2ae9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
