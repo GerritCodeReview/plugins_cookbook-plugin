@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "830dfaeb_99673bfe",
+        "filename": "src/main/resources/static/greetings.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2013-12-07T19:15:02Z",
+      "side": 1,
+      "message": "maybe just do var url \u003d ... and drop the rsrc intermediate?",
+      "revId": "d93e19c479504233fab9242ef7c9840de2e9fa6f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "830dfaeb_b962ffed",
+        "filename": "src/main/resources/static/greetings.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2013-12-07T19:15:02Z",
+      "side": 1,
+      "message": "Call it change_plugins? You have a typo in plugings",
+      "range": {
+        "startLine": 26,
+        "startChar": 10,
+        "endLine": 26,
+        "endChar": 28
+      },
+      "revId": "d93e19c479504233fab9242ef7c9840de2e9fa6f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a3083eda_3abc21ef",
+        "filename": "src/main/resources/static/greetings.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2013-12-07T19:15:02Z",
+      "side": 1,
+      "message": "change_plugins?",
+      "range": {
+        "startLine": 54,
+        "startChar": 9,
+        "endLine": 54,
+        "endChar": 27
+      },
+      "revId": "d93e19c479504233fab9242ef7c9840de2e9fa6f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
