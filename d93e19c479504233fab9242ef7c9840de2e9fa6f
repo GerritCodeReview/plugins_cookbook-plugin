@@ -42,6 +42,40 @@
     },
     {
       "key": {
+        "uuid": "a3083eda_1ab95dff",
+        "filename": "src/main/resources/static/greetings.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2013-12-07T19:22:58Z",
+      "side": 1,
+      "message": "Maybe create the table inside of the document fragment above, append the tr directly to the table, and then append the fragment to the change_plugins container after the table is finished building?",
+      "revId": "d93e19c479504233fab9242ef7c9840de2e9fa6f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "830dfaeb_39770faf",
+        "filename": "src/main/resources/static/greetings.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2013-12-07T19:22:58Z",
+      "side": 1,
+      "message": "What tr child are we appending here? It seems tr is not declared in this scope.",
+      "revId": "d93e19c479504233fab9242ef7c9840de2e9fa6f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a3083eda_3abc21ef",
         "filename": "src/main/resources/static/greetings.js",
         "patchSetId": 4
