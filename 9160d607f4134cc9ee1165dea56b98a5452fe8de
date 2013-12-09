@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "63d00689_a8629bed",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/HelloForm.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-12-09T17:10:38Z",
+      "side": 1,
+      "message": "May be add her plugin name to stress how to access it here? Because this form currently doesn\u0027t have any REST API requests. So may be put it in box Title?\n\n dialogBox.setText(\"Greetings dialog from \" + Plugin.get().getPluginName() + \"-plugin\");",
+      "range": {
+        "startLine": 45,
+        "startChar": 22,
+        "endLine": 45,
+        "endChar": 40
+      },
+      "revId": "9160d607f4134cc9ee1165dea56b98a5452fe8de",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
