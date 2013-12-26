@@ -23,13 +23,12 @@ import com.google.inject.Inject;
 
 public class HelloTopMenu implements TopMenu {
   private final List<MenuEntry> menuEntries;
-  public final static String MENU_ID = "cookbook-plugin_hello-form";
 
   @Inject
   public HelloTopMenu(@PluginName String pluginName) {
     String baseUrl = "/plugins/" + pluginName + "/";
     List<MenuItem> menuItems = Lists.newArrayListWithCapacity(2);
-    menuItems.add(new MenuItem("Greeting", "", "", MENU_ID));
+    menuItems.add(new MenuItem("Greeting", "#/x/" + pluginName + "/", ""));
     menuItems.add(new MenuItem("Documentation", baseUrl));
     menuEntries = Lists.newArrayListWithCapacity(2);
     menuEntries.add(new MenuEntry("Cookbook", menuItems));
