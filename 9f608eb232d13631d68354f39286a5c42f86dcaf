@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "f2a0465c_9c7345ba",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1010134
+      },
+      "writtenOn": "2014-01-21T09:21:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1294fafd_5d661b00",
+      "range": {
+        "startLine": 7,
+        "startChar": 27,
+        "endLine": 7,
+        "endChar": 29
+      },
+      "revId": "9f608eb232d13631d68354f39286a5c42f86dcaf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f2a0465c_1c6095de",
         "filename": "/COMMIT_MSG",
         "patchSetId": 1
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "f2a0465c_5ccdbda5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1010134
+      },
+      "writtenOn": "2014-01-21T09:21:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f2a0465c_1c6095de",
+      "range": {
+        "startLine": 9,
+        "startChar": 5,
+        "endLine": 9,
+        "endChar": 23
+      },
+      "revId": "9f608eb232d13631d68354f39286a5c42f86dcaf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1294fafd_7d6bd7c6",
         "filename": "/COMMIT_MSG",
         "patchSetId": 1
@@ -59,6 +107,30 @@
       "writtenOn": "2014-01-21T09:04:28Z",
       "side": 1,
       "message": "secret",
+      "range": {
+        "startLine": 10,
+        "startChar": 15,
+        "endLine": 10,
+        "endChar": 21
+      },
+      "revId": "9f608eb232d13631d68354f39286a5c42f86dcaf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f2a0465c_bc7081ad",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1010134
+      },
+      "writtenOn": "2014-01-21T09:21:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1294fafd_7d6bd7c6",
       "range": {
         "startLine": 10,
         "startChar": 15,
@@ -99,6 +171,30 @@
       "writtenOn": "2014-01-21T09:04:28Z",
       "side": 1,
       "message": "I thought, that auto registration only works if no modules were explicitly registered?",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 18
+      },
+      "revId": "9f608eb232d13631d68354f39286a5c42f86dcaf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f2a0465c_dc79cd9d",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/server/securestore/HelloSecureStores.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1010134
+      },
+      "writtenOn": "2014-01-21T09:21:27Z",
+      "side": 1,
+      "message": "yes, the main idea of SecureStore is based on auto registration. Even if you would define modules then SecureStore implementation will be picked up automatically.",
+      "parentUuid": "f2a0465c_3c6551ef",
       "range": {
         "startLine": 15,
         "startChar": 0,
