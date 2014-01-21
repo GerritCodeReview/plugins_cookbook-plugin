@@ -71,6 +71,23 @@
     },
     {
       "key": {
+        "uuid": "1294fafd_3d654fef",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/server/securestore/HelloSecureStores.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-01-21T09:20:15Z",
+      "side": 1,
+      "message": "Header is missing.",
+      "revId": "9f608eb232d13631d68354f39286a5c42f86dcaf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f2a0465c_3c6551ef",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/server/securestore/HelloSecureStores.java",
         "patchSetId": 1
