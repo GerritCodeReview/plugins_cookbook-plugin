@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ef793db6_14fdd4d9",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/alien/ScalaPluginScriptEngine.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-02-08T23:22:32Z",
+      "side": 1,
+      "message": "New line compared to the change in core.",
+      "range": {
+        "startLine": 83,
+        "startChar": 4,
+        "endLine": 83,
+        "endChar": 73
+      },
+      "revId": "3a2d7dc2346baf168827af81747ca885beec36ea",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef793db6_7408c844",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/alien/ScalaPluginScriptEngine.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-02-08T23:22:32Z",
+      "side": 1,
+      "message": "The only part changed from the core change.",
+      "range": {
+        "startLine": 89,
+        "startChar": 2,
+        "endLine": 105,
+        "endChar": 3
+      },
+      "revId": "3a2d7dc2346baf168827af81747ca885beec36ea",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
