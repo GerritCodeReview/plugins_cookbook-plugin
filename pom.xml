@@ -41,6 +41,7 @@ limitations under the License.
               <Gerrit-Module>com.googlesource.gerrit.plugins.cookbook.Module</Gerrit-Module>
               <Gerrit-HttpModule>com.googlesource.gerrit.plugins.cookbook.HttpModule</Gerrit-HttpModule>
               <Gerrit-SshModule>com.googlesource.gerrit.plugins.cookbook.SshModule</Gerrit-SshModule>
+              <Gerrit-LoadOrder>0</Gerrit-LoadOrder>
 
               <Implementation-Vendor>Gerrit Code Review</Implementation-Vendor>
               <Implementation-URL>http://code.google.com/p/gerrit/</Implementation-URL>
@@ -106,6 +107,25 @@ limitations under the License.
       <version>2.5.1</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-compiler</artifactId>
+      <version>2.10.3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-reflect</artifactId>
+      <version>2.10.3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+      <version>2.10.3</version>
+      <scope>provided</scope>
+    </dependency>
+
   </dependencies>
 
   <repositories>

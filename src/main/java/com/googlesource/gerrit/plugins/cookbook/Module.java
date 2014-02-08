@@ -24,7 +24,9 @@ import com.google.gerrit.extensions.restapi.RestApiModule;
 import com.google.gerrit.extensions.webui.TopMenu;
 import com.google.gerrit.reviewdb.client.Project.InheritableBoolean;
 import com.google.gerrit.server.config.ProjectConfigEntry;
+import com.google.gerrit.server.plugins.ScriptingPlugin;
 import com.google.inject.AbstractModule;
+import com.googlesource.gerrit.plugins.cookbook.alien.ScalaPlugin;
 
 public class Module extends AbstractModule {
 
@@ -32,6 +34,8 @@ public class Module extends AbstractModule {
   protected void configure() {
     DynamicSet.bind(binder(), TopMenu.class)
         .to(HelloTopMenu.class);
+    DynamicSet.bind(binder(), ScriptingPlugin.Factory.class)
+        .to(ScalaPlugin.Factory.class);
     install(new RestApiModule() {
       @Override
       protected void configure() {
