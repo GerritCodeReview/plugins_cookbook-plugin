@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0fc771d6_c58c1a71",
+        "filename": "src/main/resources/Documentation/cmd-admin.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-02-20T14:36:29Z",
+      "side": 1,
+      "message": "We always mention that the super user can also call the command, even though the plugin-specific capability wasn\u0027t granted, e. g. [1].\n\n Caller must be a member of a group that is granted the\n \u0027Create Service User\u0027 capability (provided by this plugin) or the\n \u0027Administrate Server\u0027 capability.\n\n\n[1] https://gerrit.googlesource.com/plugins/serviceuser/+/master/src/main/resources/Documentation/cmd-create.md",
+      "range": {
+        "startLine": 18,
+        "startChar": 1,
+        "endLine": 19,
+        "endChar": 31
+      },
+      "revId": "a3662959d3a7511c67e829ea4eae60414a073c3e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
