@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2f8fd5ae_fe4f2181",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-02-20T13:48:04Z",
+      "side": 1,
+      "message": "Thanks for adding that!\n\nPlease document the new SSH command in its own cmd-command.txt file, a lá [1]. And mention there, that the plugin-own capability must be granted to be able to use it.\n\n[1] https://gerrit.googlesource.com/plugins/cookbook-plugin/+/master/src/main/resources/Documentation/cmd-print.md",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 41
+      },
+      "revId": "8493aa53dd99a5880e2e6b78e8b74e0f61f45bf9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
