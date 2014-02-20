@@ -1,4 +1,4 @@
-// Copyright (C) 2013 The Android Open Source Project
+// Copyright (C) 2014 The Android Open Source Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,13 +14,13 @@
 
 package com.googlesource.gerrit.plugins.cookbook;
 
-import com.google.gerrit.sshd.PluginCommandModule;
+import com.google.gerrit.extensions.config.CapabilityDefinition;
 
-public class SshModule extends PluginCommandModule {
+class AdminCookbookCapability extends CapabilityDefinition {
+  static final String ADMIN_COOKBOOK = "adminCookbook";
+
   @Override
-  protected void configureCommands() {
-    command(PrintHelloWorldCommand.class);
-    command(AdminCookbookCommand.class);
-    alias("say-hello", PrintHelloWorldCommand.class);
+  public String getDescription() {
+    return "Administrate Cookbook";
   }
 }
