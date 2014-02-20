@@ -1,4 +1,4 @@
-// Copyright (C) 2013 The Android Open Source Project
+// Copyright (C) 2014 The Android Open Source Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,13 +14,16 @@
 
 package com.googlesource.gerrit.plugins.cookbook;
 
-import com.google.gerrit.sshd.PluginCommandModule;
+import com.google.gerrit.extensions.annotations.RequiresCapability;
+import com.google.gerrit.sshd.CommandMetaData;
+import com.google.gerrit.sshd.SshCommand;
 
-public class SshModule extends PluginCommandModule {
+@RequiresCapability(AdminCookbookCapability.ADMIN_COOKBOOK)
+@CommandMetaData(name = "admin", description = "Administrate the cookbook")
+public final class AdminCookbookCommand extends SshCommand {
+
   @Override
-  protected void configureCommands() {
-    command(PrintHelloWorldCommand.class);
-    command(AdminCookbookCommand.class);
-    alias("say-hello", PrintHelloWorldCommand.class);
+  protected void run() throws UnloggedFailure, Failure, Exception {
+    stdout.print("Hello, cookbook administrator");
   }
 }
