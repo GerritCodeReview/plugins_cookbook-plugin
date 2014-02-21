@@ -93,6 +93,30 @@
       "revId": "83c4185d97ddf109b2493de7cdd07034b4948bc0",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cf12b90d_533c64d0",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/AdminCookbookCommand.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-02-21T08:14:45Z",
+      "side": 1,
+      "message": "Actually this was copied from the print command, where:\n\n     // Note the use of \u0027\\n\u0027 instead of println to keep platform-agnostic line\n    // terminator.",
+      "parentUuid": "afd66580_ea4ac773",
+      "range": {
+        "startLine": 27,
+        "startChar": 11,
+        "endLine": 27,
+        "endChar": 16
+      },
+      "revId": "83c4185d97ddf109b2493de7cdd07034b4948bc0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
