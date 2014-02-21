@@ -22,6 +22,30 @@
       "revId": "a3662959d3a7511c67e829ea4eae60414a073c3e",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cf12b90d_7326c0ca",
+        "filename": "src/main/resources/Documentation/cmd-admin.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-02-21T05:26:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0fc771d6_c58c1a71",
+      "range": {
+        "startLine": 18,
+        "startChar": 1,
+        "endLine": 19,
+        "endChar": 31
+      },
+      "revId": "a3662959d3a7511c67e829ea4eae60414a073c3e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
