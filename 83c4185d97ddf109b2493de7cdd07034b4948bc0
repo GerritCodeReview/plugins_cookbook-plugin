@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2f8fd5ae_de87c54b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/AdminCookbookCapability.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-02-21T07:13:01Z",
+      "side": 1,
+      "message": "We should always use \"Plugin owned name\" in combination of \"Plugin owned capability\" feature. Why? Right now we don\u0027t provide plugin owned name here, so the name is induced from the jar name. Building with Maven produces:\n\n cookbook-plugin-0.1\n\nThus the capability name that is going to be used in project.config:\n\n cookbook-plugin-0.1-adminCookbook\n\nOnce the version of the plugin is increased, to say 0.2, all granted capabilities are lost. May be we should document it somewhere?\n\nWe should exted BUCK \u0026 pom.xml in an extra change or in this change and define \"cookbook-plugin\" as plugin owned name.",
+      "range": {
+        "startLine": 19,
+        "startChar": 40,
+        "endLine": 20,
+        "endChar": 53
+      },
+      "revId": "83c4185d97ddf109b2493de7cdd07034b4948bc0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
