@@ -22,6 +22,29 @@
       "revId": "83c4185d97ddf109b2493de7cdd07034b4948bc0",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0fc771d6_856b42c5",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/AdminCookbookCommand.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-02-21T07:14:35Z",
+      "side": 1,
+      "message": "println",
+      "range": {
+        "startLine": 27,
+        "startChar": 11,
+        "endLine": 27,
+        "endChar": 16
+      },
+      "revId": "83c4185d97ddf109b2493de7cdd07034b4948bc0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
