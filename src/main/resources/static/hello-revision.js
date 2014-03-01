@@ -15,10 +15,11 @@
 Gerrit.install(function(self) {
     function onSayHelloRevision(c) {
       var f = c.textfield();
-      var t = c.checkbox();
+      var l = document.getElementById('cookbook-plugin~languages');
+      var s = c.select(l.getAttribute("value").split(','), 5);
       var b = c.button('Say hello', {onclick: function(){
         c.call(
-          {message: f.value, french: t.checked},
+          {message: f.value, language: c.selected(s)},
           function(r) {
             c.hide();
             window.alert(r);
@@ -28,7 +29,7 @@ Gerrit.install(function(self) {
       c.popup(c.div(
         c.prependLabel('Greeting message', f),
         c.br(),
-        c.label(t, 'french'),
+        c.prependLabel('Language', s),
         c.br(),
         b));
       f.focus();
