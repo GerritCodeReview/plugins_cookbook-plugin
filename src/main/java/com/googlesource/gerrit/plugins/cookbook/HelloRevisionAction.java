@@ -30,7 +30,7 @@ class HelloRevisionAction implements UiAction<RevisionResource>,
   private Provider<CurrentUser> user;
 
   static class Input {
-    boolean french;
+    String language;
     String message;
   }
 
@@ -41,16 +41,13 @@ class HelloRevisionAction implements UiAction<RevisionResource>,
 
   @Override
   public String apply(RevisionResource rev, Input input) {
-    final String greeting = input.french
-        ? "Bonjour"
-        : "Hello";
-    return String.format("%s %s from change %s, patch set %d!",
-        greeting,
+    return String.format("Hello %s from change %s, patch set %d, in %s!",
         Strings.isNullOrEmpty(input.message)
             ? Objects.firstNonNull(user.get().getUserName(), "world")
             : input.message,
         rev.getChange().getId().toString(),
-        rev.getPatchSet().getPatchSetId());
+        rev.getPatchSet().getPatchSetId(),
+        input.language);
   }
 
   @Override

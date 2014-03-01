@@ -19,9 +19,11 @@ Gerrit.install(function(self) {
           + ", revision: " + r.name);
     }
     function onSubmitChange(c, r) {
+      var l = document.getElementById('cookbook-plugin~languages');
       return confirm("Really submit change:\n"
           + c.id + "\n"
-          + "revision: " + r.name
+          + "revision: " + r.name + "\n"
+          + "(supported languages: " + l.getAttribute("value").replace(/,/g, ' ') + ")"
           + "?");
     }
     function onHistory(t) {

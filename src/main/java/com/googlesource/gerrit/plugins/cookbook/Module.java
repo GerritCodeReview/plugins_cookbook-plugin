@@ -38,6 +38,7 @@ public class Module extends AbstractModule {
         post(REVISION_KIND, "hello-revision").to(HelloRevisionAction.class);
         post(PROJECT_KIND, "hello-project").to(HelloProjectAction.class);
         get(REVISION_KIND, "greetings").to(Greetings.class);
+        get(REVISION_KIND, "languages").to(GetLanguages.class);
       }
     });
     configurePluginParameters();
