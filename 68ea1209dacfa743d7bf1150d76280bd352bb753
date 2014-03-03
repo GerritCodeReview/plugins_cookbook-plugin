@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1c4fb17f_65524630",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-03T00:50:24Z",
+      "side": 1,
+      "message": "Nit: this looks like a non-ANSI character.",
+      "range": {
+        "startLine": 14,
+        "startChar": 46,
+        "endLine": 14,
+        "endChar": 47
+      },
+      "revId": "68ea1209dacfa743d7bf1150d76280bd352bb753",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cf439932_cb8d351d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-03T00:50:24Z",
+      "side": 1,
+      "message": "perform",
+      "range": {
+        "startLine": 21,
+        "startChar": 22,
+        "endLine": 21,
+        "endChar": 29
+      },
+      "revId": "68ea1209dacfa743d7bf1150d76280bd352bb753",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
