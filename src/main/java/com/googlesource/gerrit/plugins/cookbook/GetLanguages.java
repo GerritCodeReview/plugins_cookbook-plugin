@@ -21,9 +21,9 @@ import com.google.gerrit.extensions.restapi.Response;
 import com.google.gerrit.extensions.restapi.RestReadView;
 import com.google.gerrit.server.change.RevisionResource;
 
-class GetLanguages implements RestReadView<RevisionResource> {
+public class GetLanguages implements RestReadView<RevisionResource> {
   // Languages of the European Union
-  private final static List<String> LANGUAGES =
+  protected final static List<String> LANGUAGES =
       new ImmutableList.Builder<String>()
           .add("Bulgarian")
           .add("Croatian")
