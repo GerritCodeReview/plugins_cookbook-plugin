@@ -37,7 +37,6 @@ limitations under the License.
         <configuration>
           <archive>
             <manifestEntries>
-              <Gerrit-PluginName>cookbook-plugin</Gerrit-PluginName>
               <Gerrit-Module>com.googlesource.gerrit.plugins.cookbook.Module</Gerrit-Module>
               <Gerrit-HttpModule>com.googlesource.gerrit.plugins.cookbook.HttpModule</Gerrit-HttpModule>
               <Gerrit-SshModule>com.googlesource.gerrit.plugins.cookbook.SshModule</Gerrit-SshModule>
