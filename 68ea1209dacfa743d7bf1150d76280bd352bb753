@@ -22,6 +22,53 @@
       "revId": "68ea1209dacfa743d7bf1150d76280bd352bb753",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bc2f85b4_e23c46d2",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-03-07T06:42:47Z",
+      "side": 0,
+      "message": "Because it is already (differently) defined on the line 53. I guess i know what you say next: Why it wasn\u0027t done in separate change ;-)",
+      "parentUuid": "3c439582_5ee87521",
+      "range": {
+        "startLine": 40,
+        "startChar": 14,
+        "endLine": 40,
+        "endChar": 68
+      },
+      "revId": "68ea1209dacfa743d7bf1150d76280bd352bb753",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bc2f85b4_427d3292",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-03-07T06:42:47Z",
+      "side": 0,
+      "message": "It was overridden.",
+      "range": {
+        "startLine": 53,
+        "startChar": 14,
+        "endLine": 53,
+        "endChar": 61
+      },
+      "revId": "68ea1209dacfa743d7bf1150d76280bd352bb753",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
