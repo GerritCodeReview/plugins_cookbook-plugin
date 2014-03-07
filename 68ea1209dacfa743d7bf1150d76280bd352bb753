@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "5c3e89eb_3f00071f",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-07T06:47:58Z",
+      "side": 0,
+      "message": "Ah.  And it looks like I added the duplicate :(\n\nOK.  Let\u0027s remove it here, but mention it in the commit message.",
+      "parentUuid": "bc2f85b4_e23c46d2",
+      "range": {
+        "startLine": 40,
+        "startChar": 14,
+        "endLine": 40,
+        "endChar": 68
+      },
+      "revId": "68ea1209dacfa743d7bf1150d76280bd352bb753",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bc2f85b4_427d3292",
         "filename": "pom.xml",
         "patchSetId": 1
