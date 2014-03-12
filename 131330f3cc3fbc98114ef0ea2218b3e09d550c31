@@ -1,0 +1,205 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5c0cc977_af4b3948",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-12T10:36:43Z",
+      "side": 1,
+      "message": "Blank line after here?",
+      "range": {
+        "startLine": 4,
+        "startChar": 30,
+        "endLine": 4,
+        "endChar": 31
+      },
+      "revId": "131330f3cc3fbc98114ef0ea2218b3e09d550c31",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c07cd52_70edb0e2",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-12T10:36:43Z",
+      "side": 1,
+      "message": "\"of the Gerrit source tree\"",
+      "range": {
+        "startLine": 5,
+        "startChar": 51,
+        "endLine": 5,
+        "endChar": 65
+      },
+      "revId": "131330f3cc3fbc98114ef0ea2218b3e09d550c31",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c07cd52_50f22cc0",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-12T10:36:43Z",
+      "side": 1,
+      "message": "Is this suffix necessary?  It works for me with just:\n\n buck build plugins/cookbook-plugin",
+      "range": {
+        "startLine": 9,
+        "startChar": 36,
+        "endLine": 9,
+        "endChar": 52
+      },
+      "revId": "131330f3cc3fbc98114ef0ea2218b3e09d550c31",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5c0cc977_2f38e9b1",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-12T10:36:43Z",
+      "side": 1,
+      "message": "a",
+      "range": {
+        "startLine": 24,
+        "startChar": 30,
+        "endLine": 24,
+        "endChar": 31
+      },
+      "revId": "131330f3cc3fbc98114ef0ea2218b3e09d550c31",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5c0cc977_0f3d25a2",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-12T10:36:43Z",
+      "side": 1,
+      "message": "\"it is\" or just \"is\"",
+      "range": {
+        "startLine": 24,
+        "startChar": 60,
+        "endLine": 24,
+        "endChar": 62
+      },
+      "revId": "131330f3cc3fbc98114ef0ea2218b3e09d550c31",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5c0cc977_cf2b1d61",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-12T10:36:43Z",
+      "side": 1,
+      "message": "\"Note that\"",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 4
+      },
+      "revId": "131330f3cc3fbc98114ef0ea2218b3e09d550c31",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c07cd52_f0e080e7",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-12T10:36:43Z",
+      "side": 1,
+      "message": "\"will be removed in a future version\"",
+      "range": {
+        "startLine": 25,
+        "startChar": 18,
+        "endLine": 25,
+        "endChar": 70
+      },
+      "revId": "131330f3cc3fbc98114ef0ea2218b3e09d550c31",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5c0cc977_6f32f1d1",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-12T10:36:43Z",
+      "side": 1,
+      "message": "Mention that this should be run in the plugin\u0027s folder?",
+      "range": {
+        "startLine": 29,
+        "startChar": 2,
+        "endLine": 29,
+        "endChar": 19
+      },
+      "revId": "131330f3cc3fbc98114ef0ea2218b3e09d550c31",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5c0cc977_4f372dc0",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-12T10:36:43Z",
+      "side": 1,
+      "message": "New line before here?",
+      "revId": "131330f3cc3fbc98114ef0ea2218b3e09d550c31",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
