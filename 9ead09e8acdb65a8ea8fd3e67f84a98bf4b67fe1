@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7c026dbc_985bb572",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-24T19:15:35Z",
+      "side": 1,
+      "message": "This won\u0027t work, because the plugin has an explicit module.\n\nEdwin has fixed it and will upload a new patch set.",
+      "revId": "9ead09e8acdb65a8ea8fd3e67f84a98bf4b67fe1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
