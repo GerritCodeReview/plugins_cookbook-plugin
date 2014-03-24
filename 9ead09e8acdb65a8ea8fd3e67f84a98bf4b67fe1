@@ -16,6 +16,24 @@
       "revId": "9ead09e8acdb65a8ea8fd3e67f84a98bf4b67fe1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5c0769cb_1a11596d",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-03-24T19:18:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c026dbc_985bb572",
+      "revId": "9ead09e8acdb65a8ea8fd3e67f84a98bf4b67fe1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
