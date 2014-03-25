@@ -19,11 +19,11 @@ import static com.google.gerrit.server.project.ProjectResource.PROJECT_KIND;
 
 import com.google.common.collect.ImmutableList;
 import com.google.gerrit.extensions.annotations.Exports;
+import com.google.gerrit.extensions.common.InheritableBoolean;
 import com.google.gerrit.extensions.registration.DynamicSet;
 import com.google.gerrit.extensions.restapi.RestApiModule;
 import com.google.gerrit.extensions.webui.PatchSetWebLink;
 import com.google.gerrit.extensions.webui.TopMenu;
-import com.google.gerrit.reviewdb.client.Project.InheritableBoolean;
 import com.google.gerrit.server.config.ProjectConfigEntry;
 import com.google.inject.AbstractModule;
 
