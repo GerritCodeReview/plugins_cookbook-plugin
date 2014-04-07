@@ -47,16 +47,16 @@ public class Module extends AbstractModule {
 
   private void configurePluginParameters() {
     bind(ProjectConfigEntry.class)
-        .annotatedWith(Exports.named("enabled-hello"))
+        .annotatedWith(Exports.named("enable-hello"))
         .toInstance(new ProjectConfigEntry("Enable Greeting", true));
     bind(ProjectConfigEntry.class)
-       .annotatedWith(Exports.named("enabled-goodby"))
-       .toInstance(new ProjectConfigEntry("Enable Say Good By",
+       .annotatedWith(Exports.named("enable-goodbye"))
+       .toInstance(new ProjectConfigEntry("Enable Say Goodbye",
            InheritableBoolean.TRUE,
            InheritableBoolean.class, true));
     bind(ProjectConfigEntry.class)
-       .annotatedWith(Exports.named("default-greet"))
-       .toInstance(new ProjectConfigEntry("Default Greet",
+       .annotatedWith(Exports.named("default-greeting"))
+       .toInstance(new ProjectConfigEntry("Default Greeting",
            "Hey dude, how are you?", true));
     bind(ProjectConfigEntry.class)
         .annotatedWith(Exports.named("language"))
