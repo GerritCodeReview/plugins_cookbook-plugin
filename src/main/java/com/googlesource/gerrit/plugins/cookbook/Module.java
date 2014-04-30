@@ -26,6 +26,7 @@ import com.google.gerrit.extensions.webui.PatchSetWebLink;
 import com.google.gerrit.extensions.webui.ProjectWebLink;
 import com.google.gerrit.extensions.webui.TopMenu;
 import com.google.gerrit.server.config.ProjectConfigEntry;
+import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.inject.AbstractModule;
 
 public class Module extends AbstractModule {
@@ -44,6 +45,8 @@ public class Module extends AbstractModule {
         get(REVISION_KIND, "greetings").to(Greetings.class);
       }
     });
+    DynamicSet.bind(binder(), UploadValidationListener.class)
+        .to(DenyUploadExample.class);
     configurePluginParameters();
   }
 
