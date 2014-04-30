@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "25637bc5_77f2500b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/server/securestore/HelloSecureStores.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-04-30T06:29:02Z",
+      "side": 1,
+      "message": "Should this be `Store`?",
+      "range": {
+        "startLine": 30,
+        "startChar": 24,
+        "endLine": 30,
+        "endChar": 30
+      },
+      "revId": "0d49e890f33d3bde112fbde07546f86d6297cc0d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
