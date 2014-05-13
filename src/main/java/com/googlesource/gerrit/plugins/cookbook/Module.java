@@ -17,11 +17,18 @@ package com.googlesource.gerrit.plugins.cookbook;
 import static com.google.gerrit.server.change.RevisionResource.REVISION_KIND;
 import static com.google.gerrit.server.project.ProjectResource.PROJECT_KIND;
 
+import java.security.MessageDigest;
+
+import org.apache.commons.lang.StringEscapeUtils;
+import org.eclipse.jgit.lib.Constants;
+import org.eclipse.jgit.lib.ObjectId;
+
 import com.google.common.collect.ImmutableList;
 import com.google.gerrit.extensions.annotations.Exports;
 import com.google.gerrit.extensions.common.InheritableBoolean;
 import com.google.gerrit.extensions.registration.DynamicSet;
 import com.google.gerrit.extensions.restapi.RestApiModule;
+import com.google.gerrit.extensions.systemstatus.MessageOfTheDay;
 import com.google.gerrit.extensions.webui.PatchSetWebLink;
 import com.google.gerrit.extensions.webui.ProjectWebLink;
 import com.google.gerrit.extensions.webui.TopMenu;
@@ -44,6 +51,24 @@ public class Module extends AbstractModule {
         get(REVISION_KIND, "greetings").to(Greetings.class);
       }
     });
+    // Let's play fortune game
+    for (final String f : FortuneGame.getMyFortune(10)) {
+      DynamicSet.bind(binder(), MessageOfTheDay.class).toInstance(
+          new MessageOfTheDay() {
+
+            @Override
+            public String getMessageId() {
+              MessageDigest md = Constants.newMessageDigest();
+              md.update(Constants.encode(f));
+              return ObjectId.fromRaw(md.digest()).name();
+            }
+
+            @Override
+            public String getHtmlMessage() {
+              return StringEscapeUtils.escapeHtml(f);
+            }
+          });
+    }
     configurePluginParameters();
   }
 
