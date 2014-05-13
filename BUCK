@@ -12,5 +12,8 @@ gerrit_plugin(
     'Gerrit-SshModule: com.googlesource.gerrit.plugins.cookbook.SshModule',
     'Implementation-Title: Cookbook plugin',
     'Implementation-URL: https://gerrit-review.googlesource.com/#/admin/projects/plugins/cookbook-plugin',
-  ]
+  ],
+  provided_deps = [
+    '//lib/commons:lang',
+  ],
 )

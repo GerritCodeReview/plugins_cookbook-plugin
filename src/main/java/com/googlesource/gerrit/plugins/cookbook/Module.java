@@ -17,16 +17,27 @@ package com.googlesource.gerrit.plugins.cookbook;
 import static com.google.gerrit.server.change.RevisionResource.REVISION_KIND;
 import static com.google.gerrit.server.project.ProjectResource.PROJECT_KIND;
 
+import java.security.MessageDigest;
+
+import org.apache.commons.lang.StringEscapeUtils;
+import org.eclipse.jgit.lib.Constants;
+import org.eclipse.jgit.lib.ObjectId;
+
 import com.google.common.collect.ImmutableList;
 import com.google.gerrit.extensions.annotations.Exports;
 import com.google.gerrit.extensions.common.InheritableBoolean;
 import com.google.gerrit.extensions.registration.DynamicSet;
 import com.google.gerrit.extensions.restapi.RestApiModule;
+import com.google.gerrit.extensions.systemstatus.MessageOfTheDay;
 import com.google.gerrit.extensions.webui.PatchSetWebLink;
 import com.google.gerrit.extensions.webui.ProjectWebLink;
 import com.google.gerrit.extensions.webui.TopMenu;
 import com.google.gerrit.server.config.ProjectConfigEntry;
+import com.google.gerrit.server.git.validators.CommitValidationListener;
 import com.google.inject.AbstractModule;
+import com.googlesource.gerrit.plugins.cookbook.fortune.FortuneAction;
+import com.googlesource.gerrit.plugins.cookbook.fortune.FortuneGame;
+import com.googlesource.gerrit.plugins.cookbook.fortune.FortuneOnPush;
 
 public class Module extends AbstractModule {
 
@@ -36,14 +47,33 @@ public class Module extends AbstractModule {
         .to(HelloTopMenu.class);
     DynamicSet.bind(binder(), PatchSetWebLink.class).to(HelloWeblink.class);
     DynamicSet.bind(binder(), ProjectWebLink.class).to(HelloWeblink.class);
+    DynamicSet.bind(binder(), CommitValidationListener.class)
+        .to(FortuneOnPush.class);
     install(new RestApiModule() {
       @Override
       protected void configure() {
         post(REVISION_KIND, "hello-revision").to(HelloRevisionAction.class);
+        post(REVISION_KIND, "my-fortune").to(FortuneAction.class);
         post(PROJECT_KIND, "hello-project").to(HelloProjectAction.class);
         get(REVISION_KIND, "greetings").to(Greetings.class);
       }
     });
+    // Let's play fortune game
+    DynamicSet.bind(binder(), MessageOfTheDay.class).toInstance(
+        new MessageOfTheDay() {
+          String f = FortuneGame.getMyFortune();
+          @Override
+          public String getMessageId() {
+            MessageDigest md = Constants.newMessageDigest();
+            md.update(Constants.encode(f));
+            return ObjectId.fromRaw(md.digest()).name();
+          }
+
+          @Override
+          public String getHtmlMessage() {
+            return StringEscapeUtils.escapeHtml(f);
+          }
+        });
     configurePluginParameters();
   }
 

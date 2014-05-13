@@ -1,4 +1,4 @@
-// Copyright (C) 2013 The Android Open Source Project
+// Copyright (C) 2014 The Android Open Source Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,17 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.googlesource.gerrit.plugins.cookbook;
+package com.googlesource.gerrit.plugins.cookbook.fortune;
 
-import com.google.gerrit.sshd.PluginCommandModule;
-import com.googlesource.gerrit.plugins.cookbook.fortune.FortuneCommand;
+import static com.googlesource.gerrit.plugins.cookbook.fortune.FortuneGame.getMyFortune;
 
-public class SshModule extends PluginCommandModule {
+import com.google.gerrit.sshd.CommandMetaData;
+import com.google.gerrit.sshd.SshCommand;
+
+@CommandMetaData(name = "fortune", description = "Do i have a fortune today?")
+public class FortuneCommand extends SshCommand {
   @Override
-  protected void configureCommands() {
-    command(PrintHelloWorldCommand.class);
-    command(AdminCookbookCommand.class);
-    command(FortuneCommand.class);
-    alias("say-hello", PrintHelloWorldCommand.class);
+  protected void run() throws UnloggedFailure, Failure, Exception {
+    stdout.print(getMyFortune());
   }
 }
