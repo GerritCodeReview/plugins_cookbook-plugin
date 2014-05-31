@@ -1,3 +1,5 @@
+include_defs('//bucklets/gerrit_plugin.bucklet')
+
 MODULE = 'com.googlesource.gerrit.plugins.cookbook.HelloForm'
 
 gerrit_plugin(
@@ -16,4 +18,12 @@ gerrit_plugin(
   provided_deps = [
     '//lib/commons:lang',
   ],
+)
+
+# TODO(davido): is this needed?
+# requires for bucklets/tools/eclipse/project.py to work
+# not sure, if this does something useful in standalone context
+java_library(
+  name = 'classpath',
+  deps = [':cookbook-plugin__plugin'],
 )

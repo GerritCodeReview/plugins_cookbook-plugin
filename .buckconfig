@@ -1,0 +1,9 @@
+[alias]
+  cookbook = //:cookbook-plugin
+  plugin = //:cookbook-plugin
+
+[java]
+  src_roots = java, resources
+
+[project]
+  ignore = .git
