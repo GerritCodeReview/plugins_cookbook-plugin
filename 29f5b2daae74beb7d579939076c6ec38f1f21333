@@ -108,6 +108,30 @@
       "revId": "29f5b2daae74beb7d579939076c6ec38f1f21333",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ff4654ef_7e0d9156",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/UsageDataLogger.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1007114
+      },
+      "writtenOn": "2014-06-06T22:16:54Z",
+      "side": 1,
+      "message": "As an empty line to separate blocks of data",
+      "parentUuid": "3f3d4c4d_80b0367a",
+      "range": {
+        "startLine": 22,
+        "startChar": 6,
+        "endLine": 22,
+        "endChar": 19
+      },
+      "revId": "29f5b2daae74beb7d579939076c6ec38f1f21333",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
