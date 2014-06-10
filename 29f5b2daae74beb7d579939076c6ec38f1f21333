@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "df9d10d5_4d8cd971",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/UsageDataLogger.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1006276
+      },
+      "writtenOn": "2014-06-10T10:51:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9f4d5812_1b0c9bc9",
+      "revId": "29f5b2daae74beb7d579939076c6ec38f1f21333",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3f3d4c4d_e0e58270",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/UsageDataLogger.java",
         "patchSetId": 1
@@ -65,6 +83,54 @@
     },
     {
       "key": {
+        "uuid": "df9d10d5_8d5c0127",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/UsageDataLogger.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006276
+      },
+      "writtenOn": "2014-06-10T10:51:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3f3d4c4d_40ba2e5a",
+      "range": {
+        "startLine": 8,
+        "startChar": 66,
+        "endLine": 8,
+        "endChar": 67
+      },
+      "revId": "29f5b2daae74beb7d579939076c6ec38f1f21333",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "df9d10d5_ad573d01",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/UsageDataLogger.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006276
+      },
+      "writtenOn": "2014-06-10T10:51:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3f3d4c4d_e0e58270",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 6
+      },
+      "revId": "29f5b2daae74beb7d579939076c6ec38f1f21333",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3f3d4c4d_20bdaa50",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/UsageDataLogger.java",
         "patchSetId": 1
@@ -76,6 +142,30 @@
       "writtenOn": "2014-06-06T16:24:32Z",
       "side": 1,
       "message": "Nit: missing space.",
+      "range": {
+        "startLine": 14,
+        "startChar": 6,
+        "endLine": 14,
+        "endChar": 7
+      },
+      "revId": "29f5b2daae74beb7d579939076c6ec38f1f21333",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bfaa1cea_8c7527a7",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/UsageDataLogger.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1006276
+      },
+      "writtenOn": "2014-06-10T10:51:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3f3d4c4d_20bdaa50",
       "range": {
         "startLine": 14,
         "startChar": 6,
