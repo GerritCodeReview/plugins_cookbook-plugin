@@ -23,6 +23,7 @@ import com.google.gerrit.extensions.common.InheritableBoolean;
 import com.google.gerrit.extensions.registration.DynamicSet;
 import com.google.gerrit.extensions.restapi.RestApiModule;
 import com.google.gerrit.extensions.webui.PatchSetWebLink;
+import com.google.gerrit.extensions.webui.ProjectCustomIcon;
 import com.google.gerrit.extensions.webui.ProjectWebLink;
 import com.google.gerrit.extensions.webui.TopMenu;
 import com.google.gerrit.server.config.ProjectConfigEntry;
@@ -41,6 +42,7 @@ public class Module extends AbstractModule {
     DynamicSet.bind(binder(), ProjectWebLink.class).to(HelloWeblink.class);
     DynamicSet.bind(binder(), ServerPluginProvider.class).to(
         HelloSshPluginProvider.class);
+    DynamicSet.bind(binder(), ProjectCustomIcon.class).to(HelloCustomIcon.class);
     install(new RestApiModule() {
       @Override
       protected void configure() {
