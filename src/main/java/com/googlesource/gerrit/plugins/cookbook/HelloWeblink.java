@@ -23,6 +23,7 @@ public class HelloWeblink implements PatchSetWebLink, ProjectWebLink {
       "http://my.hellolink.com/project=%s";
   private String placeHolderUrlProjectCommit =
       placeHolderUrlProject + "/commit=%s";
+  private String myImageUrl = "http://placehold.it/16x16.gif";
 
   @Override
   public String getLinkName() {
@@ -37,5 +38,10 @@ public class HelloWeblink implements PatchSetWebLink, ProjectWebLink {
   @Override
   public String getProjectUrl(String project) {
     return String.format(placeHolderUrlProject, project);
+  }
+
+  @Override
+  public String getImageUrl() {
+    return myImageUrl;
   }
 }
