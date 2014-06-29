@@ -26,7 +26,10 @@ import com.google.gerrit.extensions.webui.PatchSetWebLink;
 import com.google.gerrit.extensions.webui.ProjectWebLink;
 import com.google.gerrit.extensions.webui.TopMenu;
 import com.google.gerrit.server.config.ProjectConfigEntry;
+import com.google.gerrit.server.plugins.ServerPluginProvider;
 import com.google.inject.AbstractModule;
+
+import com.googlesource.gerrit.plugins.cookbook.pluginprovider.HelloSshPluginProvider;
 
 public class Module extends AbstractModule {
 
@@ -36,6 +39,8 @@ public class Module extends AbstractModule {
         .to(HelloTopMenu.class);
     DynamicSet.bind(binder(), PatchSetWebLink.class).to(HelloWeblink.class);
     DynamicSet.bind(binder(), ProjectWebLink.class).to(HelloWeblink.class);
+    DynamicSet.bind(binder(), ServerPluginProvider.class).to(
+        HelloSshPluginProvider.class);
     install(new RestApiModule() {
       @Override
       protected void configure() {
