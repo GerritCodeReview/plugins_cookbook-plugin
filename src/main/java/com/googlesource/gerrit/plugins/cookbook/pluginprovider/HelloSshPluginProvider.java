@@ -15,7 +15,6 @@
 package com.googlesource.gerrit.plugins.cookbook.pluginprovider;
 
 import com.google.gerrit.server.plugins.InvalidPluginException;
-import com.google.gerrit.server.plugins.Plugin.ApiType;
 import com.google.gerrit.server.plugins.ServerPlugin;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
 
@@ -56,7 +55,6 @@ public class HelloSshPluginProvider implements ServerPluginProvider {
     return new ServerPlugin(name, pluginDescriptor.canonicalUrl,
         pluginDescriptor.user, srcFile, snapshot,
         new HelloSshPluginContentScanner(name), pluginDescriptor.dataDir,
-        ApiType.PLUGIN, getClass().getClassLoader(), null,
-        HelloSshModule.class, null);
+        getClass().getClassLoader());
   }
 }
