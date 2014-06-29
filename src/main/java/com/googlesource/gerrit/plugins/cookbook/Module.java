@@ -36,6 +36,8 @@ public class Module extends AbstractModule {
         .to(HelloTopMenu.class);
     DynamicSet.bind(binder(), PatchSetWebLink.class).to(HelloWeblink.class);
     DynamicSet.bind(binder(), ProjectWebLink.class).to(HelloWeblink.class);
+    DynamicSet.bind(binder(), ServerPluginProvider.class).to(
+        HelloSshPluginProvider.class);
     install(new RestApiModule() {
       @Override
       protected void configure() {
