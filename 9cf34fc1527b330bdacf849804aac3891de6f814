@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a44db111_1b99fb97",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/pluginprovider/HelloSshPluginProvider.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-06-29T07:56:11Z",
+      "side": 1,
+      "message": "Something is missing here. This constructor ist not defined:\n\n  com/googlesource/gerrit/plugins/cookbook/pluginprovider/HelloSshPluginProvider.java:55: error: constructor ServerPlugin in class com.google.gerrit.server.plugins.ServerPlugin cannot be applied to given types;\n    return new ServerPlugin(name, pluginDescriptor.canonicalUrl,\n           ^\n  required: java.lang.String,java.lang.String,com.google.gerrit.server.PluginUser,java.io.File,org.eclipse.jgit.internal.storage.file.FileSnapshot,java.util.jar.JarFile,com.google.gerrit.server.plugins.PluginContentScanner,java.io.File,com.google.gerrit.server.plugins.Plugin.ApiType,java.lang.ClassLoader,java.lang.Class\u003c? extends com.google.inject.Module\u003e,java.lang.Class\u003c? extends com.google.inject.Module\u003e,java.lang.Class\u003c? extends com.google.inject.Module\u003e\n  found: java.lang.String,java.lang.String,com.google.gerrit.server.PluginUser,java.io.File,org.eclipse.jgit.internal.storage.file.FileSnapshot,com.googlesource.gerrit.plugins.cookbook.pluginprovider.HelloSshPluginContentScanner,java.io.File,java.lang.ClassLoader\n  reason: actual and formal argument lists differ in length\nErrors: 1. Warnings: 0.",
+      "range": {
+        "startLine": 55,
+        "startChar": 4,
+        "endLine": 58,
+        "endChar": 37
+      },
+      "revId": "9cf34fc1527b330bdacf849804aac3891de6f814",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
