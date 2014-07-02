@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "8408adda_7a67b9f3",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloCustomIcon.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1016317
+      },
+      "writtenOn": "2014-07-02T13:42:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "24bc6131_0f400547",
+      "revId": "66aaf31578492022156e54100a006aaca89941cf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "44b7954c_306d68d4",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloCustomIcon.java",
         "patchSetId": 1
@@ -30,6 +48,30 @@
       "writtenOn": "2014-07-02T13:23:07Z",
       "side": 1,
       "message": "Does it need to be public?",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 6
+      },
+      "revId": "66aaf31578492022156e54100a006aaca89941cf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8408adda_5a6475ed",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloCustomIcon.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1016317
+      },
+      "writtenOn": "2014-07-02T13:42:30Z",
+      "side": 1,
+      "message": "I guess not, I was following the convention of HelloWeblink which is similar to my change. I suppose it makes more sense for it not to be public.",
+      "parentUuid": "44b7954c_306d68d4",
       "range": {
         "startLine": 9,
         "startChar": 0,
