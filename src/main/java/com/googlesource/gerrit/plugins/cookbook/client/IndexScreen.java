@@ -14,7 +14,9 @@
 
 package com.googlesource.gerrit.plugins.cookbook.client;
 
+import com.google.gerrit.client.GerritResourcesBase;
 import com.google.gerrit.plugin.client.screen.Screen;
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -24,6 +26,7 @@ import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.user.client.Event;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Panel;
 import com.google.gwt.user.client.ui.TextArea;
@@ -41,6 +44,7 @@ class IndexScreen extends VerticalPanel {
 
   private TextBox usernameTxt;
   private TextArea greetingTxt;
+  private GerritResourcesBase RESOURCES = GWT.create(GerritResourcesBase.class);
 
   IndexScreen() {
     setStyleName("cookbook-panel");
@@ -99,6 +103,10 @@ class IndexScreen extends VerticalPanel {
     });
     add(helloButton);
     helloButton.setEnabled(true);
+
+    Image img = new Image(RESOURCES.info());
+    img.setTitle("This icon does nothing");
+    add(img);
   }
 
   private void sayHello() {

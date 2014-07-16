@@ -25,7 +25,7 @@ limitations under the License.
   <version>0.1</version>
   <properties>
     <Gerrit-ApiType>plugin</Gerrit-ApiType>
-    <Gerrit-ApiVersion>2.9-SNAPSHOT</Gerrit-ApiVersion>
+    <Gerrit-ApiVersion>2.10-SNAPSHOT</Gerrit-ApiVersion>
   </properties>
 
   <build>
@@ -99,6 +99,7 @@ limitations under the License.
       <groupId>com.google.gerrit</groupId>
       <artifactId>gerrit-plugin-gwtui</artifactId>
       <version>${Gerrit-ApiVersion}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.google.gwt</groupId>
