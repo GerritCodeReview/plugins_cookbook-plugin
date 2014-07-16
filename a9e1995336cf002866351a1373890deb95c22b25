@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1976e812_26b11617",
+        "filename": "src/main/resources/Documentation/servlet-hello.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-07-16T13:49:14Z",
+      "side": 1,
+      "message": "Another option is to use here variable:\n\n @PLUGIN@\n\nBesides that all other documents are outdated too: cookbook instead of cookbook-plugin.",
+      "range": {
+        "startLine": 10,
+        "startChar": 35,
+        "endLine": 10,
+        "endChar": 43
+      },
+      "revId": "a9e1995336cf002866351a1373890deb95c22b25",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
