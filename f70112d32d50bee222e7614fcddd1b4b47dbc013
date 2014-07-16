@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9997385e_221cae84",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/IndexScreen.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-07-16T07:02:42Z",
+      "side": 1,
+      "message": "No. We are trying to keep this page sane and not going to add dummy junk at the bottom. One sane example would be to use info icon as tooltip for input fields, a lá:\n  \n    Panel labelImagePanel \u003d new HorizontalPanel();\n    Panel usernamePanel \u003d new VerticalPanel();\n    Image img \u003d new Image(RESOURCES.info());\n    img.setTitle(\"User to send greetings to\");\n    labelImagePanel.add(new Label(\"Username:\"));\n    labelImagePanel.add(img);\n    usernamePanel.add(labelImagePanel);\n\nThat gives us: [1].\n\n [1] http://imgur.com/TSLRQZM",
+      "range": {
+        "startLine": 107,
+        "startChar": 4,
+        "endLine": 109,
+        "endChar": 13
+      },
+      "revId": "f70112d32d50bee222e7614fcddd1b4b47dbc013",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
