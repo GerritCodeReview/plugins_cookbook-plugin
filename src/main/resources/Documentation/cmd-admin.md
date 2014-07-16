@@ -7,7 +7,7 @@ cookbook-plugin admin - Administrate the cookbook plugin
 
 SYNOPSIS
 --------
->     ssh -p <port> <host> cookbook-plugin admin
+>     ssh -p <port> <host> @PLUGIN@ admin
 
 DESCRIPTION
 -----------
@@ -28,7 +28,7 @@ EXAMPLES
 
 Have the server say hello to the administrator.
 
->     $ ssh -p 29418 review.example.com cookbook-plugin admin
+>     $ ssh -p 29418 review.example.com @PLUGIN@ admin
 
 SEE ALSO
 --------
