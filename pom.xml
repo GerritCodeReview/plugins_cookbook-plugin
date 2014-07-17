@@ -50,6 +50,7 @@ limitations under the License.
               <Gerrit-ApiType>${Gerrit-ApiType}</Gerrit-ApiType>
               <Gerrit-ApiVersion>${Gerrit-ApiVersion}</Gerrit-ApiVersion>
               <Gerrit-PluginName>cookbook</Gerrit-PluginName>
+	      <Gerrit-ReloadMode>restart</Gerrit-ReloadMode>
 
             </manifestEntries>
           </archive>
@@ -76,6 +77,13 @@ limitations under the License.
       <version>${Gerrit-ApiVersion}</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>com.googlecode.prolog-cafe</groupId>
+      <artifactId>PrologCafe</artifactId>
+      <version>1.3</version>
+      <scope>provided</scope>
+    </dependency>
+
   </dependencies>
 
   <repositories>

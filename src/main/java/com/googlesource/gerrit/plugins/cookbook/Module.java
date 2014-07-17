@@ -20,6 +20,7 @@ import static com.google.gerrit.server.project.ProjectResource.PROJECT_KIND;
 import com.google.gerrit.extensions.registration.DynamicSet;
 import com.google.gerrit.extensions.restapi.RestApiModule;
 import com.google.gerrit.extensions.webui.TopMenu;
+import com.google.gerrit.rules.PredicateProvider;
 import com.google.inject.AbstractModule;
 
 public class Module extends AbstractModule {
@@ -33,6 +34,7 @@ public class Module extends AbstractModule {
       protected void configure() {
         post(REVISION_KIND, "hello-revision").to(HelloRevisionAction.class);
         post(PROJECT_KIND, "hello-project").to(HelloProjectAction.class);
+        DynamicSet.bind(binder(), PredicateProvider.class).to(PkgOnePredicateProvider.class);
       }
     });
   }
