@@ -22,6 +22,30 @@
       "revId": "167d9c1635d144dfd23912f9aaa86e7d35f4eb42",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d065072b_14bff44a",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1014252
+      },
+      "writtenOn": "2014-09-09T09:34:19Z",
+      "side": 1,
+      "message": "My thought was that the tool itself provides the icon. That way if the tool changes the icon (not changing the URL off course) you wont have to recompile the plugin. Another way is to provide it as a static resource from the gerrit server.\nTo me it\u0027s not clear that packaging the icon with the plugin would be the normal case.",
+      "parentUuid": "d065072b_943dc447",
+      "range": {
+        "startLine": 26,
+        "startChar": 2,
+        "endLine": 26,
+        "endChar": 62
+      },
+      "revId": "167d9c1635d144dfd23912f9aaa86e7d35f4eb42",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
