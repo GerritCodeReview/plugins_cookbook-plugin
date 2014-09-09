@@ -46,6 +46,30 @@
       "revId": "167d9c1635d144dfd23912f9aaa86e7d35f4eb42",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "106cff13_36e8385b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-09-09T09:42:41Z",
+      "side": 1,
+      "message": "Hmm, maybe this is true for plugins that only link to another system. I\u0027m at the moment working on this \"Wiki\"-plugin and it add as project link that points to the readme of the project [1]. It would be nice to have an icon for this link, but at the moment I can\u0027t figure out how to provide this icon within the plugin as static resource.. This is why I was hoping to find an example for this here in the cookbook plugin ;-)\n\n[1] https://gerrit-review.googlesource.com/59913",
+      "parentUuid": "d065072b_14bff44a",
+      "range": {
+        "startLine": 26,
+        "startChar": 2,
+        "endLine": 26,
+        "endChar": 62
+      },
+      "revId": "167d9c1635d144dfd23912f9aaa86e7d35f4eb42",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
