@@ -50,6 +50,24 @@
       "revId": "b79f850b18ae29ceaef2d98c34547156f109e11b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f03f6be6_1d79d39c",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1010008
+      },
+      "writtenOn": "2014-09-09T14:53:09Z",
+      "side": 1,
+      "message": "Also, this would be a good place to comment about why you\u0027re doing this at all rather than injecting Provider\u003cCurrentUser\u003e. Not every plugin that uses this approach needs to have a detailed explanation, but this is the cookbook.",
+      "parentUuid": "f03f6be6_fd3867e5",
+      "revId": "b79f850b18ae29ceaef2d98c34547156f109e11b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
