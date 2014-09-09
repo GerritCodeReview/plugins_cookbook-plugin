@@ -29,6 +29,7 @@ import com.google.gerrit.extensions.webui.TopMenu;
 import com.google.gerrit.server.config.ProjectConfigEntry;
 import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
+import com.google.gerrit.rules.PredicateProvider;
 import com.google.inject.AbstractModule;
 
 import com.googlesource.gerrit.plugins.cookbook.pluginprovider.HelloSshPluginProvider;
@@ -51,6 +52,7 @@ public class Module extends AbstractModule {
         post(REVISION_KIND, "hello-revision").to(HelloRevisionAction.class);
         post(PROJECT_KIND, "hello-project").to(HelloProjectAction.class);
         get(REVISION_KIND, "greetings").to(Greetings.class);
+        DynamicSet.bind(binder(), PredicateProvider.class).to(PkgOnePredicateProvider.class);
       }
     });
     DynamicSet.bind(binder(), UploadValidationListener.class)
