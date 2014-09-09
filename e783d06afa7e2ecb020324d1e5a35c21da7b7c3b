@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d065072b_37415225",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-09-09T13:53:26Z",
+      "side": 1,
+      "message": "This doesn\u0027t match the actual error that we want to report.  Unfortunately we have to use one of the enums; as far as I can see there\u0027s no way to specify an arbitrary error message.",
+      "range": {
+        "startLine": 66,
+        "startChar": 30,
+        "endLine": 66,
+        "endChar": 74
+      },
+      "revId": "e783d06afa7e2ecb020324d1e5a35c21da7b7c3b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
