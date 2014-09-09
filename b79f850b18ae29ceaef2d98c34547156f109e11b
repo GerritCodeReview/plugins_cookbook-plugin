@@ -91,6 +91,30 @@
       "revId": "b79f850b18ae29ceaef2d98c34547156f109e11b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d065072b_b7cf2264",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-09-09T15:03:07Z",
+      "side": 1,
+      "message": "See the Depends-On line in the commit message.",
+      "parentUuid": "106cff13_b9a27bc7",
+      "range": {
+        "startLine": 66,
+        "startChar": 30,
+        "endLine": 66,
+        "endChar": 48
+      },
+      "revId": "b79f850b18ae29ceaef2d98c34547156f109e11b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
