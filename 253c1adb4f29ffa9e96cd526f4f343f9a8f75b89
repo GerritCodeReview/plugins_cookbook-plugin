@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "106cff13_19aa8f73",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1010030
+      },
+      "writtenOn": "2014-09-09T16:48:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d065072b_97b026c7",
+      "revId": "253c1adb4f29ffa9e96cd526f4f343f9a8f75b89",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d065072b_f7bd1a9d",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2014-09-09T16:39:25Z",
       "side": 1,
       "message": "These are...interesting message choices.\n\nI\u0027m fine either way in terms of committing this before we have better status message support, or not.",
+      "revId": "253c1adb4f29ffa9e96cd526f4f343f9a8f75b89",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "106cff13_39a5cba5",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1010030
+      },
+      "writtenOn": "2014-09-09T16:48:11Z",
+      "side": 1,
+      "message": "Copy/paste from ProjectConfigValidator :) there is no generic enum right now to put here AFAIK, converted to NO_PATCHSET instead.",
+      "parentUuid": "d065072b_f7bd1a9d",
       "revId": "253c1adb4f29ffa9e96cd526f4f343f9a8f75b89",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
