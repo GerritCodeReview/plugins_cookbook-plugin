@@ -94,6 +94,30 @@
       "revId": "167d9c1635d144dfd23912f9aaa86e7d35f4eb42",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d065072b_57120e2d",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-09-09T14:36:48Z",
+      "side": 1,
+      "message": "Actually this is very trivial :)\n\nJust put the icon into the static folder:\n\n  /src/main/resources/static/readme.png\n\nand then return this path:\n\n  public String getImageUrl() {\n    return \"plugins/\" + pluginName + \"/static/readme.png\";\n  }",
+      "parentUuid": "106cff13_3647988b",
+      "range": {
+        "startLine": 26,
+        "startChar": 2,
+        "endLine": 26,
+        "endChar": 62
+      },
+      "revId": "167d9c1635d144dfd23912f9aaa86e7d35f4eb42",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
