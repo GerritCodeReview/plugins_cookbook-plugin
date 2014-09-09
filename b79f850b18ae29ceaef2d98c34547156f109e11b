@@ -115,6 +115,23 @@
       "revId": "b79f850b18ae29ceaef2d98c34547156f109e11b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "106cff13_b9cf1b64",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/Module.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-09-09T16:37:55Z",
+      "side": 1,
+      "message": "Wrong indentation.",
+      "revId": "b79f850b18ae29ceaef2d98c34547156f109e11b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
