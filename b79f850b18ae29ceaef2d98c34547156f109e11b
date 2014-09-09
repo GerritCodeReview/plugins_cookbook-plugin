@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d04c27b5_dcc00d64",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1010008
+      },
+      "writtenOn": "2014-09-09T14:52:06Z",
+      "side": 1,
+      "message": "Optional nit: blank line before package",
+      "revId": "b79f850b18ae29ceaef2d98c34547156f109e11b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f03f6be6_dd35abed",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1010008
+      },
+      "writtenOn": "2014-09-09T14:52:06Z",
+      "side": 1,
+      "message": "Storing this in a field makes this class not threadsafe: calls to onPreMerge from different threads may race.\n\nIt might be that there is exactly one merge thread so there is no race in practice. But db is initialized, used, and closed all within onPreMerge, so there is no upside to making it a field, only downside.",
+      "revId": "b79f850b18ae29ceaef2d98c34547156f109e11b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f03f6be6_fd3867e5",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1010008
+      },
+      "writtenOn": "2014-09-09T14:52:06Z",
+      "side": 1,
+      "message": "Hm, I take it you already checked that Provider\u003cReviewDb\u003e doesn\u0027t work on the merge thread either :(",
+      "revId": "b79f850b18ae29ceaef2d98c34547156f109e11b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
