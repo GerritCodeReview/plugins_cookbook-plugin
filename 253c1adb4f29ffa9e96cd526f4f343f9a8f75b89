@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d065072b_97b026c7",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1010008
+      },
+      "writtenOn": "2014-09-09T16:39:25Z",
+      "side": 1,
+      "message": "Put this in a // comment, not a javadoc",
+      "revId": "253c1adb4f29ffa9e96cd526f4f343f9a8f75b89",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d065072b_f7bd1a9d",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1010008
+      },
+      "writtenOn": "2014-09-09T16:39:25Z",
+      "side": 1,
+      "message": "These are...interesting message choices.\n\nI\u0027m fine either way in terms of committing this before we have better status message support, or not.",
+      "revId": "253c1adb4f29ffa9e96cd526f4f343f9a8f75b89",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
