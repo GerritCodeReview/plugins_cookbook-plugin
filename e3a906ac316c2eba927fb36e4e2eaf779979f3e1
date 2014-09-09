@@ -68,6 +68,29 @@
       "revId": "e3a906ac316c2eba927fb36e4e2eaf779979f3e1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "106cff13_5976c755",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/Module.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1010516
+      },
+      "writtenOn": "2014-09-09T19:07:31Z",
+      "side": 1,
+      "message": "Why? It was nicer with .to in next line (like bind(ProjectConfigEntry.class).toInstance... below)",
+      "range": {
+        "startLine": 57,
+        "startChar": 61,
+        "endLine": 57,
+        "endChar": 65
+      },
+      "revId": "e3a906ac316c2eba927fb36e4e2eaf779979f3e1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
