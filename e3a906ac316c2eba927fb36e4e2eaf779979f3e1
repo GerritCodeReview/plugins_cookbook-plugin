@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "d065072b_d769fe31",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1010030
+      },
+      "writtenOn": "2014-09-10T08:25:41Z",
+      "side": 1,
+      "message": "Good one, done",
+      "parentUuid": "106cff13_d9af777c",
+      "range": {
+        "startLine": 70,
+        "startChar": 6,
+        "endLine": 71,
+        "endChar": 42
+      },
+      "revId": "e3a906ac316c2eba927fb36e4e2eaf779979f3e1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "106cff13_398e6b25",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
         "patchSetId": 6
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "106cff13_f93a334b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1010030
+      },
+      "writtenOn": "2014-09-10T08:25:41Z",
+      "side": 1,
+      "message": "Why not?",
+      "parentUuid": "106cff13_398e6b25",
+      "range": {
+        "startLine": 73,
+        "startChar": 4,
+        "endLine": 73,
+        "endChar": 9
+      },
+      "revId": "e3a906ac316c2eba927fb36e4e2eaf779979f3e1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "106cff13_1993af4b",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
         "patchSetId": 6
@@ -59,6 +107,30 @@
       "writtenOn": "2014-09-09T17:02:35Z",
       "side": 1,
       "message": "Nice error message on missing permission ;)",
+      "range": {
+        "startLine": 76,
+        "startChar": 41,
+        "endLine": 76,
+        "endChar": 77
+      },
+      "revId": "e3a906ac316c2eba927fb36e4e2eaf779979f3e1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "106cff13_d9377763",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1010030
+      },
+      "writtenOn": "2014-09-10T08:25:41Z",
+      "side": 1,
+      "message": "Agreed, @dpursehouse is looking into adding more :)",
+      "parentUuid": "106cff13_1993af4b",
       "range": {
         "startLine": 76,
         "startChar": 41,
@@ -106,6 +178,30 @@
       "side": 1,
       "message": "Because he used Eclipse formatter, what we not always supposed to do. And (almost) never change formatting (of unrelated) of lines and the code in one change.",
       "parentUuid": "106cff13_5976c755",
+      "range": {
+        "startLine": 57,
+        "startChar": 61,
+        "endLine": 57,
+        "endChar": 65
+      },
+      "revId": "e3a906ac316c2eba927fb36e4e2eaf779979f3e1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d065072b_f76cfa43",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/Module.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1010030
+      },
+      "writtenOn": "2014-09-10T08:25:41Z",
+      "side": 1,
+      "message": "Both calls are identical and I wanted to make them same (which the formatter did).\n\nSince nicety is subjective, I think this is also nice and a quite small nit :)",
+      "parentUuid": "d065072b_17f7f66b",
       "range": {
         "startLine": 57,
         "startChar": 61,
