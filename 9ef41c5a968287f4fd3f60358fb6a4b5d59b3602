@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d065072b_da7f65b2",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/RefOperationValidationExample.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1013722
+      },
+      "writtenOn": "2014-09-10T16:00:31Z",
+      "side": 1,
+      "message": "missing project input in message format",
+      "revId": "9ef41c5a968287f4fd3f60358fb6a4b5d59b3602",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
