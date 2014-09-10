@@ -29,6 +29,7 @@ import com.google.gerrit.extensions.webui.ProjectWebLink;
 import com.google.gerrit.extensions.webui.TopMenu;
 import com.google.gerrit.server.config.ProjectConfigEntry;
 import com.google.gerrit.server.git.validators.MergeValidationListener;
+import com.google.gerrit.server.git.validators.RefOperationValidationListener;
 import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
 import com.google.gerrit.server.validators.HashtagValidationListener;
@@ -63,6 +64,8 @@ public class Module extends AbstractModule {
         .to(MergeUserValidator.class);
     DynamicSet.bind(binder(), HashtagValidationListener.class)
         .to(HashtagValidator.class);
+    DynamicSet.bind(binder(), RefOperationValidationListener.class)
+        .to(RefOperationValidationExample.class);
     configurePluginParameters();
   }
 
