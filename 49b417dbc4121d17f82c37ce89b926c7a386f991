@@ -22,6 +22,30 @@
       "revId": "49b417dbc4121d17f82c37ce89b926c7a386f991",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d065072b_da1be5d1",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/MergeUserValidator.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-09-10T14:56:48Z",
+      "side": 1,
+      "message": "Yes.",
+      "parentUuid": "106cff13_9c54cd87",
+      "range": {
+        "startLine": 17,
+        "startChar": 41,
+        "endLine": 17,
+        "endChar": 55
+      },
+      "revId": "49b417dbc4121d17f82c37ce89b926c7a386f991",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
