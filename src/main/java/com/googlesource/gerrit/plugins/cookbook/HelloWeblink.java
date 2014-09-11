@@ -52,4 +52,9 @@ public class HelloWeblink implements PatchSetWebLink, ProjectWebLink, BranchWebL
   public String getBranchUrl(String projectName, String branchName) {
     return String.format(placeHolderUrlProjectBranch, projectName, branchName);
   }
+
+  @Override
+  public String getTarget() {
+    return "_blank";
+  }
 }
