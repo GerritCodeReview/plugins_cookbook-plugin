@@ -31,6 +31,7 @@ import com.google.gerrit.server.config.ProjectConfigEntry;
 import com.google.gerrit.server.git.validators.MergeValidationListener;
 import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
+import com.google.gerrit.server.validators.HashtagValidationListener;
 import com.google.inject.AbstractModule;
 
 import com.googlesource.gerrit.plugins.cookbook.pluginprovider.HelloSshPluginProvider;
@@ -60,6 +61,8 @@ public class Module extends AbstractModule {
         .to(DenyUploadExample.class);
     DynamicSet.bind(binder(), MergeValidationListener.class)
         .to(MergeUserValidator.class);
+    DynamicSet.bind(binder(), HashtagValidationListener.class)
+        .to(HashtagValidator.class);
     configurePluginParameters();
   }
 
