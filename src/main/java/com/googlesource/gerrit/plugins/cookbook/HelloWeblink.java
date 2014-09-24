@@ -14,6 +14,7 @@
 
 package com.googlesource.gerrit.plugins.cookbook;
 
+import com.google.gerrit.extensions.common.WebLinkInfo;
 import com.google.gerrit.extensions.webui.BranchWebLink;
 import com.google.gerrit.extensions.webui.PatchSetWebLink;
 import com.google.gerrit.extensions.webui.ProjectWebLink;
@@ -28,33 +29,51 @@ public class HelloWeblink implements PatchSetWebLink, ProjectWebLink, BranchWebL
       placeHolderUrlProject + "/commit=%s";
   private String myImageUrl = "http://placehold.it/16x16.gif";
 
-  @Override
-  public String getLinkName() {
+  private String getLinkName() {
     return name ;
   }
 
-  @Override
-  public String getPatchSetUrl(String project, String commit) {
+  private String getPatchSetUrl(String project, String commit) {
     return String.format(placeHolderUrlProjectCommit, project, commit);
   }
 
-  @Override
-  public String getProjectUrl(String project) {
+  private String getProjectUrl(String project) {
     return String.format(placeHolderUrlProject, project);
   }
 
-  @Override
-  public String getImageUrl() {
+  private String getImageUrl() {
     return myImageUrl;
   }
 
-  @Override
-  public String getBranchUrl(String projectName, String branchName) {
+  private String getBranchUrl(String projectName, String branchName) {
     return String.format(placeHolderUrlProjectBranch, projectName, branchName);
   }
 
-  @Override
-  public String getTarget() {
+  private String getTarget() {
     return Target.BLANK;
+  }
+
+  @Override
+  public WebLinkInfo getBranchWebLink(String projectName, String branchName) {
+    return new WebLinkInfo(getLinkName(),
+        getImageUrl(),
+        getBranchUrl(projectName, branchName),
+        getTarget());
+  }
+
+  @Override
+  public WebLinkInfo getProjectWeblink(String projectName) {
+    return new WebLinkInfo(getLinkName(),
+        getImageUrl(),
+        getProjectUrl(projectName),
+        getTarget());
+  }
+
+  @Override
+  public WebLinkInfo getPathSetWebLink(String projectName, String commit) {
+    return new WebLinkInfo(getLinkName(),
+        getImageUrl(),
+        getPatchSetUrl(projectName, commit),
+        getTarget());
   }
 }
