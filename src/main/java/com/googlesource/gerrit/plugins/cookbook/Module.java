@@ -23,16 +23,19 @@ import com.google.gerrit.extensions.common.InheritableBoolean;
 import com.google.gerrit.extensions.events.UsageDataPublishedListener;
 import com.google.gerrit.extensions.registration.DynamicSet;
 import com.google.gerrit.extensions.restapi.RestApiModule;
-import com.google.gerrit.extensions.webui.BranchWebLink;
-import com.google.gerrit.extensions.webui.PatchSetWebLink;
-import com.google.gerrit.extensions.webui.ProjectWebLink;
 import com.google.gerrit.extensions.webui.TopMenu;
+import com.google.gerrit.extensions.webui.WebLink;
+import com.google.gerrit.server.change.FileResource;
+import com.google.gerrit.server.change.RevisionResource;
 import com.google.gerrit.server.config.ProjectConfigEntry;
 import com.google.gerrit.server.git.validators.MergeValidationListener;
 import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
+import com.google.gerrit.server.project.BranchResource;
+import com.google.gerrit.server.project.ProjectResource;
 import com.google.gerrit.server.validators.HashtagValidationListener;
 import com.google.inject.AbstractModule;
+import com.google.inject.TypeLiteral;
 
 import com.googlesource.gerrit.plugins.cookbook.pluginprovider.HelloSshPluginProvider;
 
@@ -42,9 +45,18 @@ public class Module extends AbstractModule {
   protected void configure() {
     DynamicSet.bind(binder(), TopMenu.class)
         .to(HelloTopMenu.class);
-    DynamicSet.bind(binder(), PatchSetWebLink.class).to(HelloWeblink.class);
-    DynamicSet.bind(binder(), ProjectWebLink.class).to(HelloWeblink.class);
-    DynamicSet.bind(binder(), BranchWebLink.class).to(HelloWeblink.class);
+    DynamicSet.bind(binder(),
+        new TypeLiteral<WebLink<RevisionResource>>() {})
+        .to(HelloWeblink.PatchSetWeblink.class);
+    DynamicSet.bind(binder(),
+        new TypeLiteral<WebLink<BranchResource>>() {})
+        .to(HelloWeblink.BranchWeblink.class);
+    DynamicSet.bind(binder(),
+        new TypeLiteral<WebLink<ProjectResource>>() {})
+        .to(HelloWeblink.ProjectWebLink.class);
+    DynamicSet.bind(binder(),
+        new TypeLiteral<WebLink<FileResource>>() {})
+        .to(HelloWeblink.FileWebLink.class);
     DynamicSet.bind(binder(), ServerPluginProvider.class).to(
         HelloSshPluginProvider.class);
     DynamicSet.bind(binder(), UsageDataPublishedListener.class).to(UsageDataLogger.class);
