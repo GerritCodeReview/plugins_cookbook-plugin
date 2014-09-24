@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b095f3be_1b885b63",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-09-24T15:01:35Z",
+      "side": 1,
+      "message": "Can we also add FileLInk as well? The ons used in Edwin\u0027s X-docs plugin?",
+      "revId": "3f0e49c619d4a38f5cb82d0f0a669a811004368b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
