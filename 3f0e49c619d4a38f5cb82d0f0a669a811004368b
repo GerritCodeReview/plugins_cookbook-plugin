@@ -16,6 +16,24 @@
       "revId": "3f0e49c619d4a38f5cb82d0f0a669a811004368b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "90646fc9_5a3655d2",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1014252
+      },
+      "writtenOn": "2014-09-25T06:24:32Z",
+      "side": 1,
+      "message": "Should I do that in this change or should I wait to see if this gets merged and do it in separate change?",
+      "parentUuid": "b095f3be_1b885b63",
+      "revId": "3f0e49c619d4a38f5cb82d0f0a669a811004368b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
