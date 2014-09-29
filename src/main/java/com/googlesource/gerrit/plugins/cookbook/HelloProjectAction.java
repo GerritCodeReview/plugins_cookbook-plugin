@@ -21,8 +21,9 @@ import com.google.gerrit.extensions.webui.UiAction;
 import com.google.gerrit.server.CurrentUser;
 import com.google.gerrit.server.IdentifiedUser;
 import com.google.gerrit.server.project.ProjectResource;
-import com.google.inject.Inject;
 import com.google.inject.Provider;
+
+import javax.inject.Inject;
 
 class HelloProjectAction implements UiAction<ProjectResource>,
     RestModifyView<ProjectResource, HelloProjectAction.Input> {

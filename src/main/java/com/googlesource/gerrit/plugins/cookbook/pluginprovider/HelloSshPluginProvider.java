@@ -18,11 +18,12 @@ import com.google.gerrit.extensions.annotations.PluginName;
 import com.google.gerrit.server.plugins.InvalidPluginException;
 import com.google.gerrit.server.plugins.ServerPlugin;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
-import com.google.inject.Inject;
 
 import org.eclipse.jgit.internal.storage.file.FileSnapshot;
 
 import java.io.File;
+
+import javax.inject.Inject;
 
 /**
  * Dynamic provider of Gerrit plugins derived by *.ssh files under $GERRIT_SITE/plugins.

@@ -21,8 +21,9 @@ import com.google.gerrit.extensions.webui.UiAction;
 import com.google.gerrit.server.CurrentUser;
 import com.google.gerrit.server.IdentifiedUser;
 import com.google.gerrit.server.change.RevisionResource;
-import com.google.inject.Inject;
 import com.google.inject.Provider;
+
+import javax.inject.Inject;
 
 class HelloRevisionAction implements UiAction<RevisionResource>,
     RestModifyView<RevisionResource, HelloRevisionAction.Input> {

@@ -25,11 +25,12 @@ import com.google.gerrit.server.git.CommitMergeStatus;
 import com.google.gerrit.server.git.validators.MergeValidationException;
 import com.google.gerrit.server.git.validators.MergeValidationListener;
 import com.google.gerrit.server.project.ProjectState;
-import com.google.inject.Inject;
 import com.google.inject.Provider;
 import com.google.inject.Singleton;
 
 import org.eclipse.jgit.lib.Repository;
+
+import javax.inject.Inject;
 
 // Because we have a dedicated Module, we need to bind to the set
 // there, however, if you are using this as a base for your own

@@ -17,10 +17,11 @@ package com.googlesource.gerrit.plugins.cookbook;
 import com.google.gerrit.extensions.restapi.Response;
 import com.google.gerrit.extensions.restapi.RestReadView;
 import com.google.gerrit.server.change.RevisionResource;
-import com.google.inject.Inject;
 
 import java.util.ArrayList;
 import java.util.Collection;
+
+import javax.inject.Inject;
 
 class Greetings implements RestReadView<RevisionResource> {
 

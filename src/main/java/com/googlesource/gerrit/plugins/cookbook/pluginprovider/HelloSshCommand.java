@@ -18,11 +18,12 @@ import com.google.gerrit.extensions.annotations.PluginName;
 import com.google.gerrit.server.config.SitePaths;
 import com.google.gerrit.sshd.CommandMetaData;
 import com.google.gerrit.sshd.SshCommand;
-import com.google.inject.Inject;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+
+import javax.inject.Inject;
 
 /**
  * SSH command defined by dynamically registered plugins.
