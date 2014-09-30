@@ -94,6 +94,30 @@
       "revId": "c33929df07453a9cb4238ea8128d862c8b3e81c9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b03fb4b4_905c543b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1014252
+      },
+      "writtenOn": "2014-09-30T12:03:43Z",
+      "side": 1,
+      "message": "Yes, I guess it is, so either way works...",
+      "parentUuid": "b03fb4b4_50570c1c",
+      "range": {
+        "startLine": 100,
+        "startChar": 14,
+        "endLine": 100,
+        "endChar": 70
+      },
+      "revId": "c33929df07453a9cb4238ea8128d862c8b3e81c9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
