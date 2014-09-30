@@ -118,6 +118,30 @@
       "revId": "c33929df07453a9cb4238ea8128d862c8b3e81c9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f035acd2_32281074",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-09-30T15:09:03Z",
+      "side": 1,
+      "message": "Actually the fact, it is implementation specific is a good justification for Resource way and not loose methods with passing in of resource specific parameters. Because one implementation would need ref name and another SHA1 as example. So you would end up flushing the resource into single attributes and would pass it to the method(s). Let not do that, and keep the latest refactoring with one method that is Resource aware.\n\nConcerning your example/question where one Link for different resources would like to reuse the same icon, the author of plugin can create base webLinkBase class, put icon here and derive the resource specific implementation, that would reuse the same icon. Something similar was done in WIP change with UiAction base class [1].\n\n [1] https://gerrit-review.googlesource.com/50254",
+      "parentUuid": "b03fb4b4_905c543b",
+      "range": {
+        "startLine": 100,
+        "startChar": 14,
+        "endLine": 100,
+        "endChar": 70
+      },
+      "revId": "c33929df07453a9cb4238ea8128d862c8b3e81c9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
