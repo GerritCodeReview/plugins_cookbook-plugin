@@ -70,6 +70,30 @@
       "revId": "c33929df07453a9cb4238ea8128d862c8b3e81c9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b03fb4b4_50570c1c",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-09-30T11:36:35Z",
+      "side": 1,
+      "message": "OK, i see. I think this is implementation specific.",
+      "parentUuid": "b03fb4b4_7052102e",
+      "range": {
+        "startLine": 100,
+        "startChar": 14,
+        "endLine": 100,
+        "endChar": 70
+      },
+      "revId": "c33929df07453a9cb4238ea8128d862c8b3e81c9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
