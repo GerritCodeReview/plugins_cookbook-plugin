@@ -46,6 +46,30 @@
       "revId": "c33929df07453a9cb4238ea8128d862c8b3e81c9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b03fb4b4_7052102e",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1014252
+      },
+      "writtenOn": "2014-09-30T11:28:13Z",
+      "side": 1,
+      "message": "Looking at Edwins support file weblink change he gives the old FileWebLink the ref instead ([1] line 175)\nhttps://gerrit-review.googlesource.com/#/c/60012/4/gerrit-server/src/main/java/com/google/gerrit/server/change/GetDiff.java",
+      "parentUuid": "b03fb4b4_9085742d",
+      "range": {
+        "startLine": 100,
+        "startChar": 14,
+        "endLine": 100,
+        "endChar": 70
+      },
+      "revId": "c33929df07453a9cb4238ea8128d862c8b3e81c9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
