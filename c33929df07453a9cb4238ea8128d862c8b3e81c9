@@ -142,6 +142,30 @@
       "revId": "c33929df07453a9cb4238ea8128d862c8b3e81c9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b03fb4b4_b024f8a4",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1014252
+      },
+      "writtenOn": "2014-10-01T06:26:59Z",
+      "side": 1,
+      "message": "Well my concerns about how I thought the WebLinks would be implemented, as weak an argument as it was, evidently doesn\u0027t hold up since I managed to solve it with nested classes, and having a base class would also work if the implementor thinks that that\u0027s a neater option.\nI agree with you that passing the resource to the WebLink implementation gives more freedom of choice for the WebLink implementations.",
+      "parentUuid": "f035acd2_32281074",
+      "range": {
+        "startLine": 100,
+        "startChar": 14,
+        "endLine": 100,
+        "endChar": 70
+      },
+      "revId": "c33929df07453a9cb4238ea8128d862c8b3e81c9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
