@@ -18,16 +18,21 @@ Gerrit.install(function(self) {
           + c.id
           + ", revision: " + r.name);
     }
-    function onSubmitChange(c, r) {
-      return confirm("Really submit change:\n"
-          + c.id + "\n"
-          + "revision: " + r.name
-          + "?");
+    function onSubmitSomeoneElsesChange(c, r) {
+        var u = self.getCurrentUser();
+        if (u._account_id != c.owner._account_id) {
+          return confirm("Really submit change:\n"
+              + c.id + "\n"
+              + "revision: " + r.name + "\n"
+              + "from: " + c.owner.name
+              + "?");
+        }
+        return true;
     }
     function onHistory(t) {
       console.log("History: " + t);
     }
     Gerrit.on('showchange', onShowChange);
-    Gerrit.on('submitchange', onSubmitChange);
+    Gerrit.on('submitchange', onSubmitSomeoneElsesChange);
     Gerrit.on('history', onHistory);
   });
