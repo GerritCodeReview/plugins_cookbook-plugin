@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "307ae4aa_b4218094",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1014252
+      },
+      "writtenOn": "2014-10-02T06:52:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1077a0c2_d341b432",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 6
+      },
+      "revId": "c7e760c2a6a5e840ef7c6a113307cdf856a09133",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "307ae4aa_f417f835",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
         "patchSetId": 5
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "307ae4aa_542eec84",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1014252
+      },
+      "writtenOn": "2014-10-02T06:52:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "307ae4aa_f417f835",
+      "range": {
+        "startLine": 37,
+        "startChar": 15,
+        "endLine": 37,
+        "endChar": 16
+      },
+      "revId": "c7e760c2a6a5e840ef7c6a113307cdf856a09133",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1077a0c2_332d8884",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
         "patchSetId": 5
@@ -59,6 +107,30 @@
       "writtenOn": "2014-10-02T06:15:31Z",
       "side": 1,
       "message": "Nit: missing blank.",
+      "range": {
+        "startLine": 48,
+        "startChar": 74,
+        "endLine": 48,
+        "endChar": 75
+      },
+      "revId": "c7e760c2a6a5e840ef7c6a113307cdf856a09133",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1077a0c2_d3c8d460",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1014252
+      },
+      "writtenOn": "2014-10-02T06:52:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1077a0c2_332d8884",
       "range": {
         "startLine": 48,
         "startChar": 74,
