@@ -33,7 +33,7 @@ import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
 import com.google.gerrit.server.validators.HashtagValidationListener;
 import com.google.inject.AbstractModule;
-
+import com.googlesource.gerrit.plugins.cookbook.chefs.ChefsGroupBackend;
 import com.googlesource.gerrit.plugins.cookbook.pluginprovider.HelloSshPluginProvider;
 
 public class Module extends AbstractModule {
@@ -64,6 +64,7 @@ public class Module extends AbstractModule {
     DynamicSet.bind(binder(), HashtagValidationListener.class)
         .to(HashtagValidator.class);
     configurePluginParameters();
+    install(new ChefsGroupBackend.Module());
   }
 
   private void configurePluginParameters() {
