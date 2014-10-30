@@ -14,28 +14,32 @@
 
 package com.googlesource.gerrit.plugins.cookbook;
 
+import com.google.common.collect.Sets;
 import com.google.gerrit.reviewdb.client.Change;
 import com.google.gerrit.server.validators.HashtagValidationListener;
-import com.google.gerrit.server.validators.ValidationException;
+import com.google.gerrit.server.validators.HashtagsValidationException;
 
 import java.util.Set;
 
 public class HashtagValidator implements HashtagValidationListener {
-
   @Override
-  public void validateHashtags(Change change, Set<String> toAdd, Set<String> toRemove)
-      throws ValidationException {
-    if (change.getProject().get().equals("plugins/cookbook")) {
-      if (toAdd.size() > 0) {
+  public void validateHashtags(Change change, Set<String> toAdd,
+      Set<String> toRemove) throws HashtagsValidationException {
+    if (change != null && change.getProject().get().equals("plugins/cookbook")) {
+      if (toAdd != null && toAdd.size() > 0) {
+        Set<String> invalidHashtags = Sets.newHashSet();
         for (String hashtag : toAdd) {
           if (!hashtag.startsWith("cookbook-")) {
-            throw new ValidationException("Invalid cookbook hashtag: " + hashtag);
+            invalidHashtags.add(hashtag);
           }
         }
+        if (!invalidHashtags.isEmpty()) {
+          throw new HashtagsValidationException("Invalid cookbook hashtags: ",
+              invalidHashtags);
+        }
       }
-
-      if (toRemove.size() > 0) {
-        throw new ValidationException("Cannot remove cookbook hashtags");
+      if (toRemove != null && toRemove.size() > 0) {
+        throw new HashtagsValidationException("Cannot remove cookbook hashtags");
       }
     }
   }
