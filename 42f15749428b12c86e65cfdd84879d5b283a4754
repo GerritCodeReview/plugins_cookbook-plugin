@@ -122,6 +122,24 @@
       "revId": "42f15749428b12c86e65cfdd84879d5b283a4754",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b52086df_a80a1b44",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HashtagValidator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-10-30T02:47:53Z",
+      "side": 1,
+      "message": "The serial version ID is for the version of the class, not versions of instances of the class.  See [1] for more detail.\n\nTypically we set this to `0L` in Gerrit; we don\u0027t deserialise these classes AFAIK so the 0L is just to silence Eclipse warnings.\n\nIt won\u0027t be necessary to instantiate the exceptions like this if the list of invalid tags is passed in the constructor, as I suggested on the other change.\n\n[1] http://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it",
+      "parentUuid": "95daa231_7fdd4f70",
+      "revId": "42f15749428b12c86e65cfdd84879d5b283a4754",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
