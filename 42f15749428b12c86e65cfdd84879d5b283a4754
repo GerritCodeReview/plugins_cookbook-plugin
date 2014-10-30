@@ -84,6 +84,24 @@
     },
     {
       "key": {
+        "uuid": "d52b3ac1_492ba1a7",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HashtagValidator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-10-30T02:56:20Z",
+      "side": 1,
+      "message": "Not necessary if changed as suggested below.",
+      "parentUuid": "95daa231_5fd88b81",
+      "revId": "42f15749428b12c86e65cfdd84879d5b283a4754",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d515fa2f_3900ef6f",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HashtagValidator.java",
         "patchSetId": 1
@@ -155,6 +173,29 @@
       "side": 1,
       "message": "\u003eTypically we set this to `0L` in Gerrit; we don\u0027t deserialise these classes AFAIK so the 0L is just to silence Eclipse warnings.\n\nso both line 52 and line 40 should be 0L. right?",
       "parentUuid": "b52086df_a80a1b44",
+      "revId": "42f15749428b12c86e65cfdd84879d5b283a4754",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d52b3ac1_692665e3",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HashtagValidator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-10-30T02:56:20Z",
+      "side": 1,
+      "message": "The whole of this can be removed if getInvalidhastags is not declared as abstract in HashtagsValidationException, and the invalid hashtags are passed into the constructor instead.",
+      "range": {
+        "startLine": 51,
+        "startChar": 51,
+        "endLine": 58,
+        "endChar": 10
+      },
       "revId": "42f15749428b12c86e65cfdd84879d5b283a4754",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
