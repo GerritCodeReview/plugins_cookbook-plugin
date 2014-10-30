@@ -25,6 +25,24 @@
     },
     {
       "key": {
+        "uuid": "95daa231_9fe13331",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1010015
+      },
+      "writtenOn": "2014-10-30T02:42:04Z",
+      "side": 1,
+      "message": "Thanks!",
+      "parentUuid": "b50a4612_781f81cd",
+      "revId": "42f15749428b12c86e65cfdd84879d5b283a4754",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d515fa2f_59fba323",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HashtagValidator.java",
         "patchSetId": 1
@@ -48,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "95daa231_5fd88b81",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HashtagValidator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1010015
+      },
+      "writtenOn": "2014-10-30T02:42:04Z",
+      "side": 1,
+      "message": "Line 44 require",
+      "parentUuid": "d515fa2f_59fba323",
+      "revId": "42f15749428b12c86e65cfdd84879d5b283a4754",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d515fa2f_3900ef6f",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HashtagValidator.java",
         "patchSetId": 1
@@ -65,6 +101,24 @@
         "endLine": 52,
         "endChar": 57
       },
+      "revId": "42f15749428b12c86e65cfdd84879d5b283a4754",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "95daa231_7fdd4f70",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HashtagValidator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1010015
+      },
+      "writtenOn": "2014-10-30T02:42:04Z",
+      "side": 1,
+      "message": "why it must be same with line 40",
+      "parentUuid": "d515fa2f_3900ef6f",
       "revId": "42f15749428b12c86e65cfdd84879d5b283a4754",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
