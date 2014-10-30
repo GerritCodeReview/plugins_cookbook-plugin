@@ -199,6 +199,24 @@
       "revId": "42f15749428b12c86e65cfdd84879d5b283a4754",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "95daa231_3ffca7d2",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HashtagValidator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1010015
+      },
+      "writtenOn": "2014-10-30T03:44:14Z",
+      "side": 1,
+      "message": "yes, that would save some lines of code. But for that we will have to prepare a variable, and that would lost the benefit of abstract method  telling the compiler that any sub-classes, the concrete exception, must provide an implementation to return the set of invalid tags.\nas you are strong on your suggestion I uploaded a new patch-set.",
+      "parentUuid": "d52b3ac1_692665e3",
+      "revId": "42f15749428b12c86e65cfdd84879d5b283a4754",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
