@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "df1359da_697ce5a5",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-12-03T14:24:05Z",
+      "side": 1,
+      "message": "I would say this is unrelated and should be done in an own change.",
+      "revId": "f70112d32d50bee222e7614fcddd1b4b47dbc013",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9997385e_221cae84",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/IndexScreen.java",
         "patchSetId": 1
