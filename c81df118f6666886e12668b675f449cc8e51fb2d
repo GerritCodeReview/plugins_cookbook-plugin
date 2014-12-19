@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "e181644d_b2f100f8",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-12-19T08:21:38Z",
+      "side": 1,
+      "message": "Nice hack!",
+      "revId": "c81df118f6666886e12668b675f449cc8e51fb2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "212a9c14_d417dc6f",
         "filename": "BUCK",
         "patchSetId": 1
@@ -18,6 +35,29 @@
         "startChar": 0,
         "endLine": 31,
         "endChar": 63
+      },
+      "revId": "c81df118f6666886e12668b675f449cc8e51fb2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e181644d_92ecfc1c",
+        "filename": "src/test/java/com/googlesource/gerrit/plugins/cookbook/CookbookTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-12-19T08:21:38Z",
+      "side": 1,
+      "message": "hence?",
+      "range": {
+        "startLine": 25,
+        "startChar": 7,
+        "endLine": 25,
+        "endChar": 10
       },
       "revId": "c81df118f6666886e12668b675f449cc8e51fb2d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
