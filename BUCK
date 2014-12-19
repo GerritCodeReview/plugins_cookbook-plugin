@@ -17,6 +17,15 @@ gerrit_plugin(
   ]
 )
 
+java_test(
+  name = 'cookbook_tests',
+  srcs = glob(['src/test/java/**/*.java']),
+  deps = [
+    ':cookbook-plugin__plugin',
+    '//lib:junit',
+  ],
+)
+
 # TODO(davido): is this needed?
 # requires for bucklets/tools/eclipse/project.py to work
 # not sure, if this does something useful in standalone context
