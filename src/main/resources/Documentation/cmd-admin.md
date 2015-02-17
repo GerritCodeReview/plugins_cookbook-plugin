@@ -7,7 +7,7 @@ NAME
 
 SYNOPSIS
 --------
->     ssh -p <port> <host> @PLUGIN@ admin
+>     ssh -p <port> <host> cookbook admin
 
 DESCRIPTION
 -----------
@@ -28,7 +28,7 @@ EXAMPLES
 
 Have the server say hello to the administrator.
 
->     $ ssh -p 29418 review.example.com @PLUGIN@ admin
+>     $ ssh -p 29418 review.example.com cookbook admin
 
 SEE ALSO
 --------

@@ -7,7 +7,7 @@ NAME
 
 SYNOPSIS
 --------
->     ssh -p <port> <host> @PLUGIN@ print
+>     ssh -p <port> <host> cookbook print
 >      [--french]
 >      [name]
 
@@ -42,11 +42,11 @@ EXAMPLES
 
 Have the server say hi to the world.
 
->     $ ssh -p 29418 review.example.com @PLUGIN@ print
+>     $ ssh -p 29418 review.example.com cookbook print
 
 Have the server say hi to the world in French.
 
->     $ ssh -p 29418 review.example.com @PLUGIN@ print --french
+>     $ ssh -p 29418 review.example.com cookbook print --french
 
 Have the server say hi to you in French.
 
