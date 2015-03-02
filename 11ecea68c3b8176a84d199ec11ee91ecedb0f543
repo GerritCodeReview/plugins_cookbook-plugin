@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "45c5e522_aef277e9",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1012987
+      },
+      "writtenOn": "2015-03-02T14:37:57Z",
+      "side": 1,
+      "message": "To get rid of warning, do the reverse: set version and refer to version in the Gerrit-ApiVersion.\n\n\u003cversion\u003e2.10\u003c/version\u003e\n\u003cGerrit-ApiVersion\u003e${project.version}\u003c/Gerrit-ApiVersion\u003e",
+      "range": {
+        "startLine": 29,
+        "startChar": 11,
+        "endLine": 29,
+        "endChar": 31
+      },
+      "revId": "11ecea68c3b8176a84d199ec11ee91ecedb0f543",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
