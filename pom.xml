@@ -22,11 +22,11 @@ limitations under the License.
   <groupId>com.googlesource.gerrit.plugins</groupId>
   <artifactId>cookbook-plugin</artifactId>
   <packaging>jar</packaging>
-  <version>0.1</version>
   <properties>
     <Gerrit-ApiType>plugin</Gerrit-ApiType>
     <Gerrit-ApiVersion>2.10</Gerrit-ApiVersion>
   </properties>
+  <version>${Gerrit-ApiVersion}</version>
 
   <build>
     <plugins>
