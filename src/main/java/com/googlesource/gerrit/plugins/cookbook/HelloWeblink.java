@@ -46,7 +46,7 @@ public class HelloWeblink implements PatchSetWebLink, ProjectWebLink, BranchWebL
   }
 
   @Override
-  public WebLinkInfo getPathSetWebLink(String projectName, String commit) {
+  public WebLinkInfo getPatchSetWebLink(String projectName, String commit) {
     return new WebLinkInfo(name,
         myImageUrl,
         String.format(placeHolderUrlProjectCommit, projectName, commit),
