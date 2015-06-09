@@ -24,6 +24,7 @@ import com.google.gerrit.extensions.events.UsageDataPublishedListener;
 import com.google.gerrit.extensions.registration.DynamicSet;
 import com.google.gerrit.extensions.restapi.RestApiModule;
 import com.google.gerrit.extensions.webui.BranchWebLink;
+import com.google.gerrit.extensions.webui.FileHistoryWebLink;
 import com.google.gerrit.extensions.webui.PatchSetWebLink;
 import com.google.gerrit.extensions.webui.ProjectWebLink;
 import com.google.gerrit.extensions.webui.TopMenu;
@@ -46,6 +47,7 @@ public class Module extends AbstractModule {
     DynamicSet.bind(binder(), PatchSetWebLink.class).to(HelloWeblink.class);
     DynamicSet.bind(binder(), ProjectWebLink.class).to(HelloWeblink.class);
     DynamicSet.bind(binder(), BranchWebLink.class).to(HelloWeblink.class);
+    DynamicSet.bind(binder(), FileHistoryWebLink.class).to(HelloWeblink.class);
     DynamicSet.bind(binder(), ServerPluginProvider.class).to(
         HelloSshPluginProvider.class);
     DynamicSet.bind(binder(), UsageDataPublishedListener.class).to(UsageDataLogger.class);

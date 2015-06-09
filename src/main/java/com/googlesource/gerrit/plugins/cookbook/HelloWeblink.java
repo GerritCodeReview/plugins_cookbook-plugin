@@ -16,10 +16,12 @@ package com.googlesource.gerrit.plugins.cookbook;
 
 import com.google.gerrit.extensions.common.WebLinkInfo;
 import com.google.gerrit.extensions.webui.BranchWebLink;
+import com.google.gerrit.extensions.webui.FileHistoryWebLink;
 import com.google.gerrit.extensions.webui.PatchSetWebLink;
 import com.google.gerrit.extensions.webui.ProjectWebLink;
 
-public class HelloWeblink implements PatchSetWebLink, ProjectWebLink, BranchWebLink {
+public class HelloWeblink implements PatchSetWebLink, ProjectWebLink,
+    BranchWebLink, FileHistoryWebLink {
   private String name = "HelloLink";
   private String placeHolderUrlProject =
       "http://my.hellolink.com/project=%s";
@@ -27,6 +29,8 @@ public class HelloWeblink implements PatchSetWebLink, ProjectWebLink, BranchWebL
       "http://my.hellolink.com/project=%s-branch=%s";
   private String placeHolderUrlProjectCommit =
       placeHolderUrlProject + "/commit=%s";
+  private String placeHolderUrlProjectRevisionFileName =
+      placeHolderUrlProject + "-revision=%s-file=%s";
   private String myImageUrl = "http://placehold.it/16x16.gif";
 
   @Override
@@ -50,6 +54,16 @@ public class HelloWeblink implements PatchSetWebLink, ProjectWebLink, BranchWebL
     return new WebLinkInfo(name,
         myImageUrl,
         String.format(placeHolderUrlProjectCommit, projectName, commit),
+        Target.BLANK);
+  }
+
+  @Override
+  public WebLinkInfo getFileHistoryWebLink(String projectName, String revision,
+      String fileName) {
+    return new WebLinkInfo(name,
+        myImageUrl,
+        String.format(placeHolderUrlProjectRevisionFileName, projectName,
+            revision, fileName),
         Target.BLANK);
   }
 }
