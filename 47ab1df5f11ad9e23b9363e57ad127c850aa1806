@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d9d46c30_367638b7",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/RefOperationValidationExample.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-06-09T09:48:32Z",
+      "side": 1,
+      "message": "This has been renamed in core.",
+      "range": {
+        "startLine": 18,
+        "startChar": 39,
+        "endLine": 18,
+        "endChar": 64
+      },
+      "revId": "47ab1df5f11ad9e23b9363e57ad127c850aa1806",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
