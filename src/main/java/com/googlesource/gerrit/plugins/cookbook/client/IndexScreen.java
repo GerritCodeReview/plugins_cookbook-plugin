@@ -15,8 +15,11 @@
 package com.googlesource.gerrit.plugins.cookbook.client;
 
 import com.google.gerrit.client.Resources;
+import com.google.gerrit.plugin.client.Plugin;
+import com.google.gerrit.plugin.client.rpc.RestApi;
 import com.google.gerrit.plugin.client.screen.Screen;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -25,6 +28,7 @@ import com.google.gwt.event.dom.client.KeyPressEvent;
 import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.user.client.Event;
 import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Image;
@@ -49,6 +53,8 @@ class IndexScreen extends VerticalPanel {
 
   IndexScreen() {
     setStyleName("cookbook-panel");
+
+    handleNotFound();
 
     Panel labelImagePanel = new HorizontalPanel();
     Panel usernamePanel = new VerticalPanel();
@@ -131,5 +137,25 @@ class IndexScreen extends VerticalPanel {
     sb.append(", ");
     sb.append(greeting.isEmpty() ? "what's up?" : greeting);
     Window.alert(sb.toString());
+  }
+
+  private void handleNotFound() {
+    new RestApi("projects").id("All-Projects")
+        .view(Plugin.get().getPluginName(), "not-found")
+        .get(new AsyncCallback<JavaScriptObject>() {
+          @Override
+          public void onSuccess(JavaScriptObject result) {
+            // this REST request always fails with '404 Not Found',
+            // hence onSuccess is never invoked
+          }
+
+          @Override
+          public void onFailure(Throwable caught) {
+            // actual: never invoked, Gerrit core UI shows error dialog
+
+            // expected: any error should be ignored,
+            // since this onFailure() method is empty and does nothing
+          }
+        });
   }
 }

@@ -55,6 +55,7 @@ public class Module extends AbstractModule {
         post(REVISION_KIND, "hello-revision").to(HelloRevisionAction.class);
         post(PROJECT_KIND, "hello-project").to(HelloProjectAction.class);
         get(REVISION_KIND, "greetings").to(Greetings.class);
+        get(PROJECT_KIND, "not-found").to(GetNotFound.class);
       }
     });
     DynamicSet.bind(binder(), UploadValidationListener.class)
