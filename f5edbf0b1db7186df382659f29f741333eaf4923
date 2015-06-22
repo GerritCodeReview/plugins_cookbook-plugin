@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fe559639_57616c06",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/CommitValidator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2015-06-22T10:30:36Z",
+      "side": 1,
+      "message": "Coud we add accept message, like: \"Commit message is valid\" or some such?",
+      "range": {
+        "startLine": 36,
+        "startChar": 4,
+        "endLine": 36,
+        "endChar": 30
+      },
+      "revId": "f5edbf0b1db7186df382659f29f741333eaf4923",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
