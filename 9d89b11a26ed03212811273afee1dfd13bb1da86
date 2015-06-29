@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3301293e_d1cf449d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-06-29T20:41:12Z",
+      "side": 1,
+      "message": "Would remove the final dot, as per gerrit-review.googlesource.com/Documentation/dev-contributing.html#commit-message",
+      "range": {
+        "startLine": 7,
+        "startChar": 45,
+        "endLine": 7,
+        "endChar": 46
+      },
+      "revId": "9d89b11a26ed03212811273afee1dfd13bb1da86",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3301293e_71d65836",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-06-29T20:41:12Z",
+      "side": 1,
+      "message": "The synopsis and examples for the cookbook \u0027print\u0027 and \u0027admin\u0027 ssh commands were wrong.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 39
+      },
+      "revId": "9d89b11a26ed03212811273afee1dfd13bb1da86",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3301293e_51db545c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-06-29T20:41:12Z",
+      "side": 1,
+      "message": "Maybe",
+      "range": {
+        "startLine": 21,
+        "startChar": 35,
+        "endLine": 21,
+        "endChar": 41
+      },
+      "revId": "9d89b11a26ed03212811273afee1dfd13bb1da86",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b3151985_25b5ae1e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-06-29T20:41:12Z",
+      "side": 1,
+      "message": "-",
+      "range": {
+        "startLine": 22,
+        "startChar": 18,
+        "endLine": 22,
+        "endChar": 19
+      },
+      "revId": "9d89b11a26ed03212811273afee1dfd13bb1da86",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b3151985_05ba320e",
+        "filename": "src/main/resources/Documentation/cmd-admin.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-06-29T20:41:12Z",
+      "side": 1,
+      "message": "As of today\u0027s latest master (59b0d8b now), @PLUGIN@ (Gerrit-PluginName) is properly set as \u0027cookbook\u0027. This means that these changes are no longer required. -Looks to me like this change can be abandoned, then.",
+      "revId": "9d89b11a26ed03212811273afee1dfd13bb1da86",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
