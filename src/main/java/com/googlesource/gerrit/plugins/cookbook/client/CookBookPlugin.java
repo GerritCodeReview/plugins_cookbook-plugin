@@ -14,6 +14,7 @@
 
 package com.googlesource.gerrit.plugins.cookbook.client;
 
+import com.google.gerrit.client.GerritUiExtensionPoint;
 import com.google.gerrit.plugin.client.Plugin;
 import com.google.gerrit.plugin.client.PluginEntryPoint;
 
@@ -21,5 +22,10 @@ public class CookBookPlugin extends PluginEntryPoint {
   @Override
   public void onPluginLoad() {
     Plugin.get().screen("", new IndexScreen.Factory());
+    Plugin.get().panel(GerritUiExtensionPoint.PROFILE_SCREEN,
+        new CookBookProfileExtension.Factory());
+    Plugin.get().panel(
+        GerritUiExtensionPoint.CHANGE_SCREEN_BELOW_CHANGE_INFO_BLOCK,
+        new CookBookChangeScreenExtension.Factory());
   }
 }
