@@ -30,7 +30,6 @@ Add link to the .buckversion file:
 
 To build the plugin, issue the following command:
 
-
 ```
   buck build plugin
 ```
@@ -39,6 +38,12 @@ The output is created in
 
 ```
   buck-out/gen/cookbook-plugin/cookbook-plugin.jar
+```
+
+To execute the tests run:
+
+```
+  buck test
 ```
 
 Build in Gerrit tree
@@ -61,6 +66,12 @@ This project can be imported into the Eclipse IDE:
 
 ```
   ./tools/eclipse/project.py
+```
+
+To execute the tests run:
+
+```
+  buck test --include cookbook-plugin
 ```
 
 Note that for compatibility reasons a Maven build is provided, but is considered
