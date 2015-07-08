@@ -15,10 +15,14 @@
 package com.googlesource.gerrit.plugins.cookbook.client;
 
 import com.google.gerrit.client.GerritUiExtensionPoint;
+import com.google.gerrit.client.Resources;
 import com.google.gerrit.plugin.client.Plugin;
 import com.google.gerrit.plugin.client.PluginEntryPoint;
+import com.google.gwt.core.client.GWT;
 
 public class CookBookPlugin extends PluginEntryPoint {
+  public static final Resources RESOURCES = GWT.create(Resources.class);
+
   @Override
   public void onPluginLoad() {
     Plugin.get().screen("", new IndexScreen.Factory());
@@ -27,5 +31,7 @@ public class CookBookPlugin extends PluginEntryPoint {
     Plugin.get().panel(
         GerritUiExtensionPoint.CHANGE_SCREEN_BELOW_CHANGE_INFO_BLOCK,
         new CookBookChangeScreenExtension.Factory());
+    Plugin.get().panel(GerritUiExtensionPoint.CHANGE_SCREEN_HEADER,
+        new ChangeScreenStatusExtension.Factory());
   }
 }
