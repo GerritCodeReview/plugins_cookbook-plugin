@@ -1,4 +1,4 @@
-// Copyright (C) 2014 The Android Open Source Project
+// Copyright (C) 2015 The Android Open Source Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,15 +14,19 @@
 
 package com.googlesource.gerrit.plugins.cookbook;
 
-import static org.junit.Assert.assertTrue;
+import static com.google.common.truth.Truth.assertThat;
+
+import com.google.gerrit.acceptance.NoHttpd;
+import com.google.gerrit.acceptance.PluginDaemonTest;
 
 import org.junit.Test;
 
-public class CookbookTest {
+@NoHttpd
+public class CookbookIT extends PluginDaemonTest {
+
   @Test
-  public void cookbookTest() {
-    // Dummy test, only used to make sure the cookbook plugin gets compiled
-    // when running `buck test`, thus highlighting any compilation errors.
-    assertTrue(true);
+  public void printTest() throws Exception {
+    assertThat(sshSession.exec("cookbook print")).isEqualTo("Hello world!\n");
+    assertThat(sshSession.hasError()).isFalse();
   }
 }

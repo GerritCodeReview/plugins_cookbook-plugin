@@ -19,12 +19,12 @@ gerrit_plugin(
 
 java_test(
   name = 'cookbook_tests',
-  srcs = glob(['src/test/java/**/*.java']),
+  srcs = glob(['src/test/java/**/*IT.java']),
   labels = ['cookbook-plugin'],
   source_under_test = [':cookbook-plugin__plugin'],
-  deps = [
+  deps = GERRIT_PLUGIN_API + [
     ':cookbook-plugin__plugin',
-    '//lib:junit',
+    '//lib:truth',
   ],
 )
 
