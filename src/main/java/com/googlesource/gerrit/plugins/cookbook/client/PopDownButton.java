@@ -59,21 +59,13 @@ public class PopDownButton extends Button {
   }
 
   private void show() {
-    // Find the headerLine widget of the change screen. It is needed to display
-    // the popup relative to it.
-    Widget headerLine = getParent();
-    while (headerLine != null
-        && headerLine.getElement().getClassName().endsWith("headerLine")) {
-      headerLine = headerLine.getParent();
-    }
-
-    if (popup != null || headerLine == null) {
+    if (popup != null) {
       getElement().getStyle().clearFontWeight();
       popup.hide();
       return;
     }
 
-    final Widget relativeTo = headerLine;
+    final Widget relativeTo = getParent();
     final PluginSafePopupPanel p = new PluginSafePopupPanel(true) {
       @Override
       public void setPopupPosition(int left, int top) {
