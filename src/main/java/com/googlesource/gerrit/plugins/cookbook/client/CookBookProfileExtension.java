@@ -14,6 +14,8 @@
 
 package com.googlesource.gerrit.plugins.cookbook.client;
 
+import com.google.gerrit.client.GerritUiExtensionPoint;
+import com.google.gerrit.client.info.AccountInfo;
 import com.google.gerrit.plugin.client.extension.Panel;
 import com.google.gwt.user.client.ui.Grid;
 import com.google.gwt.user.client.ui.HTMLTable.CellFormatter;
@@ -26,12 +28,14 @@ public class CookBookProfileExtension extends VerticalPanel {
   static class Factory implements Panel.EntryPoint {
     @Override
     public void onLoad(Panel panel) {
-      panel.setWidget(new CookBookProfileExtension());
+      AccountInfo accountInfo =
+          panel.getObject(GerritUiExtensionPoint.Key.ACCOUNT_INFO).cast();
+      panel.setWidget(new CookBookProfileExtension(accountInfo));
     }
   }
 
-  CookBookProfileExtension() {
-    Grid g = new Grid(2, 2);
+  CookBookProfileExtension(AccountInfo accountInfo) {
+    Grid g = new Grid(3, 2);
     g.addStyleName("infoBlock");
     g.addStyleName("accountInfoBlock");
     CellFormatter fmt = g.getCellFormatter();
@@ -45,11 +49,17 @@ public class CookBookProfileExtension extends VerticalPanel {
 
     g.setText(1, 0, "Department");
     fmt.addStyleName(1, 0, "header");
-    g.setText(1, 1, "Cookies");
+    g.setText(1, 1, "Cookies " + accountInfo.email());
+
+    g.setText(2, 0, "CookBook Email");
+    fmt.addStyleName(2, 0, "header");
+    g.setText(2, 1, accountInfo.username() != null
+        ? accountInfo.username() + "@cookbook.com"
+        : "N/A");
     add(g);
 
     fmt.addStyleName(0, 0, "topmost");
     fmt.addStyleName(0, 1, "topmost");
-    fmt.addStyleName(1, 0, "bottomheader");
+    fmt.addStyleName(2, 0, "bottomheader");
   }
 }
