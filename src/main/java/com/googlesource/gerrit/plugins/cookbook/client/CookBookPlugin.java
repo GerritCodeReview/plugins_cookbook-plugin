@@ -18,6 +18,7 @@ import com.google.gerrit.client.GerritUiExtensionPoint;
 import com.google.gerrit.client.Resources;
 import com.google.gerrit.plugin.client.Plugin;
 import com.google.gerrit.plugin.client.PluginEntryPoint;
+import com.google.gerrit.plugin.client.extension.Panel;
 import com.google.gwt.core.client.GWT;
 
 public class CookBookPlugin extends PluginEntryPoint {
@@ -38,5 +39,13 @@ public class CookBookPlugin extends PluginEntryPoint {
     Plugin.get().panel(
         GerritUiExtensionPoint.CHANGE_SCREEN_HEADER_RIGHT_OF_POP_DOWNS,
         new BuildsDropDownPanel.Factory());
+    Plugin.get().panel(
+        GerritUiExtensionPoint.CHANGE_SCREEN_HEADER_RIGHT_OF_BUTTONS,
+        new Panel.EntryPoint() {
+          @Override
+          public void onLoad(Panel panel) {
+            panel.setWidget(new HighlightButton("Library-Compliance+1"));
+          }
+        });
   }
 }
