@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "333689c8_c931b119",
+        "filename": "src/test/java/com/googlesource/gerrit/plugins/cookbook/CookbookIT.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-07-09T13:07:59Z",
+      "side": 1,
+      "message": "License header missing (with one blank line between end of header and package line).",
+      "revId": "603564f57bddd7000ffd8f82f17f64f5cb4f9ea2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
