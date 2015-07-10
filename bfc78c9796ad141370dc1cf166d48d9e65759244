@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b8f6d649_7d609788",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/PopDownButton.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1018662
+      },
+      "writtenOn": "2015-07-10T14:25:54Z",
+      "side": 1,
+      "message": "Can this class be moved to gerrit core, maybe in gerrit.plugin.client.extension? It would be nice for other plugins who may want to reuse this button.",
+      "revId": "bfc78c9796ad141370dc1cf166d48d9e65759244",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
