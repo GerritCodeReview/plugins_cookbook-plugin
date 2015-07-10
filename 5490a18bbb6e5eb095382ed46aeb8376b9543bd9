@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "98059200_1c6f5577",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1018662
+      },
+      "writtenOn": "2015-07-10T13:58:27Z",
+      "side": 1,
+      "message": "how to get? pass? access? AccountInfo",
+      "range": {
+        "startLine": 7,
+        "startChar": 15,
+        "endLine": 7,
+        "endChar": 22
+      },
+      "revId": "5490a18bbb6e5eb095382ed46aeb8376b9543bd9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b8f6d649_fd3267aa",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1018662
+      },
+      "writtenOn": "2015-07-10T13:58:27Z",
+      "side": 1,
+      "message": "JavaScriptObjects",
+      "range": {
+        "startLine": 9,
+        "startChar": 36,
+        "endLine": 9,
+        "endChar": 54
+      },
+      "revId": "5490a18bbb6e5eb095382ed46aeb8376b9543bd9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "98059200_fc73895d",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/CookBookProfileExtension.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1018662
+      },
+      "writtenOn": "2015-07-10T13:58:27Z",
+      "side": 1,
+      "message": "wrap this line",
+      "range": {
+        "startLine": 31,
+        "startChar": 6,
+        "endLine": 31,
+        "endChar": 96
+      },
+      "revId": "5490a18bbb6e5eb095382ed46aeb8376b9543bd9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
