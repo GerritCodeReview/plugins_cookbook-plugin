@@ -15,6 +15,7 @@
 package com.googlesource.gerrit.plugins.cookbook.client;
 
 import com.google.gerrit.client.GerritUiExtensionPoint;
+import com.google.gerrit.client.info.ChangeInfo;
 import com.google.gerrit.plugin.client.extension.Panel;
 import com.google.gwt.user.client.ui.Grid;
 import com.google.gwt.user.client.ui.VerticalPanel;
@@ -34,15 +35,16 @@ public class CookBookChangeScreenExtension extends VerticalPanel {
   }
 
   CookBookChangeScreenExtension(Panel panel) {
+    ChangeInfo change =
+        panel.getObject(GerritUiExtensionPoint.Key.CHANGE_INFO).cast();
+
     Grid g = new Grid(1, 2);
     g.addStyleName("infoBlock");
     CellFormatter fmt = g.getCellFormatter();
 
     g.setText(0, 0, "Numeric Change ID");
     fmt.addStyleName(0, 0, "header");
-    g.setWidget(0, 1,
-        new CopyableLabel(Integer.toString(panel.getInt(
-            GerritUiExtensionPoint.Key.CHANGE_ID, -1))));
+    g.setWidget(0, 1, new CopyableLabel(Integer.toString(change._number())));
     add(g);
 
     fmt.addStyleName(0, 0, "topmost");
