@@ -16,6 +16,24 @@
       "revId": "bfc78c9796ad141370dc1cf166d48d9e65759244",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "18afe290_182f05ca",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/PopDownButton.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-07-14T15:04:30Z",
+      "side": 1,
+      "message": "Yes, it might make sense to move this into gerrit-plugin-gwtui. I\u0027ll consider this when/if this series gets merged.",
+      "parentUuid": "b8f6d649_7d609788",
+      "revId": "bfc78c9796ad141370dc1cf166d48d9e65759244",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
