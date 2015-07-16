@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "784c5e14_1b6edbf6",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/Preferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-07-16T13:49:37Z",
+      "side": 1,
+      "message": "Note: This class is a partial copy of com.google.gerrit.client.account.Preferences. Instead of copying this code com.google.gerrit.client.account.Preferences should be moved into gerrit-gwtui-common to make it accessible by plugins.",
+      "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
