@@ -34,6 +34,24 @@
       "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b84256dc_3d1aaf9c",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/Preferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2015-07-16T19:04:30Z",
+      "side": 1,
+      "message": "This sounds all very cool. I\u0027m trying to verify this Gerrit core series with this cookbook-plugin series. It\u0027s failing with JS error, when I\u0027m trying to open user Setting dialog, on both Chrome 44.0.2403.89 and Firefox 39:\n\n  (TypeError) : Cannot read property \u0027Gerrit\u0027 of undefinedClass$S151: \n  (TypeError) : Cannot read property \u0027Gerrit\u0027 of undefined\n\tat Unknown.screens(gerrit_ui-0.js)\n\tat Unknown.plugins_1(gerrit_ui-0.js)\n\tat Unknown.SettingsScreen(gerrit_ui-0.js)\n\tat Unknown.MyProfileScreen(gerrit_ui-0.js)\n\tat Unknown.select_1(gerrit_ui-3.js)\n\tat Unknown.onSuccess_3(gerrit_ui-3.js)\n\tat Unknown.executeOnSuccess0(gerrit_ui-0.js)\n\tat Unknown.execute_28(gerrit_ui-0.js)\n\tat Unknown.$executeScheduled(gerrit_ui-0.js)\n\tat Unknown.runScheduledTasks(gerrit_ui-0.js)\n\tat Unknown.flushPostEventPumpCommands(gerrit_ui-0.js)\n\tat Unknown.execute_30(gerrit_ui-0.js)\n\tat Unknown.execute_29(gerrit_ui-0.js)\n\tat Unknown.apply_8(gerrit_ui-0.js)\n\tat Unknown.entry0(gerrit_ui-0.js)\n\tat Unknown.anonymous(gerrit_ui-0.js)\n\tat Unknown.callback(gerrit_ui-0.js)",
+      "parentUuid": "784c5e14_db387300",
+      "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
