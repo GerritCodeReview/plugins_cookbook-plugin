@@ -31,8 +31,12 @@ public class CookBookPlugin extends PluginEntryPoint {
   @Override
   public void onPluginLoad() {
     Plugin.get().screen("", new IndexScreen.Factory());
+    Plugin.get().screenRegex("c/(.*)", new CookBookChangeScreen.Factory());
     Plugin.get().settingsScreen("preferences", "Food Preferences",
         new FoodPreferencesScreen.Factory());
+    Plugin.get().panel(
+        GerritUiExtensionPoint.PREFERENCES_SCREEN_BOTTOM,
+        new ChangeScreenPreferencePanel.Factory());
     Plugin.get().panel(GerritUiExtensionPoint.PROFILE_SCREEN_BOTTOM,
         new CookBookProfileExtension.Factory());
     Plugin.get().panel(
