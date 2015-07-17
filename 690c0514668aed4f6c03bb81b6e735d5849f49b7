@@ -70,6 +70,24 @@
       "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "784c5e14_dba153b6",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/Preferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2015-07-17T07:34:29Z",
+      "side": 1,
+      "message": "| could you start verifying the changes bottom up so that we see from which change on it is failing?\n\nGiven how big these series are, it wasn\u0027t clear to me what core change corresponds to what plugin change. Can they be linked somehow?",
+      "parentUuid": "784c5e14_7b4a7f79",
+      "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
