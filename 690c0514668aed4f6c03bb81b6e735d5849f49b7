@@ -124,6 +124,24 @@
       "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b88a569d_1dfa13b3",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/Preferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-07-20T12:25:20Z",
+      "side": 1,
+      "message": "\u003e My problem with the approach you described: I cloneed \n \u003e gerrit without submodules and thus the pointer to the \n \u003e corresponding cookbook-plugin version is lost.\n\nHmm, do you have a better suggestion how I can link the changes then?\n\n \u003e But anyway, if i am taking the last commit from this \n \u003e series in core and the last cookbook-plugin change from \n \u003e the series in cookbook-plugin they should work\n\nYes, the latest Gerrit core change [1] and the lastest plugin change [2] should work together. And they work for me.\n\n \u003e But it did\u0027t. Why?\n\nThat\u0027s not easy to say from that stacktrace when we don\u0027t know from which change on it starts failing. This is why I suggested to start verifying from the bottom of the series. This would help to identify the change that contains the bad code and then it\u0027s hopefully easier to understand how to fix it.\n\nAnyway, can you send me the commit IDs of Gerrit core and the cookbook plugin on which you tested? Then I can verify that they match and maybe even reproduce the problem.\n\n[1] https://gerrit-review.googlesource.com/69599\n[2] https://gerrit-review.googlesource.com/69640",
+      "parentUuid": "784c5e14_7b0d9f3d",
+      "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
