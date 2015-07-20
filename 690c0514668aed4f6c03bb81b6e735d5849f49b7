@@ -88,6 +88,24 @@
       "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "784c5e14_bb0a4728",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/Preferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-07-20T11:56:48Z",
+      "side": 1,
+      "message": "Yes, this series is quite big and it\u0027s easy to loose overview :(\n\n \u003e Can they be linked somehow?\n\nMost of them were already linked. The Gerrit core changes include the corresponding update of the cookbook plugin. Means you can simply checkout the Gerrit core change and then update the submodules. Then you should have the version of the cookbook plugin that matches the Gerrit core state that you have checked out. In addition the Gerrit core change and the change in the cookbook plugin have the same topic in Gerrit then.\n\nThis link was missing for this last cookbook plugin change, but now it\u0027s done. For this I had to reorder some of the Gerrit core changes. But now all cookback plugin changes should be linked.",
+      "parentUuid": "784c5e14_dba153b6",
+      "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
