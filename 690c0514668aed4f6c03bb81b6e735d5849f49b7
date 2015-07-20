@@ -106,6 +106,24 @@
       "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "784c5e14_7b0d9f3d",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/Preferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2015-07-20T12:13:28Z",
+      "side": 1,
+      "message": "My problem with the approach you described: I cloneed gerrit without submodules and thus the pointer to the corresponding cookbook-plugin version is lost. But anyway, if i am taking the last commit from this series in core and the last cookbook-plugin change from the series in cookbook-plugin they should work, right? But it did\u0027t. Why?",
+      "parentUuid": "784c5e14_bb0a4728",
+      "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
