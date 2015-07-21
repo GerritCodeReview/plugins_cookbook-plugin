@@ -142,6 +142,24 @@
       "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "edfb2e32_dec3257c",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/Preferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2015-07-21T06:26:59Z",
+      "side": 1,
+      "message": "Thanks. Apparently it helped (or something was wrong on my side). Ths works now. Two probems:\n\n* 1. When trying to change the type of the screen from DEFAULT to cookbook change screen: http://imgur.com/fPO5LIr I\u0027m unhappy about the fact, that \"save changes\" button stays disabled, and the changes to the drop down immedaitely send to the server, So that i was iritated if the changes gone or was applied. Can we improve that?\n* 2, After changing to cookbook change screen and trying to open a change: I don\u0027t see anything, only that: http://imgur.com/ahocMn1 ; have you forgotten to upload cookbook change screen implementation? ;-)",
+      "parentUuid": "b88a569d_1dfa13b3",
+      "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
