@@ -160,6 +160,24 @@
       "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "edfb2e32_7edad162",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/Preferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-07-21T07:34:27Z",
+      "side": 1,
+      "message": "\u003e Thanks. Apparently it helped (or something was wrong on \n \u003e my side). Ths works now.\n\nCool. Thanks for trying again :-)\n\n \u003e 1. When trying to change the type of the screen from DEFAULT to   \n \u003e cookbook change screen: http://imgur.com/fPO5LIr I\u0027m unhappy \n \u003e about the fact, that \"save changes\" button stays disabled, and \n \u003e the changes to the drop down immedaitely send to the server, So \n \u003e that i was iritated if the changes gone or was applied. Can we \n \u003e improve that?\n\nI know that this is not optimal yet. At the moment the plugin can only add additional panels to the Gerrit screens, but it cannot interact with elements on that screen. E.g. it cannot enable the \u0027Save Changes\u0027 button and it also cannot react when the user clicks on this button. Would be good to find a solution to make this work, but we are not there yet.\n\nWhat we could do right now is:\n\n1. Add another \u0027Save\u0027 button below the change screen setting that saves this one setting.\n\n2. Do not put this preference on the existing MyPreferencesScreen, but add a new user settings screen that offers this one setting with a \u0027Save\u0027 button.\n\n3. Leave it as it is until we find a better solution.\n\n \u003e 2, After changing to cookbook change screen and trying to open a \n \u003e change: I don\u0027t see anything, only that: http://imgur.com/ahocMn1 \n \u003e ; have you forgotten to upload cookbook change screen \n \u003e implementation? ;-)\n\n:D This IS the implementation of the cookbook change screen. The real alternative change screen should rather be implemented in another plugin ;-)",
+      "parentUuid": "edfb2e32_dec3257c",
+      "revId": "690c0514668aed4f6c03bb81b6e735d5849f49b7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
