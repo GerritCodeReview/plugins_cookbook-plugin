@@ -22,6 +22,30 @@
       "revId": "2ff713f3d3f0bbabf00b73c74705cd3741f61a70",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cdcf4a9d_b537e009",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloForm.gwt.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-07-27T09:13:35Z",
+      "side": 0,
+      "message": "I think it is related, because with the change in Gerrit core [1] GerritGwtUICommon which we inherit above in line 21 includes Clippy and GlobalKey now.\n\n[1] https://gerrit-review.googlesource.com/#/c/69480/16/gerrit-gwtui-common/src/main/java/com/google/gerrit/GerritGwtUICommon.gwt.xml",
+      "parentUuid": "4de99af9_d15b845b",
+      "range": {
+        "startLine": 25,
+        "startChar": 2,
+        "endLine": 26,
+        "endChar": 60
+      },
+      "revId": "2ff713f3d3f0bbabf00b73c74705cd3741f61a70",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
