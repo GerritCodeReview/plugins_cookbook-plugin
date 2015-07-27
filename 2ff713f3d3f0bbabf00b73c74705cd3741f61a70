@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4de99af9_d15b845b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloForm.gwt.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-07-27T02:50:18Z",
+      "side": 0,
+      "message": "Is this removal related to the change?",
+      "range": {
+        "startLine": 25,
+        "startChar": 2,
+        "endLine": 26,
+        "endChar": 60
+      },
+      "revId": "2ff713f3d3f0bbabf00b73c74705cd3741f61a70",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
