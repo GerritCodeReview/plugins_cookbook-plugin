@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "0af5c83c_df0afb28",
+        "filename": "BUCK",
+        "patchSetId": 6
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2015-07-30T15:44:00Z",
+      "side": 1,
+      "message": "Now that we have real unit test can we remove David\u0027s hack with dummy class as part of this change?\n\n  srcs \u003d glob([\u0027src/test/java/**/*IT.java\u0027]),",
+      "range": {
+        "startLine": 22,
+        "startChar": 33,
+        "endLine": 22,
+        "endChar": 34
+      },
+      "revId": "7735f9c273f95fb5851c5fa2bd4d34326f7b52bf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0af5c83c_1f098336",
         "filename": "pom.xml",
         "patchSetId": 6
@@ -37,6 +60,30 @@
       "side": 1,
       "message": "If I remove it, only CookbookIT gets executed (missing CookbookTest). We need this mvn plugin configured herein to enable other test classes beyond the default *Test one(s). Now, once I configure mvn this way, we then need to be fully explicit and re-include even that default.",
       "parentUuid": "0af5c83c_1f098336",
+      "range": {
+        "startLine": 40,
+        "startChar": 12,
+        "endLine": 40,
+        "endChar": 44
+      },
+      "revId": "7735f9c273f95fb5851c5fa2bd4d34326f7b52bf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0af5c83c_bf173753",
+        "filename": "pom.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2015-07-30T15:44:00Z",
+      "side": 1,
+      "message": "Yes, that\u0027s what I would expect to happen after this change is merged: David\u0027s hack should be removed: \n\n  @Test  \n  public void cookbookTest() {\n    // Dummy test, only used to make sure the cookbook plugin gets compiled\n    // when running `buck test`, thus highlighting any compilation errors.\n    assertTrue(true);\n  }\n\nThe reasons for it was that cookbook-plugin is core plugin but is not get built by default. To trigger the build this dummy test was created. Now it can be removed again.",
+      "parentUuid": "0d3082cc_27d43ab6",
       "range": {
         "startLine": 40,
         "startChar": 12,
