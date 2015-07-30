@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0af5c83c_1f098336",
+        "filename": "pom.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2015-07-30T15:15:05Z",
+      "side": 1,
+      "message": "Unused?",
+      "range": {
+        "startLine": 40,
+        "startChar": 12,
+        "endLine": 40,
+        "endChar": 44
+      },
+      "revId": "7735f9c273f95fb5851c5fa2bd4d34326f7b52bf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
