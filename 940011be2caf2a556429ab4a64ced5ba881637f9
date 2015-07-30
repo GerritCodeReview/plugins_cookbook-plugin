@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "0d3082cc_6768f294",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-07-30T15:02:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "aa059cff_1c3e35e6",
+      "range": {
+        "startLine": 11,
+        "startChar": 32,
+        "endLine": 11,
+        "endChar": 52
+      },
+      "revId": "940011be2caf2a556429ab4a64ced5ba881637f9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0af5c83c_bf73b7da",
         "filename": "BUCK",
         "patchSetId": 5
@@ -36,6 +60,30 @@
       "writtenOn": "2015-07-30T08:01:37Z",
       "side": 1,
       "message": "Truth already exports unit, so now you are specifying junit twice.",
+      "range": {
+        "startLine": 27,
+        "startChar": 4,
+        "endLine": 28,
+        "endChar": 18
+      },
+      "revId": "940011be2caf2a556429ab4a64ced5ba881637f9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0d3082cc_875326ec",
+        "filename": "BUCK",
+        "patchSetId": 5
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-07-30T15:02:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0af5c83c_bf73b7da",
       "range": {
         "startLine": 27,
         "startChar": 4,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "0d3082cc_a7582a09",
+        "filename": "lib/BUCK",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-07-30T15:02:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0af5c83c_ff693fea",
+      "range": {
+        "startLine": 5,
+        "startChar": 8,
+        "endLine": 5,
+        "endChar": 35
+      },
+      "revId": "940011be2caf2a556429ab4a64ced5ba881637f9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0af5c83c_df667b1a",
         "filename": "lib/BUCK",
         "patchSetId": 5
@@ -82,6 +154,30 @@
       "writtenOn": "2015-07-30T08:01:37Z",
       "side": 1,
       "message": "This was recently bumped on master to com.google.truth:truth:0.27. This version should be used here.",
+      "range": {
+        "startLine": 19,
+        "startChar": 8,
+        "endLine": 19,
+        "endChar": 35
+      },
+      "revId": "940011be2caf2a556429ab4a64ced5ba881637f9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0d3082cc_c74d1e46",
+        "filename": "lib/BUCK",
+        "patchSetId": 5
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-07-30T15:02:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0af5c83c_df667b1a",
       "range": {
         "startLine": 19,
         "startChar": 8,
@@ -111,6 +207,24 @@
     },
     {
       "key": {
+        "uuid": "0d3082cc_27451a19",
+        "filename": "src/test/java/com/googlesource/gerrit/plugins/cookbook/CookbookIT.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-07-30T15:02:25Z",
+      "side": 1,
+      "message": "Done; PDT should (does) respect it yes, as it does nothing special about it, just like its parent AbstractDaemonTest. GerritServer alone handles that annotation indeed.",
+      "parentUuid": "aa059cff_3c39f1fd",
+      "revId": "940011be2caf2a556429ab4a64ced5ba881637f9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0af5c83c_9f70f3ce",
         "filename": "src/test/java/com/googlesource/gerrit/plugins/cookbook/CookbookIT.java",
         "patchSetId": 5
@@ -122,6 +236,24 @@
       "writtenOn": "2015-07-30T08:01:37Z",
       "side": 1,
       "message": "Can you add REST unit test to demonstrate that REST is working as expected in addition to SSH? And may be some Plugin API tests(s)?",
+      "revId": "940011be2caf2a556429ab4a64ced5ba881637f9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0d3082cc_47420e12",
+        "filename": "src/test/java/com/googlesource/gerrit/plugins/cookbook/CookbookIT.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-07-30T15:02:25Z",
+      "side": 1,
+      "message": "Would leave such relevant ideas to other future changes, if you don\u0027t mind of course. That new PluginDaemonTest framework will keep being challenged and likely improved I hope out of more contribs.",
+      "parentUuid": "0af5c83c_9f70f3ce",
       "revId": "940011be2caf2a556429ab4a64ced5ba881637f9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
