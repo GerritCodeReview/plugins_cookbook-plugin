@@ -117,8 +117,8 @@ limitations under the License.
 
   <repositories>
     <repository>
-      <id>gerrit-api-repository</id>
-      <url>https://gerrit-api.commondatastorage.googleapis.com/release/</url>
+      <id>maven.org</id>
+      <url>http://repo1.maven.org/maven2</url>
     </repository>
   </repositories>
 </project>
