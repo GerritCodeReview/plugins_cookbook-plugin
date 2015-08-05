@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "8af6189c_4bf0c589",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/ChangeScreenPreferencePanel.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-08-05T10:05:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8ae458f8_db73d3d9",
+      "range": {
+        "startLine": 33,
+        "startChar": 2,
+        "endLine": 33,
+        "endChar": 22
+      },
+      "revId": "c32cf6847948da05418f8b4a2841ee40afcc0182",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6ab564d9_7a3e39e7",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/ChangeScreenPreferencePanel.java",
         "patchSetId": 5
@@ -36,6 +60,24 @@
       "writtenOn": "2015-08-04T13:56:18Z",
       "side": 1,
       "message": "wrap this line?",
+      "revId": "c32cf6847948da05418f8b4a2841ee40afcc0182",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4ab8a0d4_b9e1bfbb",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/client/ChangeScreenPreferencePanel.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-08-05T10:05:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6ab564d9_7a3e39e7",
       "revId": "c32cf6847948da05418f8b4a2841ee40afcc0182",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
