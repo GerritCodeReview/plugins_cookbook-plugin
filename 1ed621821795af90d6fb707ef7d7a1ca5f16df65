@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "676bdf6a_8a35ab01",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-08-11T13:47:28Z",
+      "side": 1,
+      "message": "Fails for me with\n\n  java.nio.file.NoSuchFileException: /Users/XXX/git/gerrit/plugins/cookbook-plugin/buck-out/gen/cookbook-plugin.jar\n\nif I didn\u0027t run the buck build before.",
+      "revId": "1ed621821795af90d6fb707ef7d7a1ca5f16df65",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
