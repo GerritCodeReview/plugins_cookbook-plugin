@@ -16,6 +16,24 @@
       "revId": "1ed621821795af90d6fb707ef7d7a1ca5f16df65",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "647cbd57_c2936261",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-08-25T19:56:30Z",
+      "side": 1,
+      "message": "Will check this out again as we reconsider our mvn support for this change stack.",
+      "parentUuid": "676bdf6a_8a35ab01",
+      "revId": "1ed621821795af90d6fb707ef7d7a1ca5f16df65",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
