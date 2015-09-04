@@ -20,6 +20,7 @@ import static com.google.gerrit.server.project.ProjectResource.PROJECT_KIND;
 import com.google.common.collect.ImmutableList;
 import com.google.gerrit.extensions.annotations.Exports;
 import com.google.gerrit.extensions.client.InheritableBoolean;
+import com.google.gerrit.extensions.config.TrackingValuesParser;
 import com.google.gerrit.extensions.events.NewProjectCreatedListener;
 import com.google.gerrit.extensions.events.UsageDataPublishedListener;
 import com.google.gerrit.extensions.registration.DynamicSet;
@@ -71,6 +72,9 @@ public class Module extends AbstractModule {
         .to(CommitValidator.class);
     DynamicSet.bind(binder(), NewProjectCreatedListener.class)
         .to(ProjectCreatedListener.class);
+    DynamicSet.bind(binder(), TrackingValuesParser.class)
+        .to(CookbookTrackingValues.class);
+
     configurePluginParameters();
   }
 
