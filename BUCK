@@ -22,9 +22,8 @@ java_test(
   srcs = glob(['src/test/java/**/*IT.java']),
   labels = ['cookbook-plugin'],
   source_under_test = [':cookbook-plugin__plugin'],
-  deps = GERRIT_PLUGIN_API + [
+  deps = GERRIT_PLUGIN_API + GERRIT_TESTS + [
     ':cookbook-plugin__plugin',
-    '//lib:truth',
   ],
 )
 
