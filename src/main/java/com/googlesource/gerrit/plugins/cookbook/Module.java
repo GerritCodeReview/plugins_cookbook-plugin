@@ -34,6 +34,7 @@ import com.google.gerrit.server.git.validators.CommitValidationListener;
 import com.google.gerrit.server.git.validators.MergeValidationListener;
 import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
+import com.google.gerrit.server.query.change.ChangeQueryBuilder.DynamicBuilder;
 import com.google.gerrit.server.validators.HashtagValidationListener;
 import com.google.inject.AbstractModule;
 
@@ -74,6 +75,9 @@ public class Module extends AbstractModule {
     DynamicSet.bind(binder(), CommitValidationListener.class)
         .to(CommitValidator.class);
     configurePluginParameters();
+
+    DynamicSet.bind(binder(), DynamicBuilder.class)
+          .to(SampleOperator.class);
   }
 
   private void configurePluginParameters() {
