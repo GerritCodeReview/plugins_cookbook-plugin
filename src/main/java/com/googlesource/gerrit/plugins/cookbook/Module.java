@@ -38,6 +38,7 @@ import com.google.gerrit.extensions.webui.WebUiPlugin;
 import com.google.gerrit.server.config.ProjectConfigEntry;
 import com.google.gerrit.server.git.validators.CommitValidationListener;
 import com.google.gerrit.server.git.validators.MergeValidationListener;
+import com.google.gerrit.server.git.validators.RefOperationValidationListener;
 import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
 import com.google.gerrit.server.query.change.ChangeQueryBuilder.ChangeOperatorFactory;
@@ -78,6 +79,8 @@ public class Module extends AbstractModule {
         .to(CommitValidator.class);
     DynamicSet.bind(binder(), NewProjectCreatedListener.class)
         .to(ProjectCreatedListener.class);
+    DynamicSet.bind(binder(), RefOperationValidationListener.class)
+        .to(RefOperationValidationExample.class);
     configurePluginParameters();
     DynamicSet.bind(binder(), ExternalIncludedIn.class)
         .to(DeployedOnIncludedInExtension.class);
