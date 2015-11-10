@@ -20,6 +20,7 @@ import static com.google.gerrit.server.project.ProjectResource.PROJECT_KIND;
 import com.google.common.collect.ImmutableList;
 import com.google.gerrit.extensions.annotations.Exports;
 import com.google.gerrit.extensions.client.InheritableBoolean;
+import com.google.gerrit.extensions.events.LifecycleListener;
 import com.google.gerrit.extensions.events.NewProjectCreatedListener;
 import com.google.gerrit.extensions.events.UsageDataPublishedListener;
 import com.google.gerrit.extensions.registration.DynamicSet;
@@ -52,7 +53,7 @@ public class Module extends AbstractModule {
     DynamicSet.bind(binder(), ServerPluginProvider.class).to(
         HelloSshPluginProvider.class);
     DynamicSet.bind(binder(), UsageDataPublishedListener.class).to(UsageDataLogger.class);
-
+    DynamicSet.bind(binder(), LifecycleListener.class).to(ConsoleMetricReporter.class);
     install(new RestApiModule() {
       @Override
       protected void configure() {
