@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "16feeae5_ff945bb7",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/Module.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1021592
+      },
+      "writtenOn": "2015-11-10T23:00:58Z",
+      "side": 1,
+      "message": "This should not be needed since I\u0027m using @Listen on the LifecycleListener class. But it is.",
+      "range": {
+        "startLine": 56,
+        "startChar": 4,
+        "endLine": 56,
+        "endChar": 87
+      },
+      "revId": "29b027cb8d41e7d2248efe451b5f8e7bfc982f66",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
