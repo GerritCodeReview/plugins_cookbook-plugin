@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3b203791_f5df1827",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1021592
+      },
+      "writtenOn": "2015-11-11T19:17:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1b1ff356_34a8f09a",
+      "range": {
+        "startLine": 7,
+        "startChar": 19,
+        "endLine": 7,
+        "endChar": 21
+      },
+      "revId": "29b027cb8d41e7d2248efe451b5f8e7bfc982f66",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3b203791_b5bbe0e5",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/ConsoleMetricReporter.java",
         "patchSetId": 1
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "3b203791_d5dc1c35",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/ConsoleMetricReporter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1021592
+      },
+      "writtenOn": "2015-11-11T19:17:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3b203791_b5bbe0e5",
+      "range": {
+        "startLine": 1,
+        "startChar": 17,
+        "endLine": 1,
+        "endChar": 21
+      },
+      "revId": "29b027cb8d41e7d2248efe451b5f8e7bfc982f66",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3b203791_95b8e4e9",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/ConsoleMetricReporter.java",
         "patchSetId": 1
@@ -59,6 +107,30 @@
       "writtenOn": "2015-11-11T18:54:29Z",
       "side": 1,
       "message": "of",
+      "range": {
+        "startLine": 27,
+        "startChar": 17,
+        "endLine": 27,
+        "endChar": 19
+      },
+      "revId": "29b027cb8d41e7d2248efe451b5f8e7bfc982f66",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1b1ff356_34f6b0bc",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/ConsoleMetricReporter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1021592
+      },
+      "writtenOn": "2015-11-11T19:17:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3b203791_95b8e4e9",
       "range": {
         "startLine": 27,
         "startChar": 17,
