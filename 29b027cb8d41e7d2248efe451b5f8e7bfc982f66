@@ -115,6 +115,30 @@
       "revId": "29b027cb8d41e7d2248efe451b5f8e7bfc982f66",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3b203791_15fbb4a2",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/Module.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1021592
+      },
+      "writtenOn": "2015-11-11T19:15:20Z",
+      "side": 1,
+      "message": "I cannot figure it out. It works in other plugins. Not sure if it has to do with all different kinds of modules and bindings this plug-in supplies.",
+      "parentUuid": "3b203791_75c7886c",
+      "range": {
+        "startLine": 56,
+        "startChar": 4,
+        "endLine": 56,
+        "endChar": 87
+      },
+      "revId": "29b027cb8d41e7d2248efe451b5f8e7bfc982f66",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
