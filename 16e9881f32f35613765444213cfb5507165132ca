@@ -22,6 +22,30 @@
       "revId": "16e9881f32f35613765444213cfb5507165132ca",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bb5c2765_399e6f79",
+        "filename": "lib/dropwizard/BUCK",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2015-11-20T17:27:39Z",
+      "side": 1,
+      "message": "Works in tree mode because of gerrit/lib/dropwizard/BUCK, which is a dep for gerrit-sshd and gerrit-server today. I don\u0027t know why it didn\u0027t become part of the plugin jar at the time of change [1] -which introduced that dep in cookbook. Most likely because standalone mode was forgotten about back then. If you confirm that the dep should be added to plugin-jar instead, how would you see doing that? -Asking since newish to this particular aspect myself; thx.\n\n[1] https://gerrit-review.googlesource.com/#/c/72299",
+      "parentUuid": "3bc1171a_cd082970",
+      "range": {
+        "startLine": 4,
+        "startChar": 10,
+        "endLine": 4,
+        "endChar": 25
+      },
+      "revId": "16e9881f32f35613765444213cfb5507165132ca",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
