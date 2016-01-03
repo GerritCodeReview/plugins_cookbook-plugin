@@ -16,16 +16,11 @@ package com.googlesource.gerrit.plugins.cookbook;
 
 import com.google.gerrit.reviewdb.client.Branch;
 import com.google.gerrit.reviewdb.client.PatchSet;
-import com.google.gerrit.reviewdb.client.PatchSetApproval;
-import com.google.gerrit.reviewdb.server.ReviewDb;
-import com.google.gerrit.server.ApprovalsUtil;
 import com.google.gerrit.server.IdentifiedUser;
 import com.google.gerrit.server.git.CodeReviewCommit;
 import com.google.gerrit.server.git.validators.MergeValidationException;
 import com.google.gerrit.server.git.validators.MergeValidationListener;
 import com.google.gerrit.server.project.ProjectState;
-import com.google.inject.Inject;
-import com.google.inject.Provider;
 import com.google.inject.Singleton;
 
 import org.eclipse.jgit.lib.Repository;
@@ -38,42 +33,18 @@ import org.eclipse.jgit.lib.Repository;
 @Singleton
 public class MergeUserValidator implements MergeValidationListener {
 
-  private final IdentifiedUser.GenericFactory identifiedUserFactory;
-  private final Provider<ReviewDb> reviewDb;
-  private final ApprovalsUtil approvalsUtil;
-
-
-  // Because there is 'No user on merge thread' we need to get the
-  // identified user from IdentifiedUser.GenericFactory, this is
-  // normally not needed and you can, in many cases, just use
-  // Provider<CurrentUser>, unfortunately not this one.
-  @Inject
-  MergeUserValidator(IdentifiedUser.GenericFactory identifiedUserFactory,
-      Provider<ReviewDb> reviewDb,
-      ApprovalsUtil approvalsUtil) {
-    this.identifiedUserFactory = identifiedUserFactory;
-    this.reviewDb = reviewDb;
-    this.approvalsUtil = approvalsUtil;
-  }
-
   /**
    * Reject all merges if the submitter is not an administrator
    */
   @Override
   public void onPreMerge(Repository repo, CodeReviewCommit commit,
-      ProjectState destProject, Branch.NameKey destBranch, PatchSet.Id patchSetId)
-      throws MergeValidationException {
-    PatchSetApproval psa =
-        approvalsUtil.getSubmitter(reviewDb.get(), commit.notes(), patchSetId);
-    if (psa == null) {
-      throw new MergeValidationException(
-          "Missing submitter record for " + patchSetId);
-    }
-    IdentifiedUser submitter =
-        identifiedUserFactory.create(psa.getAccountId());
-    if (!submitter.getCapabilities().canAdministrateServer()) {
-      throw new MergeValidationException("Submitter " + submitter.getNameEmail()
-          + " is not a site administrator");
+      ProjectState destProject, Branch.NameKey destBranch,
+      PatchSet.Id patchSetId, IdentifiedUser caller)
+          throws MergeValidationException {
+    if (!caller.getCapabilities().canAdministrateServer()) {
+      throw new MergeValidationException(String.format(
+          "Submitter %s is not a site administrator",
+          caller.getNameEmail()));
     }
   }
 }
