@@ -14,6 +14,9 @@
 
 package com.googlesource.gerrit.plugins.cookbook.client;
 
+import com.google.gerrit.client.GerritUiExtensionPoint;
+import com.google.gerrit.client.info.ChangeInfo;
+import com.google.gerrit.client.info.ChangeInfo.RevisionInfo;
 import com.google.gerrit.plugin.client.extension.Panel;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Grid;
@@ -30,39 +33,51 @@ public class BuildsDropDownPanel extends FlowPanel {
   static class Factory implements Panel.EntryPoint {
     @Override
     public void onLoad(Panel panel) {
-      panel.setWidget(new BuildsDropDownPanel());
+      panel.setWidget(new BuildsDropDownPanel(panel));
     }
   }
 
-  BuildsDropDownPanel() {
-    Grid g = new Grid(3, 4);
+  BuildsDropDownPanel(Panel panel) {
+    ChangeInfo change =
+        panel.getObject(GerritUiExtensionPoint.Key.CHANGE_INFO).cast();
+    RevisionInfo rev =
+        panel.getObject(GerritUiExtensionPoint.Key.REVISION_INFO).cast();
+    Grid g = new Grid(4, 4);
     g.addStyleName("infoBlock");
     CellFormatter fmt = g.getCellFormatter();
-
-    g.setText(0, 0, "State");
+    g.setText(0, 0, "Change");
     fmt.addStyleName(0, 0, "header");
-    g.setText(0, 1, "PS");
+    g.setText(0, 1, String.valueOf(change._number()));
     fmt.addStyleName(0, 1, "header");
-    g.setText(0, 2, "Date");
+    g.setText(0, 2, "PatchSet");
     fmt.addStyleName(0, 2, "header");
-    g.setText(0, 3, "Log");
+    g.setText(0, 3, String.valueOf(rev._number()));
     fmt.addStyleName(0, 3, "header");
+
+    g.setText(1, 0, "State");
+    fmt.addStyleName(1, 0, "header");
+    g.setText(1, 1, "PS");
+    fmt.addStyleName(1, 1, "header");
+    g.setText(1, 2, "Date");
+    fmt.addStyleName(1, 2, "header");
+    g.setText(1, 3, "Log");
+    fmt.addStyleName(1, 3, "header");
 
     HorizontalPanel p = new HorizontalPanel();
     p.add(new Image(CookBookPlugin.RESOURCES.greenCheck()));
     p.add(new InlineLabel("OK"));
-    g.setWidget(1, 0, p);
-    g.setWidget(1, 1, new InlineLabel("2"));
-    g.setWidget(1, 2, new InlineLabel("2015-07-09 11:06:13"));
-    g.setWidget(1, 3, new InlineHyperlink("Build Log", "TODO"));
+    g.setWidget(2, 0, p);
+    g.setWidget(2, 1, new InlineLabel("2"));
+    g.setWidget(2, 2, new InlineLabel("2015-07-09 11:06:13"));
+    g.setWidget(2, 3, new InlineHyperlink("Build Log", "TODO"));
 
     p = new HorizontalPanel();
     p.add(new Image(CookBookPlugin.RESOURCES.redNot()));
     p.add(new InlineLabel("FAILED"));
-    g.setWidget(2, 0, p);
-    g.setWidget(2, 1, new InlineLabel("1"));
-    g.setWidget(2, 2, new InlineLabel("2015-07-09 09:17:28"));
-    g.setWidget(2, 3, new InlineHyperlink("Build Log", "TODO"));
+    g.setWidget(3, 0, p);
+    g.setWidget(3, 1, new InlineLabel("1"));
+    g.setWidget(3, 2, new InlineLabel("2015-07-09 09:17:28"));
+    g.setWidget(3, 3, new InlineHyperlink("Build Log", "TODO"));
 
     fmt.addStyleName(0, 0, "topmost");
     fmt.addStyleName(0, 1, "topmost");
