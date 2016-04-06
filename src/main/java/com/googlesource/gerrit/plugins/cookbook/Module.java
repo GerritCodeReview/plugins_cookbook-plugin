@@ -71,8 +71,6 @@ public class Module extends AbstractModule {
         .to(CommitValidator.class);
     DynamicSet.bind(binder(), NewProjectCreatedListener.class)
         .to(ProjectCreatedListener.class);
-    DynamicSet.bind(binder(), CommitValidationListener.class)
-        .to(CommitValidator.class);
     configurePluginParameters();
   }
 
