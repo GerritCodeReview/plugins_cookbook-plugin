@@ -24,6 +24,7 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.InlineHyperlink;
 
 public class CookBookPlugin extends PluginEntryPoint {
   public static final Resources RESOURCES = GWT.create(Resources.class);
@@ -60,6 +61,14 @@ public class CookBookPlugin extends PluginEntryPoint {
               }
             });
             panel.setWidget(b);
+          }
+        });
+    Plugin.get().panel(
+        GerritUiExtensionPoint.CHANGE_SCREEN_COMMIT_WEBLINK,
+        new Panel.EntryPoint() {
+          @Override
+          public void onLoad(Panel panel) {
+            panel.setWidget((new InlineHyperlink("(Builds)", "TODO")));
           }
         });
   }
