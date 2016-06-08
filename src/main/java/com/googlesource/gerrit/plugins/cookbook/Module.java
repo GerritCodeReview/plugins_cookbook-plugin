@@ -35,6 +35,8 @@ import com.google.gerrit.server.git.validators.MergeValidationListener;
 import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
 import com.google.gerrit.server.query.change.ChangeQueryBuilder.DynamicBuilder;
+import com.google.gerrit.server.query.change.ChangeQueryBuilder.ChangeOperatorFactory;
+import com.google.gerrit.server.validators.EmailIdValidationListener;
 import com.google.gerrit.server.validators.HashtagValidationListener;
 import com.google.inject.AbstractModule;
 
@@ -68,6 +70,8 @@ public class Module extends AbstractModule {
         .to(MergeUserValidator.class);
     DynamicSet.bind(binder(), HashtagValidationListener.class)
         .to(HashtagValidator.class);
+    DynamicSet.bind(binder(), EmailIdValidationListener.class)
+        .to(EmailPolicy.class);
     DynamicSet.bind(binder(), CommitValidationListener.class)
         .to(CommitValidator.class);
     DynamicSet.bind(binder(), NewProjectCreatedListener.class)
