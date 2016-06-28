@@ -15,17 +15,17 @@
 package com.googlesource.gerrit.plugins.cookbook;
 
 import com.google.gerrit.reviewdb.client.Change;
-import com.google.gerrit.server.query.OperatorPredicate;
 import com.google.gerrit.server.query.Predicate;
 import com.google.gerrit.server.query.QueryParseException;
 import com.google.gerrit.server.query.change.ChangeData;
 import com.google.gerrit.server.query.change.ChangeQueryBuilder;
+import com.google.gerrit.server.query.change.OperatorChangePredicate;
 import com.google.inject.Singleton;
 
 @Singleton
 public class SampleOperator
     implements ChangeQueryBuilder.ChangeOperatorFactory {
-  public static class MyPredicate extends OperatorPredicate<ChangeData> {
+  public static class MyPredicate extends OperatorChangePredicate {
     private final Change.Id id;
 
     MyPredicate(Change.Id id) {
