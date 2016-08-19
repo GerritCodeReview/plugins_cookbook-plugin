@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "68c1271d_49a0a18b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/RefOperationValidationExample.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-08-19T06:21:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "483d43bc_70a0d08b",
+      "range": {
+        "startLine": 1,
+        "startChar": 17,
+        "endLine": 1,
+        "endChar": 21
+      },
+      "revId": "3db68ab6550b29928e4e81fec9157764b2f1325b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "483d43bc_b096383b",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/RefOperationValidationExample.java",
         "patchSetId": 11
@@ -36,6 +60,30 @@
       "writtenOn": "2016-08-19T02:55:39Z",
       "side": 1,
       "message": "\"branch\"?",
+      "range": {
+        "startLine": 38,
+        "startChar": 30,
+        "endLine": 38,
+        "endChar": 39
+      },
+      "revId": "3db68ab6550b29928e4e81fec9157764b2f1325b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "88bc9b98_0a837b03",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/RefOperationValidationExample.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-08-19T06:21:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "483d43bc_b096383b",
       "range": {
         "startLine": 38,
         "startChar": 30,
