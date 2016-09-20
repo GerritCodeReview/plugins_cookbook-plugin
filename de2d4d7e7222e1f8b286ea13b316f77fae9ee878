@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2bec8e3b_0563b613",
+        "filename": ".buckconfig",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-09-20T08:58:56Z",
+      "side": 1,
+      "message": "I guess after we upgrade Buck, it can be removed?",
+      "revId": "de2d4d7e7222e1f8b286ea13b316f77fae9ee878",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
