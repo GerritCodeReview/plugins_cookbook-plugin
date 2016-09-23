@@ -24,13 +24,8 @@ import com.google.gerrit.server.validators.ValidationException;
 import com.google.gwtorm.server.OrmException;
 import com.google.inject.Inject;
 
-import org.eclipse.jgit.util.io.DisabledOutputStream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.util.Set;
 
 public class AssigneeValidator implements AssigneeValidationListener {
   private static final Logger log =
