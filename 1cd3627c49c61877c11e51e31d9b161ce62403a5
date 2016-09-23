@@ -16,6 +16,24 @@
       "revId": "1cd3627c49c61877c11e51e31d9b161ce62403a5",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "45f45341_1f82a303",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/Module.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1012449
+      },
+      "writtenOn": "2016-09-23T07:12:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b091cf63_ab5ce9e9",
+      "revId": "1cd3627c49c61877c11e51e31d9b161ce62403a5",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
