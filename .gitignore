@@ -7,3 +7,4 @@
 /buck-cache
 /buck-out
 /bucklets
+*.iml
