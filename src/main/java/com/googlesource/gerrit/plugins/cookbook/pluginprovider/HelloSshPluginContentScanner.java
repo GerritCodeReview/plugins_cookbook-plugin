@@ -14,7 +14,6 @@
 
 package com.googlesource.gerrit.plugins.cookbook.pluginprovider;
 
-import com.google.common.base.Optional;
 import com.google.gerrit.server.plugins.InvalidPluginException;
 import com.google.gerrit.server.plugins.PluginContentScanner;
 import com.google.gerrit.server.plugins.PluginEntry;
@@ -26,6 +25,7 @@ import java.lang.annotation.Annotation;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Map;
+import java.util.Optional;
 import java.util.jar.Manifest;
 
 /**
@@ -74,8 +74,8 @@ public class HelloSshPluginContentScanner implements PluginContentScanner {
    * Return plugin resource entry: not used in this sample.
    */
   @Override
-  public Optional<PluginEntry> getEntry(String resourcePath) throws IOException {
-    return Optional.absent();
+  public Optional<PluginEntry> getEntry(String resourcePath) {
+    return Optional.empty();
   }
 
   /**
