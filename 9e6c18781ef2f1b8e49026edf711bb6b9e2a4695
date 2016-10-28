@@ -16,6 +16,24 @@
       "revId": "9e6c18781ef2f1b8e49026edf711bb6b9e2a4695",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "66b7a6b6_476dee77",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloProjectAction.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2016-10-28T06:44:30Z",
+      "side": 1,
+      "message": "I don\u0027t see any benefit to copying the Guava implementation.\n\nIt doesn\u0027t need to be templated; we\u0027re only ever using it for String.\n\nThe rest is just the same thing implemented with a ternary operator.",
+      "parentUuid": "a6c19e1f_e97dd522",
+      "revId": "9e6c18781ef2f1b8e49026edf711bb6b9e2a4695",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
