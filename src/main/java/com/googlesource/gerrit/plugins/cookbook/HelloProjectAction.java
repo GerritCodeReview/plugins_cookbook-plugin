@@ -14,8 +14,6 @@
 
 package com.googlesource.gerrit.plugins.cookbook;
 
-import com.google.common.base.MoreObjects;
-import com.google.common.base.Strings;
 import com.google.gerrit.extensions.restapi.RestModifyView;
 import com.google.gerrit.extensions.webui.UiAction;
 import com.google.gerrit.server.CurrentUser;
@@ -39,6 +37,20 @@ class HelloProjectAction implements UiAction<ProjectResource>,
     this.user = user;
   }
 
+  private boolean isNullOrEmpty(String s) {
+    return s == null || s.isEmpty();
+  }
+
+  private Object firstNonNull(String first, String second) {
+    if (first != null) {
+      return first;
+    }
+    if (second != null) {
+      return second;
+    }
+    throw new NullPointerException();
+  }
+
   @Override
   public String apply(ProjectResource rsrc, Input input) {
     final String greeting = input.french
@@ -46,8 +58,8 @@ class HelloProjectAction implements UiAction<ProjectResource>,
         : "Hello";
     return String.format("%s %s from project %s!",
         greeting,
-        Strings.isNullOrEmpty(input.message)
-            ? MoreObjects.firstNonNull(user.get().getUserName(), "world")
+        isNullOrEmpty(input.message)
+            ? firstNonNull(user.get().getUserName(), "world")
             : input.message,
         rsrc.getName());
   }
