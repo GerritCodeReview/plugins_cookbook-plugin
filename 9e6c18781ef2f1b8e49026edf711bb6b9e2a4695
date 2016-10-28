@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a6c19e1f_e97dd522",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloProjectAction.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-10-28T06:03:11Z",
+      "side": 1,
+      "message": "Borrow the implementation from Guava?\n\n  public static \u003cT\u003e T firstNonNull(@Nullable T first, @Nullable T second) {\n     return first !\u003d null ? first : checkNotNull(second);\n   }\n\nand replace checkNotNull(second) with Objects.requireNonNull(second).",
+      "revId": "9e6c18781ef2f1b8e49026edf711bb6b9e2a4695",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
