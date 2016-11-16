@@ -18,10 +18,12 @@ gerrit_plugin(
   ],
 )
 
+# For the reasons, how the plugin tests are implemented
+# they cannot be ran hermetically. 
 junit_tests(
   name = 'cookbook_tests',
   srcs = glob(['src/test/java/**/*IT.java']),
-  tags = ['cookbook-plugin'],
+  tags = ['cookbook-plugin', 'local'],
   deps = [
     ':cookbook-plugin__plugin',
     '//gerrit-acceptance-framework:lib',
