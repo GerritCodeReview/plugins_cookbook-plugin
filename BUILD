@@ -18,15 +18,12 @@ gerrit_plugin(
     resources = glob(["src/main/**/*"]),
 )
 
-# For the reasons, how the plugin tests are implemented
-# they cannot be run hermetically.
 junit_tests(
     name = "cookbook_tests",
-    size = "large",
+    size = "small",
     srcs = glob(["src/test/java/**/*IT.java"]),
     tags = [
         "cookbook-plugin",
-        "local",
     ],
     visibility = ["//visibility:public"],
     deps = [

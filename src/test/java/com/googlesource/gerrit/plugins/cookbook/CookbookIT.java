@@ -16,13 +16,19 @@ package com.googlesource.gerrit.plugins.cookbook;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.gerrit.acceptance.PluginDaemonTest;
+import com.google.gerrit.acceptance.LightweightPluginDaemonTest;
 import com.google.gerrit.acceptance.RestResponse;
+import com.google.gerrit.acceptance.TestPlugin;
 
 import org.junit.Test;
 
-public class CookbookIT extends PluginDaemonTest {
-
+@TestPlugin(
+    name = "cookbook",
+    sysModule = "com.googlesource.gerrit.plugins.cookbook.Module",
+    httpModule = "com.googlesource.gerrit.plugins.cookbook.HttpModule",
+    sshModule = "com.googlesource.gerrit.plugins.cookbook.SshModule"
+)
+public class CookbookIT extends LightweightPluginDaemonTest {
   @Test
   public void printTest() throws Exception {
     assertThat(adminSshSession.exec("cookbook print"))
