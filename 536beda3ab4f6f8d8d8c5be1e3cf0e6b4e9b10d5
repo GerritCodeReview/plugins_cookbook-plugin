@@ -22,6 +22,30 @@
       "revId": "536beda3ab4f6f8d8d8c5be1e3cf0e6b4e9b10d5",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad8730a_915c7c96",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/HelloWeblink.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2016-12-12T05:45:09Z",
+      "side": 1,
+      "message": "This is the text that gets shown in the generated image (see the screenshot that I posted).\n\nCB \u003d Cook Book.  Thought it was better than a solid black square :)",
+      "parentUuid": "9ad8730a_11696c36",
+      "range": {
+        "startLine": 35,
+        "startChar": 58,
+        "endLine": 35,
+        "endChar": 60
+      },
+      "revId": "536beda3ab4f6f8d8d8c5be1e3cf0e6b4e9b10d5",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
