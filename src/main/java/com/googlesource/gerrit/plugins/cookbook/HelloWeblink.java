@@ -31,7 +31,8 @@ public class HelloWeblink implements PatchSetWebLink, ProjectWebLink,
       placeHolderUrlProject + "/commit=%s";
   private String placeHolderUrlProjectRevisionFileName =
       placeHolderUrlProject + "-revision=%s-file=%s";
-  private String myImageUrl = "http://placehold.it/16x16.gif";
+  private String myImageUrl =
+      "http://dummyimage.com/16x16/000000/ffffff.png&text=CB";
 
   @Override
   public WebLinkInfo getBranchWebLink(String projectName, String branchName) {
