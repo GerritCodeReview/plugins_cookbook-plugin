@@ -18,9 +18,9 @@ gerrit_plugin(
     resources = glob(["src/main/**/*"]),
 )
 
-junit_tests(
+java_test(
     name = "cookbook_tests",
-    size = "small",
+    size = "medium",
     srcs = glob(["src/test/java/**/*IT.java"]),
     tags = [
         "cookbook-plugin",
