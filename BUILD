@@ -20,7 +20,7 @@ gerrit_plugin(
 
 junit_tests(
     name = "cookbook_tests",
-    size = "small",
+    size = "medium",
     srcs = glob(["src/test/java/**/*IT.java"]),
     tags = [
         "cookbook-plugin",
