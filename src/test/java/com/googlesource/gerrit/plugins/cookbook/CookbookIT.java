@@ -20,6 +20,7 @@ import com.google.gerrit.acceptance.LightweightPluginDaemonTest;
 import com.google.gerrit.acceptance.RestResponse;
 import com.google.gerrit.acceptance.TestPlugin;
 
+import com.google.gerrit.acceptance.UseSsh;
 import org.junit.Test;
 
 @TestPlugin(
@@ -28,6 +29,7 @@ import org.junit.Test;
     httpModule = "com.googlesource.gerrit.plugins.cookbook.HttpModule",
     sshModule = "com.googlesource.gerrit.plugins.cookbook.SshModule"
 )
+@UseSsh
 public class CookbookIT extends LightweightPluginDaemonTest {
   @Test
   public void printTest() throws Exception {
