@@ -19,8 +19,8 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.gerrit.acceptance.LightweightPluginDaemonTest;
 import com.google.gerrit.acceptance.RestResponse;
 import com.google.gerrit.acceptance.TestPlugin;
-
 import com.google.gerrit.acceptance.UseSsh;
+
 import org.junit.Test;
 
 @TestPlugin(
