@@ -22,5 +22,6 @@ public class SshModule extends PluginCommandModule {
     command(PrintHelloWorldCommand.class);
     command(AdminCookbookCommand.class);
     alias("say-hello", PrintHelloWorldCommand.class);
+    globalAlias("say-hi", PrintHelloWorldCommand.class);
   }
 }
