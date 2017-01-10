@@ -17,7 +17,6 @@ package com.googlesource.gerrit.plugins.cookbook.pluginprovider;
 import com.google.gerrit.server.plugins.InvalidPluginException;
 import com.google.gerrit.server.plugins.PluginContentScanner;
 import com.google.gerrit.server.plugins.PluginEntry;
-
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,9 +27,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.jar.Manifest;
 
-/**
- * Plugin scanner is responsible for returning plugin contents.
- */
+/** Plugin scanner is responsible for returning plugin contents. */
 public class HelloSshPluginContentScanner implements PluginContentScanner {
   private final String pluginName;
 
@@ -38,9 +35,7 @@ public class HelloSshPluginContentScanner implements PluginContentScanner {
     this.pluginName = pluginName;
   }
 
-  /**
-   * Scanner for self-registration: not used in this sample.
-   */
+  /** Scanner for self-registration: not used in this sample. */
   @Override
   public Map<Class<? extends Annotation>, Iterable<ExtensionMetaData>> scan(
       String pluginName, Iterable<Class<? extends Annotation>> annotations)
@@ -48,39 +43,35 @@ public class HelloSshPluginContentScanner implements PluginContentScanner {
     return null;
   }
 
-  /**
-   * Returns the Plugin Manfiest content as it was packaged in a JAR file.
-   */
+  /** Returns the Plugin Manfiest content as it was packaged in a JAR file. */
   @Override
   public Manifest getManifest() throws IOException {
     String manifestString =
-        "PluginName: " + pluginName + "\n" +
-        "Implementation-Version: 1.0\n" +
-        "Gerrit-ReloadMode: restart\n" +
-        "Gerrit-ApiType: Plugin\n" +
-        "Gerrit-SshModule: " + HelloSshModule.class.getName() + "\n";
+        "PluginName: "
+            + pluginName
+            + "\n"
+            + "Implementation-Version: 1.0\n"
+            + "Gerrit-ReloadMode: restart\n"
+            + "Gerrit-ApiType: Plugin\n"
+            + "Gerrit-SshModule: "
+            + HelloSshModule.class.getName()
+            + "\n";
     return new Manifest(new ByteArrayInputStream(manifestString.getBytes()));
   }
 
-  /**
-   * Read static plugin resources: not used in this sample.
-   */
+  /** Read static plugin resources: not used in this sample. */
   @Override
   public InputStream getInputStream(PluginEntry entry) throws IOException {
     return null;
   }
 
-  /**
-   * Return plugin resource entry: not used in this sample.
-   */
+  /** Return plugin resource entry: not used in this sample. */
   @Override
   public Optional<PluginEntry> getEntry(String resourcePath) {
     return Optional.empty();
   }
 
-  /**
-   * Return full list of plugin resources: not used in this sample.
-   */
+  /** Return full list of plugin resources: not used in this sample. */
   @Override
   public Enumeration<PluginEntry> entries() {
     return Collections.emptyEnumeration();

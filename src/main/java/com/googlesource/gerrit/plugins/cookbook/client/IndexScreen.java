@@ -55,28 +55,32 @@ class IndexScreen extends VerticalPanel {
     labelImagePanel.add(img);
     labelImagePanel.add(new Label(":"));
     usernamePanel.add(labelImagePanel);
-    usernameTxt = new TextBox() {
-      @Override
-      public void onBrowserEvent(Event event) {
-        super.onBrowserEvent(event);
-        if (event.getTypeInt() == Event.ONPASTE) {
-          Scheduler.get().scheduleDeferred(new ScheduledCommand() {
-            @Override
-            public void execute() {
-              if (getValue().trim().length() != 0) {
-                setEnabled(true);
-              }
+    usernameTxt =
+        new TextBox() {
+          @Override
+          public void onBrowserEvent(Event event) {
+            super.onBrowserEvent(event);
+            if (event.getTypeInt() == Event.ONPASTE) {
+              Scheduler.get()
+                  .scheduleDeferred(
+                      new ScheduledCommand() {
+                        @Override
+                        public void execute() {
+                          if (getValue().trim().length() != 0) {
+                            setEnabled(true);
+                          }
+                        }
+                      });
             }
-          });
-        }
-      }
-    };
-    usernameTxt.addKeyPressHandler(new KeyPressHandler() {
-      @Override
-      public void onKeyPress(final KeyPressEvent event) {
-        event.stopPropagation();
-      }
-    });
+          }
+        };
+    usernameTxt.addKeyPressHandler(
+        new KeyPressHandler() {
+          @Override
+          public void onKeyPress(final KeyPressEvent event) {
+            event.stopPropagation();
+          }
+        });
     usernameTxt.sinkEvents(Event.ONPASTE);
     usernameTxt.setVisibleLength(40);
     usernamePanel.add(usernameTxt);
@@ -85,12 +89,13 @@ class IndexScreen extends VerticalPanel {
     Panel messagePanel = new VerticalPanel();
     messagePanel.add(new Label("Message:"));
     greetingTxt = new TextArea();
-    greetingTxt.addKeyPressHandler(new KeyPressHandler() {
-      @Override
-      public void onKeyPress(final KeyPressEvent event) {
-        event.stopPropagation();
-      }
-    });
+    greetingTxt.addKeyPressHandler(
+        new KeyPressHandler() {
+          @Override
+          public void onKeyPress(final KeyPressEvent event) {
+            event.stopPropagation();
+          }
+        });
     greetingTxt.setVisibleLines(12);
     greetingTxt.setCharacterWidth(80);
     greetingTxt.getElement().setPropertyBoolean("spellcheck", false);
@@ -99,12 +104,13 @@ class IndexScreen extends VerticalPanel {
 
     Button helloButton = new Button("Say Hello");
     helloButton.addStyleName("cookbook-helloButton");
-    helloButton.addClickHandler(new ClickHandler() {
-      @Override
-      public void onClick(final ClickEvent event) {
-        sayHello();
-      }
-    });
+    helloButton.addClickHandler(
+        new ClickHandler() {
+          @Override
+          public void onClick(final ClickEvent event) {
+            sayHello();
+          }
+        });
     add(helloButton);
     helloButton.setEnabled(true);
   }

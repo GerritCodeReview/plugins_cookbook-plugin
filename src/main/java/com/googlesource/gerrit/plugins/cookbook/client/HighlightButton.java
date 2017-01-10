@@ -20,16 +20,20 @@ import com.google.gwtexpui.safehtml.client.SafeHtmlBuilder;
 /**
  * Highlight button for header line in change screen.
  *
- * This class can *only* be used within a panel that extends the header line of
- * the change screen, but will not work standalone.
+ * <p>This class can *only* be used within a panel that extends the header line of the change
+ * screen, but will not work standalone.
  */
 public class HighlightButton extends Button {
 
   public HighlightButton(String text) {
     // Create Button with inner div. This is required to get proper styling
     // in the context of the change screen.
-    super((new SafeHtmlBuilder()).openDiv()
-        .appendAttribute("style", "color: #fff;").append(text).closeDiv());
+    super(
+        (new SafeHtmlBuilder())
+            .openDiv()
+            .appendAttribute("style", "color: #fff;")
+            .append(text)
+            .closeDiv());
     getElement().removeClassName("gwt-Button");
     getElement().getStyle().setBackgroundColor("#4d90fe");
   }

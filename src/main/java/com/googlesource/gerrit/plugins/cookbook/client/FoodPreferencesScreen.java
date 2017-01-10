@@ -41,12 +41,13 @@ class FoodPreferencesScreen extends VerticalPanel {
     Panel messagePanel = new VerticalPanel();
     messagePanel.add(new Label("Food Allergies or Dietary Concerns:"));
     TextArea txt = new TextArea();
-    txt.addKeyPressHandler(new KeyPressHandler() {
-      @Override
-      public void onKeyPress(final KeyPressEvent event) {
-        event.stopPropagation();
-      }
-    });
+    txt.addKeyPressHandler(
+        new KeyPressHandler() {
+          @Override
+          public void onKeyPress(final KeyPressEvent event) {
+            event.stopPropagation();
+          }
+        });
     txt.setVisibleLines(12);
     txt.setCharacterWidth(80);
     txt.getElement().setPropertyBoolean("spellcheck", false);
@@ -55,12 +56,13 @@ class FoodPreferencesScreen extends VerticalPanel {
 
     Button helloButton = new Button("Save");
     helloButton.addStyleName("cookbook-helloButton");
-    helloButton.addClickHandler(new ClickHandler() {
-      @Override
-      public void onClick(final ClickEvent event) {
-        Window.alert("TODO: implement save");
-      }
-    });
+    helloButton.addClickHandler(
+        new ClickHandler() {
+          @Override
+          public void onClick(final ClickEvent event) {
+            Window.alert("TODO: implement save");
+          }
+        });
     add(helloButton);
     helloButton.setEnabled(true);
   }

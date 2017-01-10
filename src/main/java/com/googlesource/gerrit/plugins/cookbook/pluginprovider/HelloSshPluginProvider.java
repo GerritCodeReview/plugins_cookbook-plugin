@@ -19,28 +19,24 @@ import com.google.gerrit.server.plugins.InvalidPluginException;
 import com.google.gerrit.server.plugins.ServerPlugin;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
 import com.google.inject.Inject;
-
+import java.nio.file.Path;
 import org.eclipse.jgit.internal.storage.file.FileSnapshot;
 
-import java.nio.file.Path;
-
 /**
- * Dynamic provider of Gerrit plugins derived by *.ssh files under
- * $GERRIT_SITE/plugins.
- * <p>
- * Example of how to define a dynamic Gerrit plugin provider to register
- * a new plugin based on the content of *.ssh files.
- * <p>
- * This provider allows to define a Gerrit plugin by simply dropping a .ssh file
- * (e.g. hello.ssh) under $GERRIT_SITE/plugins.
- * <p>
- * Once the file is created a new plugin is automatically loaded with the name
- * without extension of the .ssh file (e.g. hello) and a new 'cat' SSH command
- * is automatically available from the registered plugin.
- * <p>
- * The 'cat' command will print the contents of the .ssh file, along with the
- * contents of any arguments, resolved against the plugin's data directory
- * $GERRIT_SITE/data/name.
+ * Dynamic provider of Gerrit plugins derived by *.ssh files under $GERRIT_SITE/plugins.
+ *
+ * <p>Example of how to define a dynamic Gerrit plugin provider to register a new plugin based on
+ * the content of *.ssh files.
+ *
+ * <p>This provider allows to define a Gerrit plugin by simply dropping a .ssh file (e.g. hello.ssh)
+ * under $GERRIT_SITE/plugins.
+ *
+ * <p>Once the file is created a new plugin is automatically loaded with the name without extension
+ * of the .ssh file (e.g. hello) and a new 'cat' SSH command is automatically available from the
+ * registered plugin.
+ *
+ * <p>The 'cat' command will print the contents of the .ssh file, along with the contents of any
+ * arguments, resolved against the plugin's data directory $GERRIT_SITE/data/name.
  */
 public class HelloSshPluginProvider implements ServerPluginProvider {
   private static final String SSH_EXT = ".ssh";
@@ -63,12 +59,17 @@ public class HelloSshPluginProvider implements ServerPluginProvider {
   }
 
   @Override
-  public ServerPlugin get(Path srcPath, FileSnapshot snapshot,
-      PluginDescription pluginDescriptor) throws InvalidPluginException {
+  public ServerPlugin get(Path srcPath, FileSnapshot snapshot, PluginDescription pluginDescriptor)
+      throws InvalidPluginException {
     String name = getPluginName(srcPath);
-    return new ServerPlugin(name, pluginDescriptor.canonicalUrl,
-        pluginDescriptor.user, srcPath, snapshot,
-        new HelloSshPluginContentScanner(name), pluginDescriptor.dataDir,
+    return new ServerPlugin(
+        name,
+        pluginDescriptor.canonicalUrl,
+        pluginDescriptor.user,
+        srcPath,
+        snapshot,
+        new HelloSshPluginContentScanner(name),
+        pluginDescriptor.dataDir,
         getClass().getClassLoader());
   }
 

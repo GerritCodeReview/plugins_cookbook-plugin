@@ -23,9 +23,7 @@ import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.InlineHyperlink;
 import com.google.gwt.user.client.ui.InlineLabel;
 
-/**
- * Extension for change screen that displays a status in the header bar.
- */
+/** Extension for change screen that displays a status in the header bar. */
 public class BuildsDropDownPanel extends FlowPanel {
   static class Factory implements Panel.EntryPoint {
     @Override

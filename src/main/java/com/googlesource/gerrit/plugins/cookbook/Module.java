@@ -45,63 +45,52 @@ import com.google.gerrit.server.query.change.ChangeQueryBuilder.ChangeOperatorFa
 import com.google.gerrit.server.validators.AssigneeValidationListener;
 import com.google.gerrit.server.validators.HashtagValidationListener;
 import com.google.inject.AbstractModule;
-
 import com.googlesource.gerrit.plugins.cookbook.pluginprovider.HelloSshPluginProvider;
 
 public class Module extends AbstractModule {
 
   @Override
   protected void configure() {
-    DynamicSet.bind(binder(), TopMenu.class)
-        .to(HelloTopMenu.class);
+    DynamicSet.bind(binder(), TopMenu.class).to(HelloTopMenu.class);
     DynamicSet.bind(binder(), PatchSetWebLink.class).to(HelloWeblink.class);
     DynamicSet.bind(binder(), ProjectWebLink.class).to(HelloWeblink.class);
     DynamicSet.bind(binder(), BranchWebLink.class).to(HelloWeblink.class);
     DynamicSet.bind(binder(), FileHistoryWebLink.class).to(HelloWeblink.class);
-    DynamicSet.bind(binder(), ServerPluginProvider.class).to(
-        HelloSshPluginProvider.class);
+    DynamicSet.bind(binder(), ServerPluginProvider.class).to(HelloSshPluginProvider.class);
     DynamicSet.bind(binder(), UsageDataPublishedListener.class).to(UsageDataLogger.class);
     DynamicSet.bind(binder(), LifecycleListener.class).to(ConsoleMetricReporter.class);
-    install(new RestApiModule() {
-      @Override
-      protected void configure() {
-        post(REVISION_KIND, "hello-revision").to(HelloRevisionAction.class);
-        post(PROJECT_KIND, "hello-project").to(HelloProjectAction.class);
-        get(REVISION_KIND, "greetings").to(Greetings.class);
-      }
-    });
-    DynamicSet.bind(binder(), UploadValidationListener.class)
-        .to(DenyUploadExample.class);
-    DynamicSet.bind(binder(), MergeValidationListener.class)
-        .to(MergeUserValidator.class);
-    DynamicSet.bind(binder(), HashtagValidationListener.class)
-        .to(HashtagValidator.class);
-    DynamicSet.bind(binder(), AssigneeValidationListener.class)
-        .to(AssigneeValidator.class);
-    DynamicSet.bind(binder(), CommitValidationListener.class)
-        .to(CommitValidator.class);
-    DynamicSet.bind(binder(), NewProjectCreatedListener.class)
-        .to(ProjectCreatedListener.class);
+    install(
+        new RestApiModule() {
+          @Override
+          protected void configure() {
+            post(REVISION_KIND, "hello-revision").to(HelloRevisionAction.class);
+            post(PROJECT_KIND, "hello-project").to(HelloProjectAction.class);
+            get(REVISION_KIND, "greetings").to(Greetings.class);
+          }
+        });
+    DynamicSet.bind(binder(), UploadValidationListener.class).to(DenyUploadExample.class);
+    DynamicSet.bind(binder(), MergeValidationListener.class).to(MergeUserValidator.class);
+    DynamicSet.bind(binder(), HashtagValidationListener.class).to(HashtagValidator.class);
+    DynamicSet.bind(binder(), AssigneeValidationListener.class).to(AssigneeValidator.class);
+    DynamicSet.bind(binder(), CommitValidationListener.class).to(CommitValidator.class);
+    DynamicSet.bind(binder(), NewProjectCreatedListener.class).to(ProjectCreatedListener.class);
     DynamicSet.bind(binder(), RefOperationValidationListener.class)
         .to(RefOperationValidationExample.class);
     configurePluginParameters();
-    DynamicSet.bind(binder(), ExternalIncludedIn.class)
-        .to(DeployedOnIncludedInExtension.class);
+    DynamicSet.bind(binder(), ExternalIncludedIn.class).to(DeployedOnIncludedInExtension.class);
 
     bind(ChangeOperatorFactory.class)
         .annotatedWith(Exports.named("sample"))
         .to(SampleOperator.class);
 
-    DynamicSet.bind(binder(), WebUiPlugin.class)
-        .toInstance(new JavaScriptPlugin("greetings.js"));
+    DynamicSet.bind(binder(), WebUiPlugin.class).toInstance(new JavaScriptPlugin("greetings.js"));
     DynamicSet.bind(binder(), WebUiPlugin.class)
         .toInstance(new JavaScriptPlugin("hello-change.js"));
     DynamicSet.bind(binder(), WebUiPlugin.class)
         .toInstance(new JavaScriptPlugin("hello-project.js"));
     DynamicSet.bind(binder(), WebUiPlugin.class)
         .toInstance(new JavaScriptPlugin("hello-revision.js"));
-    DynamicSet.bind(binder(), WebUiPlugin.class)
-        .toInstance(new GwtPlugin("cookbook"));
+    DynamicSet.bind(binder(), WebUiPlugin.class).toInstance(new GwtPlugin("cookbook"));
   }
 
   private void configurePluginParameters() {
@@ -109,29 +98,33 @@ public class Module extends AbstractModule {
         .annotatedWith(Exports.named("enable-hello"))
         .toInstance(new ProjectConfigEntry("Enable Greeting", true));
     bind(ProjectConfigEntry.class)
-       .annotatedWith(Exports.named("enable-goodbye"))
-       .toInstance(new ProjectConfigEntry("Enable Say Goodbye",
-           InheritableBoolean.TRUE,
-           InheritableBoolean.class, true));
+        .annotatedWith(Exports.named("enable-goodbye"))
+        .toInstance(
+            new ProjectConfigEntry(
+                "Enable Say Goodbye", InheritableBoolean.TRUE, InheritableBoolean.class, true));
     bind(ProjectConfigEntry.class)
-       .annotatedWith(Exports.named("default-greeting"))
-       .toInstance(new ProjectConfigEntry("Default Greeting",
-           "Hey dude, how are you?", true));
+        .annotatedWith(Exports.named("default-greeting"))
+        .toInstance(new ProjectConfigEntry("Default Greeting", "Hey dude, how are you?", true));
     bind(ProjectConfigEntry.class)
         .annotatedWith(Exports.named("language"))
-        .toInstance(new ProjectConfigEntry("Preferred Language", "en",
-            ImmutableList.of("en", "de", "fr"), true));
+        .toInstance(
+            new ProjectConfigEntry(
+                "Preferred Language", "en", ImmutableList.of("en", "de", "fr"), true));
     bind(ProjectConfigEntry.class)
         .annotatedWith(Exports.named("greet-number-per-week"))
         .toInstance(new ProjectConfigEntry("Greets Per Week", 42, true));
     bind(ProjectConfigEntry.class)
-       .annotatedWith(Exports.named("greet-number-per-year"))
-       .toInstance(new ProjectConfigEntry("Greets Per Year", 4711L, true));
+        .annotatedWith(Exports.named("greet-number-per-year"))
+        .toInstance(new ProjectConfigEntry("Greets Per Year", 4711L, true));
     bind(ProjectConfigEntry.class)
-       .annotatedWith(Exports.named("reviewers"))
+        .annotatedWith(Exports.named("reviewers"))
         .toInstance(
-            new ProjectConfigEntry("Reviewers", null,
-                ProjectConfigEntryType.ARRAY, null, false,
+            new ProjectConfigEntry(
+                "Reviewers",
+                null,
+                ProjectConfigEntryType.ARRAY,
+                null,
+                false,
                 "Users or groups can be provided as reviewers"));
   }
 }

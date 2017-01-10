@@ -27,7 +27,6 @@ import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
-
 import java.util.Map;
 
 public class ChangeScreenPreferencePanel extends VerticalPanel {
@@ -35,8 +34,7 @@ public class ChangeScreenPreferencePanel extends VerticalPanel {
   private static final String COOKBOOK = "COOKBOOK";
   private static final String OTHER = "OTHER";
   private static final String DEFAULT_URL_MATCH = "/c/(.*)";
-  private static final String COOKBOOK_URL_TOKEN =
-      "/x/" + Plugin.get().getName() + "/c/$1";
+  private static final String COOKBOOK_URL_TOKEN = "/x/" + Plugin.get().getName() + "/c/$1";
 
   static class Factory implements Panel.EntryPoint {
     @Override
@@ -49,18 +47,21 @@ public class ChangeScreenPreferencePanel extends VerticalPanel {
   private Timer hideTimer;
 
   ChangeScreenPreferencePanel() {
-    new RestApi("accounts").id("self").view("preferences")
-        .get(new AsyncCallback<GeneralPreferences>() {
-          @Override
-          public void onSuccess(GeneralPreferences result) {
-            display(result);
-          }
+    new RestApi("accounts")
+        .id("self")
+        .view("preferences")
+        .get(
+            new AsyncCallback<GeneralPreferences>() {
+              @Override
+              public void onSuccess(GeneralPreferences result) {
+                display(result);
+              }
 
-          @Override
-          public void onFailure(Throwable caught) {
-            // never invoked
-          }
-        });
+              @Override
+              public void onFailure(Throwable caught) {
+                // never invoked
+              }
+            });
   }
 
   private void display(final GeneralPreferences info) {
@@ -103,37 +104,42 @@ public class ChangeScreenPreferencePanel extends VerticalPanel {
       }
     }
 
-    box.addChangeHandler(new ChangeHandler() {
-      @Override
-      public void onChange(ChangeEvent event) {
-        savedLabel.setVisible(false);
-        if (box.getSelectedValue().equals(OTHER)) {
-          return;
-        }
+    box.addChangeHandler(
+        new ChangeHandler() {
+          @Override
+          public void onChange(ChangeEvent event) {
+            savedLabel.setVisible(false);
+            if (box.getSelectedValue().equals(OTHER)) {
+              return;
+            }
 
-        Map<String, String> urlAliases = info.urlAliases();
-        if (box.getSelectedValue().equals(COOKBOOK)) {
-          urlAliases.put(DEFAULT_URL_MATCH, COOKBOOK_URL_TOKEN);
-        } else {
-          urlAliases.remove(DEFAULT_URL_MATCH);
-        }
-        info.setUrlAliases(urlAliases);
+            Map<String, String> urlAliases = info.urlAliases();
+            if (box.getSelectedValue().equals(COOKBOOK)) {
+              urlAliases.put(DEFAULT_URL_MATCH, COOKBOOK_URL_TOKEN);
+            } else {
+              urlAliases.remove(DEFAULT_URL_MATCH);
+            }
+            info.setUrlAliases(urlAliases);
 
-        new RestApi("accounts").id("self").view("preferences")
-            .put(info, new AsyncCallback<GeneralPreferences>() {
-              @Override
-              public void onSuccess(GeneralPreferences result) {
-                Plugin.get().refreshUserPreferences();
-                showSavedStatus();
-              }
+            new RestApi("accounts")
+                .id("self")
+                .view("preferences")
+                .put(
+                    info,
+                    new AsyncCallback<GeneralPreferences>() {
+                      @Override
+                      public void onSuccess(GeneralPreferences result) {
+                        Plugin.get().refreshUserPreferences();
+                        showSavedStatus();
+                      }
 
-              @Override
-              public void onFailure(Throwable caught) {
-                // never invoked
-              }
-            });
-      }
-    });
+                      @Override
+                      public void onFailure(Throwable caught) {
+                        // never invoked
+                      }
+                    });
+          }
+        });
   }
 
   private void showSavedStatus() {
@@ -142,13 +148,14 @@ public class ChangeScreenPreferencePanel extends VerticalPanel {
       hideTimer = null;
     }
     savedLabel.setVisible(true);
-    hideTimer = new Timer() {
-      @Override
-      public void run() {
-        savedLabel.setVisible(false);
-        hideTimer = null;
-      }
-    };
+    hideTimer =
+        new Timer() {
+          @Override
+          public void run() {
+            savedLabel.setVisible(false);
+            hideTimer = null;
+          }
+        };
     hideTimer.schedule(1000);
   }
 }

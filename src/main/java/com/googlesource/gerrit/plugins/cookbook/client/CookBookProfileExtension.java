@@ -21,15 +21,12 @@ import com.google.gwt.user.client.ui.Grid;
 import com.google.gwt.user.client.ui.HTMLTable.CellFormatter;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
-/**
- * Extension for the user profile screen.
- */
+/** Extension for the user profile screen. */
 public class CookBookProfileExtension extends VerticalPanel {
   static class Factory implements Panel.EntryPoint {
     @Override
     public void onLoad(Panel panel) {
-      AccountInfo accountInfo =
-          panel.getObject(GerritUiExtensionPoint.Key.ACCOUNT_INFO).cast();
+      AccountInfo accountInfo = panel.getObject(GerritUiExtensionPoint.Key.ACCOUNT_INFO).cast();
       panel.setWidget(new CookBookProfileExtension(accountInfo));
     }
   }
@@ -53,9 +50,8 @@ public class CookBookProfileExtension extends VerticalPanel {
 
     g.setText(2, 0, "CookBook Email");
     fmt.addStyleName(2, 0, "header");
-    g.setText(2, 1, accountInfo.username() != null
-        ? accountInfo.username() + "@cookbook.com"
-        : "N/A");
+    g.setText(
+        2, 1, accountInfo.username() != null ? accountInfo.username() + "@cookbook.com" : "N/A");
     add(g);
 
     fmt.addStyleName(0, 0, "topmost");
