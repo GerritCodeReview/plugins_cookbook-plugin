@@ -20,15 +20,13 @@ import com.google.gerrit.server.config.SitePaths;
 import com.google.gerrit.sshd.CommandMetaData;
 import com.google.gerrit.sshd.SshCommand;
 import com.google.inject.Inject;
-
-import org.kohsuke.args4j.Argument;
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import org.kohsuke.args4j.Argument;
 
 /** SSH command defined by dynamically registered plugins. */
 @CommandMetaData(name = "cat", description = "Print content of plugin file")
@@ -41,9 +39,8 @@ public final class HelloSshCommand extends SshCommand {
   private List<String> files = new ArrayList<>();
 
   @Inject
-  public HelloSshCommand(@PluginName String pluginName,
-      SitePaths sitePaths,
-      @PluginData Path dataDir) {
+  public HelloSshCommand(
+      @PluginName String pluginName, SitePaths sitePaths, @PluginData Path dataDir) {
     this.pluginName = pluginName;
     this.pluginDir = sitePaths.plugins_dir.normalize();
     this.dataDir = dataDir.normalize();

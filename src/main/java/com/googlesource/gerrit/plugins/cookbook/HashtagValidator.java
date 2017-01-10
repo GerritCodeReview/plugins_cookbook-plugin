@@ -17,7 +17,6 @@ package com.googlesource.gerrit.plugins.cookbook;
 import com.google.gerrit.reviewdb.client.Change;
 import com.google.gerrit.server.validators.HashtagValidationListener;
 import com.google.gerrit.server.validators.ValidationException;
-
 import java.util.Set;
 
 public class HashtagValidator implements HashtagValidationListener {

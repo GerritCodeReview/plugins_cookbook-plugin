@@ -16,9 +16,7 @@ package com.googlesource.gerrit.plugins.cookbook.pluginprovider;
 
 import com.google.gerrit.sshd.PluginCommandModule;
 
-/**
- * SSH Module exported by provided plugins.
- */
+/** SSH Module exported by provided plugins. */
 public class HelloSshModule extends PluginCommandModule {
   @Override
   protected void configureCommands() {

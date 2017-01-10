@@ -20,30 +20,26 @@ import com.google.gerrit.acceptance.LightweightPluginDaemonTest;
 import com.google.gerrit.acceptance.RestResponse;
 import com.google.gerrit.acceptance.TestPlugin;
 import com.google.gerrit.acceptance.UseSsh;
-
 import org.junit.Test;
 
 @TestPlugin(
-    name = "cookbook",
-    sysModule = "com.googlesource.gerrit.plugins.cookbook.Module",
-    httpModule = "com.googlesource.gerrit.plugins.cookbook.HttpModule",
-    sshModule = "com.googlesource.gerrit.plugins.cookbook.SshModule"
+  name = "cookbook",
+  sysModule = "com.googlesource.gerrit.plugins.cookbook.Module",
+  httpModule = "com.googlesource.gerrit.plugins.cookbook.HttpModule",
+  sshModule = "com.googlesource.gerrit.plugins.cookbook.SshModule"
 )
 @UseSsh
 public class CookbookIT extends LightweightPluginDaemonTest {
   @Test
   public void printTest() throws Exception {
-    assertThat(adminSshSession.exec("cookbook print"))
-        .isEqualTo("Hello world!\n");
+    assertThat(adminSshSession.exec("cookbook print")).isEqualTo("Hello world!\n");
     assertThat(adminSshSession.hasError()).isFalse();
   }
 
   @Test
   public void revisionTest() throws Exception {
     createChange();
-    RestResponse response =
-        adminRestSession.post("/changes/1/revisions/1/cookbook~hello-revision");
-    assertThat(response.getEntityContent())
-        .contains("Hello admin from change 1, patch set 1!");
+    RestResponse response = adminRestSession.post("/changes/1/revisions/1/cookbook~hello-revision");
+    assertThat(response.getEntityContent()).contains("Hello admin from change 1, patch set 1!");
   }
 }

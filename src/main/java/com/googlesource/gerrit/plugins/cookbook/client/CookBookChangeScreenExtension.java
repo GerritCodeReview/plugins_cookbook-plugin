@@ -23,10 +23,7 @@ import com.google.gwt.user.client.ui.HTMLTable.CellFormatter;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwtexpui.clippy.client.CopyableLabel;
 
-/**
- * Extension for change screen that displays the numeric change ID with
- * copy-to-clipboard icon.
- */
+/** Extension for change screen that displays the numeric change ID with copy-to-clipboard icon. */
 public class CookBookChangeScreenExtension extends VerticalPanel {
   static class Factory implements Panel.EntryPoint {
     @Override
@@ -36,10 +33,8 @@ public class CookBookChangeScreenExtension extends VerticalPanel {
   }
 
   CookBookChangeScreenExtension(Panel panel) {
-    ChangeInfo change =
-        panel.getObject(GerritUiExtensionPoint.Key.CHANGE_INFO).cast();
-    RevisionInfo rev =
-        panel.getObject(GerritUiExtensionPoint.Key.REVISION_INFO).cast();
+    ChangeInfo change = panel.getObject(GerritUiExtensionPoint.Key.CHANGE_INFO).cast();
+    RevisionInfo rev = panel.getObject(GerritUiExtensionPoint.Key.REVISION_INFO).cast();
 
     Grid g = new Grid(2, 2);
     g.addStyleName("infoBlock");

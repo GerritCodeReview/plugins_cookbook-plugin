@@ -32,35 +32,42 @@ public class CookBookPlugin extends PluginEntryPoint {
   public void onPluginLoad() {
     Plugin.get().screen("", new IndexScreen.Factory());
     Plugin.get().screenRegex("c/(.*)", new CookBookChangeScreen.Factory());
-    Plugin.get().settingsScreen("preferences", "Food Preferences",
-        new FoodPreferencesScreen.Factory());
-    Plugin.get().panel(
-        GerritUiExtensionPoint.PREFERENCES_SCREEN_BOTTOM,
-        new ChangeScreenPreferencePanel.Factory());
-    Plugin.get().panel(GerritUiExtensionPoint.PROFILE_SCREEN_BOTTOM,
-        new CookBookProfileExtension.Factory());
-    Plugin.get().panel(
-        GerritUiExtensionPoint.CHANGE_SCREEN_BELOW_CHANGE_INFO_BLOCK,
-        new CookBookChangeScreenExtension.Factory());
-    Plugin.get().panel(GerritUiExtensionPoint.CHANGE_SCREEN_HEADER,
-        new ChangeScreenStatusExtension.Factory());
-    Plugin.get().panel(
-        GerritUiExtensionPoint.CHANGE_SCREEN_HEADER_RIGHT_OF_POP_DOWNS,
-        new BuildsDropDownPanel.Factory());
-    Plugin.get().panel(
-        GerritUiExtensionPoint.CHANGE_SCREEN_HEADER_RIGHT_OF_BUTTONS,
-        new Panel.EntryPoint() {
-          @Override
-          public void onLoad(Panel panel) {
-            Button b = new HighlightButton("Library-Compliance+1");
-            b.addClickHandler(new ClickHandler() {
+    Plugin.get()
+        .settingsScreen("preferences", "Food Preferences", new FoodPreferencesScreen.Factory());
+    Plugin.get()
+        .panel(
+            GerritUiExtensionPoint.PREFERENCES_SCREEN_BOTTOM,
+            new ChangeScreenPreferencePanel.Factory());
+    Plugin.get()
+        .panel(
+            GerritUiExtensionPoint.PROFILE_SCREEN_BOTTOM, new CookBookProfileExtension.Factory());
+    Plugin.get()
+        .panel(
+            GerritUiExtensionPoint.CHANGE_SCREEN_BELOW_CHANGE_INFO_BLOCK,
+            new CookBookChangeScreenExtension.Factory());
+    Plugin.get()
+        .panel(
+            GerritUiExtensionPoint.CHANGE_SCREEN_HEADER, new ChangeScreenStatusExtension.Factory());
+    Plugin.get()
+        .panel(
+            GerritUiExtensionPoint.CHANGE_SCREEN_HEADER_RIGHT_OF_POP_DOWNS,
+            new BuildsDropDownPanel.Factory());
+    Plugin.get()
+        .panel(
+            GerritUiExtensionPoint.CHANGE_SCREEN_HEADER_RIGHT_OF_BUTTONS,
+            new Panel.EntryPoint() {
               @Override
-              public void onClick(ClickEvent event) {
-                Window.alert("TODO");
+              public void onLoad(Panel panel) {
+                Button b = new HighlightButton("Library-Compliance+1");
+                b.addClickHandler(
+                    new ClickHandler() {
+                      @Override
+                      public void onClick(ClickEvent event) {
+                        Window.alert("TODO");
+                      }
+                    });
+                panel.setWidget(b);
               }
             });
-            panel.setWidget(b);
-          }
-        });
   }
 }

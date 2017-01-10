@@ -22,8 +22,9 @@ import com.google.gerrit.server.project.ProjectResource;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 
-class HelloProjectAction implements UiAction<ProjectResource>,
-    RestModifyView<ProjectResource, HelloProjectAction.Input> {
+class HelloProjectAction
+    implements UiAction<ProjectResource>,
+        RestModifyView<ProjectResource, HelloProjectAction.Input> {
 
   private Provider<CurrentUser> user;
 
@@ -53,10 +54,9 @@ class HelloProjectAction implements UiAction<ProjectResource>,
 
   @Override
   public String apply(ProjectResource rsrc, Input input) {
-    final String greeting = input.french
-        ? "Bonjour"
-        : "Hello";
-    return String.format("%s %s from project %s!",
+    final String greeting = input.french ? "Bonjour" : "Hello";
+    return String.format(
+        "%s %s from project %s!",
         greeting,
         isNullOrEmpty(input.message)
             ? firstNonNull(user.get().getUserName(), "world")
@@ -65,8 +65,7 @@ class HelloProjectAction implements UiAction<ProjectResource>,
   }
 
   @Override
-  public Description getDescription(
-      ProjectResource resource) {
+  public Description getDescription(ProjectResource resource) {
     return new Description()
         .setLabel("Say hello")
         .setTitle("Say hello in different languages")
