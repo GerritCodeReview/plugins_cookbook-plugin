@@ -15,7 +15,7 @@
 package com.googlesource.gerrit.plugins.cookbook;
 
 import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.Multimap;
+import com.google.common.collect.ListMultimap;
 import com.google.gerrit.extensions.config.ExternalIncludedIn;
 
 import java.util.Collection;
@@ -25,9 +25,9 @@ public class DeployedOnIncludedInExtension implements ExternalIncludedIn {
   private static final String STAGING = "Staging";
 
   @Override
-  public Multimap<String, String> getIncludedIn(String project, String commit,
-      Collection<String> tags, Collection<String> branches) {
-    Multimap<String, String> m = ArrayListMultimap.create();
+  public ListMultimap<String, String> getIncludedIn(String project,
+      String commit, Collection<String> tags, Collection<String> branches) {
+    ListMultimap<String, String> m = ArrayListMultimap.create();
     m.put(PROD, "A");
     m.put(PROD, "B");
     m.put(PROD, "C");
