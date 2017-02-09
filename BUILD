@@ -30,5 +30,6 @@ junit_tests(
         ":cookbook-plugin__plugin",
         "//gerrit-acceptance-framework:lib",
         "//gerrit-plugin-api:lib",
+        "//lib/bouncycastle:bcprov-without-neverlink"
     ],
 )

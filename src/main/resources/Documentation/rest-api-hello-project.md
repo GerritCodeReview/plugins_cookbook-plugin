@@ -31,14 +31,14 @@ EXAMPLES
 
 Have the server say Hello to the user
 
->     curl -X POST --digest --user joe:secret http://host:port/a/projects/foo/cookbook~hello-project
+>     curl -X POST --user joe:secret http://host:port/a/projects/foo/cookbook~hello-project
 > "Hello joe from project foo!"
 
 Have the server say Bonjour to François
 
 >     curl -X POST -H "Content-Type: application/json" \
 >       -d '{message: "François", french: true}' \
->       --digest --user joe:secret \
+>       --user joe:secret \
 >       http://host:port/a/projects/foo/cookbook~hello-project
 > "Bonjour François from project foo!"
 
