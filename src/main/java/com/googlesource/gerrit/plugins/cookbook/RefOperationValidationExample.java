@@ -15,25 +15,39 @@
 package com.googlesource.gerrit.plugins.cookbook;
 
 import com.google.common.collect.Lists;
+import com.google.gerrit.extensions.restapi.AuthException;
 import com.google.gerrit.reviewdb.client.RefNames;
 import com.google.gerrit.server.events.RefReceivedEvent;
 import com.google.gerrit.server.git.validators.RefOperationValidationListener;
 import com.google.gerrit.server.git.validators.ValidationMessage;
+import com.google.gerrit.server.permissions.GlobalPermission;
+import com.google.gerrit.server.permissions.PermissionBackend;
+import com.google.gerrit.server.permissions.PermissionBackendException;
 import com.google.gerrit.server.validators.ValidationException;
+import com.google.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
 public class RefOperationValidationExample implements RefOperationValidationListener {
+  private final PermissionBackend permissionBackend;
+
+  @Inject
+  RefOperationValidationExample(PermissionBackend permissionBackend) {
+    this.permissionBackend = permissionBackend;
+  }
 
   @Override
   public List<ValidationMessage> onRefOperation(RefReceivedEvent event) throws ValidationException {
     ArrayList<ValidationMessage> messages = Lists.newArrayList();
-    if (event.command.getRefName().startsWith(RefNames.REFS_HEADS + "protected-")
-        && !event.user.getCapabilities().canAdministrateServer()) {
-      throw new ValidationException(
-          String.format(
-              "Operation %s on %s branch in project %s is not valid!",
-              event.command.getType(), event.command.getRefName(), event.project.getName()));
+    if (event.command.getRefName().startsWith(RefNames.REFS_HEADS + "protected-")) {
+      try {
+        permissionBackend.user(event.user).check(GlobalPermission.ADMINISTRATE_SERVER);
+      } catch (AuthException | PermissionBackendException e) {
+        throw new ValidationException(
+            String.format(
+                "Operation %s on %s branch in project %s is not valid!",
+                event.command.getType(), event.command.getRefName(), event.project.getName()));
+      }
     }
     return messages;
   }

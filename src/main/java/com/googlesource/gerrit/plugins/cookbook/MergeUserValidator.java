@@ -14,13 +14,18 @@
 
 package com.googlesource.gerrit.plugins.cookbook;
 
+import com.google.gerrit.extensions.restapi.AuthException;
 import com.google.gerrit.reviewdb.client.Branch;
 import com.google.gerrit.reviewdb.client.PatchSet;
 import com.google.gerrit.server.IdentifiedUser;
 import com.google.gerrit.server.git.CodeReviewCommit;
 import com.google.gerrit.server.git.validators.MergeValidationException;
 import com.google.gerrit.server.git.validators.MergeValidationListener;
+import com.google.gerrit.server.permissions.GlobalPermission;
+import com.google.gerrit.server.permissions.PermissionBackend;
+import com.google.gerrit.server.permissions.PermissionBackendException;
 import com.google.gerrit.server.project.ProjectState;
+import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import org.eclipse.jgit.lib.Repository;
 
@@ -31,6 +36,12 @@ import org.eclipse.jgit.lib.Repository;
 //@Listen
 @Singleton
 public class MergeUserValidator implements MergeValidationListener {
+  private final PermissionBackend permissionBackend;
+
+  @Inject
+  MergeUserValidator(PermissionBackend permissionBackend) {
+    this.permissionBackend = permissionBackend;
+  }
 
   /** Reject all merges if the submitter is not an administrator */
   @Override
@@ -42,7 +53,9 @@ public class MergeUserValidator implements MergeValidationListener {
       PatchSet.Id patchSetId,
       IdentifiedUser caller)
       throws MergeValidationException {
-    if (!caller.getCapabilities().canAdministrateServer()) {
+    try {
+      permissionBackend.user(caller).check(GlobalPermission.ADMINISTRATE_SERVER);
+    } catch (AuthException | PermissionBackendException e) {
       throw new MergeValidationException(
           "Submitter " + caller.getNameEmail() + " is not a site administrator");
     }
