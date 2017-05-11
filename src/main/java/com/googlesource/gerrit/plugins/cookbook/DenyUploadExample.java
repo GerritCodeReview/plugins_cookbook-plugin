@@ -41,4 +41,10 @@ public class DenyUploadExample implements UploadValidationListener {
           "This error message was sent from cookbook plugin DenyUploadExample.");
     }
   }
+
+  @Override
+  public void onBeginNegotiate(Repository repository, Project project,
+      String remoteHost, UploadPack up, Collection<? extends ObjectId> wants,
+      int cntOffered) throws ValidationException {
+  }
 }
