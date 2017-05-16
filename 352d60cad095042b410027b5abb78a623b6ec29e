@@ -39,6 +39,24 @@
       "revId": "352d60cad095042b410027b5abb78a623b6ec29e",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c95cec4b_e3103702",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/cookbook/DenyUploadExample.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2017-05-16T10:04:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b9648b60_e1da5959",
+      "revId": "352d60cad095042b410027b5abb78a623b6ec29e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
