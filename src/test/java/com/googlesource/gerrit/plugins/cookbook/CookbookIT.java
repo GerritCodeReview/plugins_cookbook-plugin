@@ -16,12 +16,26 @@ package com.googlesource.gerrit.plugins.cookbook;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import com.google.gerrit.acceptance.GerritConfig;
+import com.google.gerrit.acceptance.GerritPluginConfig;
+import com.google.gerrit.acceptance.GerritPluginConfigs;
 import com.google.gerrit.acceptance.PluginDaemonTest;
 import com.google.gerrit.acceptance.RestResponse;
+import com.google.gerrit.acceptance.UseLocalDisk;
+import com.google.gerrit.server.config.GerritServerConfig;
+import com.google.gerrit.server.config.PluginConfigFactory;
+import com.google.inject.Inject;
 
+import org.eclipse.jgit.lib.Config;
 import org.junit.Test;
 
 public class CookbookIT extends PluginDaemonTest {
+  @Inject
+  PluginConfigFactory config;
+
+  @Inject
+  @GerritServerConfig
+  Config serverConfig;
 
   @Test
   public void printTest() throws Exception {
@@ -37,5 +51,45 @@ public class CookbookIT extends PluginDaemonTest {
         adminRestSession.post("/changes/1/revisions/1/cookbook~hello-revision");
     assertThat(response.getEntityContent())
         .contains("Hello admin from change 1, patch set 1!");
+  }
+
+  @Test
+  @GerritConfig(name="test.test", value="test")
+  public void gerritConfigAnnotationSingle() throws Exception {
+    assertThat(serverConfig.getString("test", null, "test")).isEqualTo("test");
+  }
+
+  @Test
+  @UseLocalDisk
+  @GerritPluginConfig(pluginName = "test", name = "test.test", value = "test")
+  public void pluginConfigAnnotationSingle() throws Exception {
+    assertThat(config).isNotNull();
+    assertThat(
+        config.getGlobalPluginConfig("test").getString("test", null, "test"))
+        .isEqualTo("test");
+  }
+
+  @Test
+  @UseLocalDisk
+  @GerritPluginConfigs({
+    @GerritPluginConfig(pluginName = "test1", name = "test.test1", value = "test"),
+    @GerritPluginConfig(pluginName = "test1", name = "test.test2", value = "test"),
+    @GerritPluginConfig(pluginName = "test2", name = "test.test", value = "test"),
+    @GerritPluginConfig(pluginName = "test3", name = "test.test", value = "test")
+  })
+  public void pluginConfigAnnotationMutiple() throws Exception {
+    assertThat(config).isNotNull();
+    assertThat(
+        config.getGlobalPluginConfig("test1").getString("test", null, "test1"))
+        .isEqualTo("test");
+    assertThat(
+        config.getGlobalPluginConfig("test1").getString("test", null, "test2"))
+        .isEqualTo("test");
+    assertThat(
+        config.getGlobalPluginConfig("test2").getString("test", null, "test"))
+        .isEqualTo("test");
+    assertThat(
+        config.getGlobalPluginConfig("test3").getString("test", null, "test"))
+        .isEqualTo("test");
   }
 }
