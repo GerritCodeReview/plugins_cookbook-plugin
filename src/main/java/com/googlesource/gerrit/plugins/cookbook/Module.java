@@ -42,7 +42,6 @@ import com.google.gerrit.server.git.validators.RefOperationValidationListener;
 import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.gerrit.server.plugins.ServerPluginProvider;
 import com.google.gerrit.server.query.change.ChangeQueryBuilder.ChangeOperatorFactory;
-import com.google.gerrit.server.validators.AssigneeValidationListener;
 import com.google.gerrit.server.validators.HashtagValidationListener;
 import com.google.inject.AbstractModule;
 import com.googlesource.gerrit.plugins.cookbook.pluginprovider.HelloSshPluginProvider;
@@ -71,7 +70,6 @@ public class Module extends AbstractModule {
     DynamicSet.bind(binder(), UploadValidationListener.class).to(DenyUploadExample.class);
     DynamicSet.bind(binder(), MergeValidationListener.class).to(MergeUserValidator.class);
     DynamicSet.bind(binder(), HashtagValidationListener.class).to(HashtagValidator.class);
-    DynamicSet.bind(binder(), AssigneeValidationListener.class).to(AssigneeValidator.class);
     DynamicSet.bind(binder(), CommitValidationListener.class).to(CommitValidator.class);
     DynamicSet.bind(binder(), NewProjectCreatedListener.class).to(ProjectCreatedListener.class);
     DynamicSet.bind(binder(), RefOperationValidationListener.class)
